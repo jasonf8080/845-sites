@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #0d141b;
+  --paper-strong: #111b26;
+  --panel: #1a2431;
+  --ink: #edf1f5;
+  --ink-soft: rgba(255,255,255,0.78);
+  --muted: rgba(255,255,255,0.62);
+  --border: rgba(255,255,255,0.15);
+  --primary: #0f1720;
+  --primary-strong: #0b1219;
+  --accent: #ef7a3d;
+  --accent-soft: #f39a68;
+  --button: #1d2c3d;
+  --success: #2f6d57;
+}
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: 'Arial Black', 'Impact', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: -0.08em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  color: var(--ink);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(239, 122, 61, 0.28);
+}

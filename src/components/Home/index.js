@@ -1,0 +1,8 @@
+export { Hero } from './Hero'
+export { Services } from './Services'
+export { WhyChooseUs } from './WhyChooseUs'
+export { MyWork } from './MyWork'
+export { ProcessSteps } from './ProcessSteps'
+export { Reviews } from './Reviews'
+export { ServiceArea } from './ServiceArea'
+export { CTASection } from './CTASection'
