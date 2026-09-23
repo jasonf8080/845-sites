@@ -19,7 +19,7 @@ export const Hero = () => (
 
       <div className="grid items-end gap-8 pt-6 md:grid-cols-[1.2fr_0.8fr] md:pt-10">
         <div className="relative z-10">
-          <h1 className="max-w-[900px] text-[2.5rem] font-black leading-[0.88] tracking-[-0.05em] text-white sm:text-[3.2rem] md:text-[6.4rem] md:tracking-[-0.08em]">
+          <h1 className="max-w-[900px] text-[2.5rem] font-black leading-[0.88] tracking-[-0.07em] text-white sm:text-[3.2rem] md:text-[6.4rem] md:tracking-[-0.08em]">
             <span className="block">We specialize in building</span>
             <span className="mt-2 block text-white/90">Website &</span>
           </h1>
@@ -29,10 +29,10 @@ export const Hero = () => (
           </div>
 
           <div className="mt-8 flex items-end gap-0 md:mt-10">
-            <span className="text-[5.2rem] font-black leading-[0.8] tracking-[-0.06em] text-[#ff6e3c] md:text-[18rem] md:tracking-[-0.09em]">
+            <span className="text-[5.2rem] font-black leading-[0.8] tracking-[-0.07em] text-[#ff6e3c] md:text-[18rem] md:tracking-[-0.09em]">
               D
             </span>
-            <span className="pb-4 text-[2.5rem] font-black leading-[0.82] tracking-[-0.05em] text-white sm:text-[3.2rem] md:pb-8 md:text-[6.5rem] md:tracking-[-0.08em]">
+            <span className="pb-4 text-[2.5rem] font-black leading-[0.82] tracking-[-0.07em] text-white sm:text-[3.2rem] md:pb-8 md:text-[6.5rem] md:tracking-[-0.08em]">
               evelopment
             </span>
           </div>
