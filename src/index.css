@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,7 +30,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -42,7 +44,7 @@ h2,
 h3,
 h4,
 .font-display {
-  font-family: 'Arial Black', 'Impact', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Archivo Black', 'Arial Black', 'Impact', 'Helvetica Neue', Arial, sans-serif;
   letter-spacing: -0.07em;
   font-weight: 900;
   text-transform: uppercase;
