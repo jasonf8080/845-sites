@@ -1,59 +1,147 @@
 import { Link } from 'react-router-dom'
-import { FiArrowRight } from 'react-icons/fi'
+import { FiArrowRight, FiCheck, FiGlobe, FiTrendingUp, FiZap, FiShield, FiMonitor } from 'react-icons/fi'
+
+const FEATURE_ITEMS = [
+  {
+    title: 'More visibility',
+    description: 'Get found by local customers.',
+    icon: FiGlobe,
+  },
+  {
+    title: 'More customers',
+    description: 'Turn visitors into real business.',
+    icon: FiTrendingUp,
+  },
+  {
+    title: 'Local focus',
+    description: 'Built for the Hudson Valley.',
+    icon: FiShield,
+  },
+  {
+    title: 'Modern & fast',
+    description: 'High performance, always.',
+    icon: FiZap,
+  },
+]
 
 export const Hero = () => (
-  <section id="home" className="relative overflow-hidden bg-[#11171c] px-5 pb-10 pt-8 md:px-8 md:pb-16 md:pt-10">
+  <section id="home" className="relative overflow-hidden bg-[#0b141b] px-5 pb-8 pt-6 text-white md:px-8 md:pb-10 md:pt-8">
     <div className="pointer-events-none absolute inset-0">
-      <div className="absolute -left-28 top-0 h-[70%] w-[90%] rounded-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06),transparent_55%)]" />
-      <div className="absolute right-[-18%] top-1/3 h-[70%] w-[60%] rounded-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06),transparent_60%)]" />
-      <div className="absolute left-[-16%] top-1/2 h-[68%] w-[120%] -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.04),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(255,119,59,0.22),transparent_25%),radial-gradient(circle_at_70%_60%,rgba(255,119,59,0.16),transparent_24%),linear-gradient(90deg,#0a1218_0%,#0d1721_42%,#0a1218_100%)]" />
+      <div className="absolute -left-[10%] top-[8%] h-[72%] w-[72%] rounded-full bg-[radial-gradient(circle,rgba(255,130,66,0.16),rgba(255,130,66,0.06)_28%,transparent_68%)] blur-3xl" />
+      <div className="absolute right-[8%] top-[18%] h-[50%] w-[50%] rounded-full border border-[#ff7f45]/40" />
+      <div className="absolute right-[11%] top-[21%] h-[42%] w-[42%] rounded-full border border-[#ff7f45]/20" />
+      <div className="absolute right-[10%] top-[18%] h-[52%] w-[52%] rounded-full border border-[#ff7f45]/15" />
     </div>
 
-    <div className="relative mx-auto max-w-[1600px] min-h-[calc(100vh-88px)]">
-      <div className="flex items-start justify-between pb-2 pt-12 md:pt-16">
-        <div className="flex items-center gap-3 text-[0.94rem] font-medium text-[#ff6e3c]">
-          <span className="text-[1.15rem] leading-none">✦</span>
-          <span>Trusted Web Design Agency</span>
+    <div className="relative mx-auto max-w-[1500px]">
+      <div className="flex min-h-[calc(100vh-120px)] flex-col justify-between">
+        <div className="relative z-10 pt-4 xl:pt-8">
+          <div className="grid items-start gap-8 xl:grid-cols-[1.2fr_0.8fr]">
+            <div className="max-w-[820px]">
+              <div className="mb-5 flex items-center gap-4 text-[0.68rem] font-medium uppercase tracking-[0.26em] text-white/75 md:text-[0.72rem]">
+                <span>Websites for real businesses</span>
+                <span className="h-px flex-1 bg-white/20" />
+              </div>
+
+              <h1 className="text-[4.2rem] font-black leading-[0.82] tracking-[-0.07em] text-white sm:text-[5.2rem] lg:text-[7.5rem] xl:text-[9rem]">
+                <span className="block">LOCAL</span>
+                <span className="block text-white">BUSINESSES</span>
+                <span className="block text-[#ff6e3c]">BIGGER</span>
+              </h1>
+
+              <p className="mt-6 text-[1.15rem] font-medium leading-[1.35] text-white/90 md:text-[1.65rem] md:leading-[1.25]">
+                Modern websites, built for growth.
+              </p>
+
+              <p className="mt-4 max-w-[620px] text-[1.06rem] leading-[1.5] text-white/72 md:text-[1.2rem]">
+                We help Hudson Valley businesses stand out online with custom websites, local SEO, and modern design — so you can get more customers and focus on what you do best.
+              </p>
+
+              <div className="mt-8 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
+                <Link
+                  to="/login"
+                  className="inline-flex items-center justify-center gap-3 rounded-full bg-[#ff6e3c] px-6 py-4 text-[0.9rem] font-semibold uppercase tracking-[0.02em] text-white shadow-[0_12px_28px_rgba(255,110,60,0.35)] transition-transform hover:-translate-y-0.5 md:text-[1.06rem]"
+                >
+                  Get Your Website <FiArrowRight aria-hidden="true" className="text-lg" />
+                </Link>
+
+                <button
+                  type="button"
+                  className="inline-flex items-center gap-3 text-white/85 transition-opacity hover:opacity-90"
+                >
+                  <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/35 bg-white/5 text-lg">
+                    <FiMonitor aria-hidden="true" />
+                  </span>
+                  <span className="text-left text-[0.75rem] font-medium uppercase tracking-[0.2em] text-white/75">
+                    See How It Works
+                    <span className="mt-1 block text-[0.58rem] tracking-[0.18em] text-white/55">Watch 1 min video</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div className="relative hidden min-h-[460px] xl:block">
+              <div className="absolute inset-x-0 top-0 flex justify-center">
+                <div className="text-[0.78rem] font-medium uppercase tracking-[0.22em] text-white/75">
+                  <div className="text-left">914</div>
+                  <div className="text-left">845</div>
+                  <div className="text-left">AND BEYOND</div>
+                </div>
+              </div>
+
+              <div className="absolute left-1/2 top-[40%] h-[250px] w-[250px] -translate-x-1/2 -translate-y-1/2 rounded-full border-[2px] border-[#f5af7d]/60 shadow-[0_0_25px_rgba(255,119,59,0.18)]" />
+              <div className="absolute left-1/2 top-[40%] h-[320px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#ff7f45]/30" />
+
+              <div className="absolute inset-x-0 top-[28%] flex justify-center">
+                <div className="text-[10rem] font-black leading-none tracking-[-0.09em] text-white/10">845</div>
+              </div>
+
+              <div className="absolute right-[10%] top-[14%] text-right">
+                <div className="font-['Caveat'] text-[3.2rem] italic leading-none text-white/90">Hudson Valley</div>
+                <div className="mt-1 flex items-center gap-3 text-[2.2rem] font-['Caveat'] italic leading-none text-white/90">
+                  <span>Built</span>
+                  <span className="h-[3px] w-24 rounded-full bg-[#ff6e3c]" />
+                </div>
+              </div>
+
+              <div className="absolute bottom-[13%] right-[4%] text-[0.7rem] uppercase tracking-[0.22em] text-white/70">
+                <div className="text-right">Modern</div>
+                <div className="text-right">Local</div>
+                <div className="text-right">Impactful</div>
+              </div>
+
+              <div className="absolute bottom-[8%] right-[10%] flex h-[110px] w-[110px] items-center justify-center rounded-full border border-[#ff7f45]/60 bg-[#0d141a]/80 text-[#ff6e3c] shadow-[0_0_20px_rgba(255,119,59,0.15)]">
+                <div className="flex h-[68px] w-[68px] items-center justify-center rounded-full border border-[#ff7f45]/40 text-[2.2rem]">
+                  <FiArrowRight aria-hidden="true" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div className="grid items-end gap-8 pt-6 md:grid-cols-[1.2fr_0.8fr] md:pt-10">
-        <div className="relative z-10">
-          <h1 className="max-w-[900px] text-[2.5rem] font-black leading-[0.88] tracking-[-0.07em] text-white sm:text-[3.2rem] md:text-[6.4rem] md:tracking-[-0.08em]">
-            <span className="block">We specialize in building</span>
-            <span className="mt-2 block text-white/90">Website &</span>
-          </h1>
-
-          <div className="mt-4 flex h-[16px] w-[360px] max-w-[55vw] items-center">
-            <span className="block h-[2px] w-full rounded-full bg-white/70" />
+        <div className="relative z-10 mt-10 border-t border-white/10 pt-7">
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {FEATURE_ITEMS.map(({ title, description, icon: Icon }) => (
+              <div key={title} className="flex items-center gap-4 border-r border-white/10 px-2 py-2 last:border-r-0 md:px-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 text-[1.3rem] text-[#ff6e3c]">
+                  <Icon aria-hidden="true" />
+                </div>
+                <div>
+                  <div className="text-[0.92rem] font-black uppercase tracking-[-0.04em] text-white md:text-[1rem]">
+                    {title}
+                  </div>
+                  <div className="mt-1 text-[0.72rem] leading-relaxed text-white/68 md:text-[0.76rem]">{description}</div>
+                </div>
+              </div>
+            ))}
           </div>
 
-          <div className="mt-8 flex items-end gap-0 md:mt-10">
-            <span className="text-[5.2rem] font-black leading-[0.8] tracking-[-0.07em] text-[#ff6e3c] md:text-[18rem] md:tracking-[-0.09em]">
-              D
-            </span>
-            <span className="pb-4 text-[2.5rem] font-black leading-[0.82] tracking-[-0.07em] text-white sm:text-[3.2rem] md:pb-8 md:text-[6.5rem] md:tracking-[-0.08em]">
-              evelopment
-            </span>
+          <div className="mt-6 flex items-center justify-between border-t border-white/10 pt-5 text-[0.72rem] uppercase tracking-[0.24em] text-white/65">
+            <span>Scroll to explore</span>
+            <span>Est. 2024</span>
           </div>
         </div>
-
-        <div className="relative z-10 flex flex-col items-start justify-end pb-8 md:pb-10">
-          <p className="max-w-[330px] text-[1.15rem] leading-[1.45] text-white/80 md:text-[1.28rem]">
-            elevate your brand with the agency <br /> agency — everything from strategy to <br /> advertising &amp; scale.
-          </p>
-
-          <Link
-            to="#"
-            className="mt-6 inline-flex items-center gap-2 text-[0.98rem] font-medium text-[#ff6e3c] transition-opacity hover:opacity-90"
-          >
-            Explore More <FiArrowRight aria-hidden="true" />
-          </Link>
-        </div>
-      </div>
-
-      <div className="absolute bottom-[110px] right-4 hidden h-[110px] w-[80px] items-center justify-center bg-[#2d4dff] text-[1.05rem] font-bold uppercase tracking-[-0.06em] text-white md:flex">
-        <span className="inline-block -rotate-90 whitespace-nowrap">Explore More Theme</span>
       </div>
     </div>
   </section>
