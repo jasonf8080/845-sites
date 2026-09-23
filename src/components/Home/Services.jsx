@@ -36,7 +36,7 @@ export const Services = () => (
 
       <div className="grid gap-8 xl:grid-cols-[0.85fr_1.1fr_1.1fr]">
         <div className="flex flex-col justify-between pt-2">
-          <h2 className="max-w-[420px] text-[3.1rem] font-black leading-[0.82] tracking-[-0.075em] text-white md:text-[5.1rem]">
+          <h2 className="max-w-[420px] text-[3.1rem] font-black leading-[0.82] tracking-[-0.05em] text-white md:text-[5.1rem] md:tracking-[-0.075em]">
             SIMPLE,
             <span className="mt-1 block">HONEST</span>
             <span className="mt-1 block">PRICING.</span>
@@ -68,7 +68,7 @@ export const Services = () => (
               <span className="text-[0.72rem] font-medium uppercase tracking-[0.18em] text-white/70">{label}</span>
             </div>
 
-            <h3 className="max-w-[330px] text-[2.3rem] font-black leading-[0.92] tracking-[-0.075em] text-white md:text-[3.05rem]">
+            <h3 className="max-w-[330px] text-[2.3rem] font-black leading-[0.92] tracking-[-0.05em] text-white md:text-[3.05rem] md:tracking-[-0.075em]">
               {title.split('\n').map((line, index) => (
                 <span key={line + index} className="block">
                   {line}
@@ -77,7 +77,7 @@ export const Services = () => (
             </h3>
 
             <div className="mt-7 flex items-baseline gap-3">
-              <span className="text-[2.6rem] font-black leading-none tracking-[-0.08em] text-[#ff6e3c] md:text-[3.7rem]">
+              <span className="text-[2.6rem] font-black leading-none tracking-[-0.05em] text-[#ff6e3c] md:text-[3.7rem] md:tracking-[-0.08em]">
                 {price}
               </span>
               <span className="text-[0.74rem] font-medium uppercase tracking-[0.12em] text-white/70">

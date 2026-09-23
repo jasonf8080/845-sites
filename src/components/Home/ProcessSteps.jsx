@@ -53,7 +53,7 @@ export const ProcessSteps = () => {
           <span className="block text-[0.72rem] font-black uppercase tracking-[0.2em] text-[#ff8d59] md:text-[0.8rem]">
             OUR PROCESS
           </span>
-          <h2 className="mt-3 text-[2.4rem] font-black leading-[0.82] tracking-[-0.08em] text-white md:text-[4.6rem]">
+          <h2 className="mt-3 text-[2.4rem] font-black leading-[0.82] tracking-[-0.05em] text-white md:text-[4.6rem] md:tracking-[-0.08em]">
             <span className="block">A SIMPLE PROCESS.</span>
             <span className="mt-1 block text-white/70">BEAUTIFUL RESULTS.</span>
           </h2>
@@ -79,11 +79,11 @@ export const ProcessSteps = () => {
                     </div>
                   </div>
 
-                  <div className="text-[1.15rem] font-black leading-none tracking-[-0.06em] text-[#ff8d59] md:text-[1.5rem]">
+                  <div className="text-[1.15rem] font-black leading-none tracking-[-0.05em] text-[#ff8d59] md:text-[1.5rem] md:tracking-[-0.06em]">
                     {String(step.id).padStart(2, '0')}.
                   </div>
 
-                  <h3 className="mt-2 max-w-[200px] text-[0.9rem] font-black leading-[1.05] tracking-[-0.06em] text-white md:text-[1.2rem]">
+                  <h3 className="mt-2 max-w-[200px] text-[0.9rem] font-black leading-[1.05] tracking-[-0.05em] text-white md:text-[1.2rem] md:tracking-[-0.06em]">
                     {step.title.toUpperCase()}
                   </h3>
 

@@ -40,7 +40,7 @@ export const WhyChooseUs = () => (
 
       <div className="grid items-start gap-8 lg:grid-cols-[0.92fr_1.08fr]">
         <div className="pt-2">
-          <h2 className="max-w-[700px] text-[3.2rem] font-black leading-[0.86] tracking-[-0.075em] text-white md:text-[5.8rem]">
+          <h2 className="max-w-[700px] text-[3.2rem] font-black leading-[0.86] tracking-[-0.05em] text-white md:text-[5.8rem] md:tracking-[-0.075em]">
             BUILT FOR
             <span className="mt-1 block">BUSINESSES</span>
             <span className="mt-1 block">THAT WANT TO</span>
@@ -62,7 +62,7 @@ export const WhyChooseUs = () => (
                 <Icon aria-hidden="true" />
               </div>
 
-              <h3 className="max-w-[245px] text-[1.85rem] font-black leading-[0.96] tracking-[-0.07em] text-white md:text-[2.6rem]">
+              <h3 className="max-w-[245px] text-[1.85rem] font-black leading-[0.96] tracking-[-0.05em] text-white md:text-[2.6rem] md:tracking-[-0.07em]">
                 {title.split('\n').map((line, index) => (
                   <span key={line + index} className="block">
                     {line}

@@ -16,7 +16,7 @@ export const MyWork = () => (
             FEATURED PROJECT
           </div>
 
-          <h2 className="max-w-[520px] text-[3.3rem] font-black leading-[0.84] tracking-[-0.075em] text-white md:text-[5.2rem]">
+          <h2 className="max-w-[520px] text-[3.3rem] font-black leading-[0.84] tracking-[-0.05em] text-white md:text-[5.2rem] md:tracking-[-0.075em]">
             IF YOU WANT TO
             <span className="mt-1 block">PLANT GROW YOU?</span>
             <span className="mt-1 block">IN THE RIGHT SPOT.</span>
@@ -77,7 +77,7 @@ export const MyWork = () => (
                   <span className="h-px w-10 bg-white/45" />
                 </div>
 
-                <h3 className="text-[2.6rem] font-semibold leading-[0.84] tracking-[-0.065em] text-white md:text-[4.1rem]">
+                <h3 className="text-[2.6rem] font-semibold leading-[0.84] tracking-[-0.05em] text-white md:text-[4.1rem] md:tracking-[-0.065em]">
                   Gardenside Kitchen &amp; Coffee Bar
                 </h3>
 
@@ -118,7 +118,7 @@ export const MyWork = () => (
               {stat.icon === 'code' ? '</>' : stat.icon === 'mobile' ? '⌂' : stat.icon === 'pin' ? '⌖' : '⌁'}
             </div>
             <div>
-              <div className="text-[2rem] font-black leading-none tracking-[-0.07em] text-white">{stat.title}</div>
+              <div className="text-[2rem] font-black leading-none tracking-[-0.05em] text-white md:tracking-[-0.07em]">{stat.title}</div>
               <div className="mt-1 text-[0.68rem] uppercase tracking-[0.12em] text-white/75">{stat.label}</div>
             </div>
           </div>

@@ -26,7 +26,7 @@ export const Reviews = () => (
 
       <div className="grid items-start gap-8 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="pt-2">
-          <h2 className="max-w-[560px] text-[3.2rem] font-black leading-[0.86] tracking-[-0.075em] text-white md:text-[5.4rem]">
+          <h2 className="max-w-[560px] text-[3.2rem] font-black leading-[0.86] tracking-[-0.05em] text-white md:text-[5.4rem] md:tracking-[-0.075em]">
             OWNERS WHO
             <span className="mt-1 block">STOPPED</span>
             <span className="mt-1 block">WORRYING</span>
@@ -73,7 +73,7 @@ export const Reviews = () => (
               <div className="mt-8 h-px w-full bg-white/18" />
 
               <div className="mt-6">
-                <p className="text-[1.02rem] font-black uppercase tracking-[-0.04em] text-white md:text-[1.1rem]">{review.author.toUpperCase()}</p>
+                <p className="text-[1.02rem] font-black uppercase tracking-[-0.03em] text-white md:text-[1.1rem] md:tracking-[-0.04em]">{review.author.toUpperCase()}</p>
                 <p className="mt-2 max-w-[290px] text-[0.72rem] uppercase tracking-[0.12em] text-white/72 md:text-[0.82rem]">
                   {review.role.toUpperCase()}
                 </p>

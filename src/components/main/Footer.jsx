@@ -4,7 +4,7 @@ export const Footer = () => (
   <footer id="contact" className="bg-[#0d141b] px-6 py-8 text-white md:px-8">
     <div className="mx-auto flex max-w-[1280px] flex-col gap-6 md:flex-row md:items-center md:justify-between">
       <div className="flex items-end gap-2 text-white">
-        <span className="text-[2.2rem] font-black leading-none tracking-[-0.08em]">E8GHT45</span>
+        <span className="text-[2.2rem] font-black leading-none tracking-[-0.05em] md:tracking-[-0.08em]">E8GHT45</span>
         <span className="pb-1 text-[0.52rem] font-semibold uppercase tracking-[0.22em] text-white/80">SITES</span>
       </div>
 

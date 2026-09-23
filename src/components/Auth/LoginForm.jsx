@@ -2,7 +2,7 @@ export const LoginForm = () => (
   <div className="w-full max-w-md rounded-[28px] border border-white/10 bg-[#111b26] p-8 text-white shadow-[0_24px_60px_rgba(0,0,0,0.25)]">
     <div className="mb-8 text-center">
       <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[#ff8d59]">Welcome back</p>
-      <h1 className="mt-3 text-3xl font-black tracking-[-0.08em] text-white">Login</h1>
+      <h1 className="mt-3 text-3xl font-black tracking-[-0.05em] text-white md:tracking-[-0.08em]">Login</h1>
     </div>
 
     <form className="space-y-4">

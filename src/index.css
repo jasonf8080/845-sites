@@ -43,9 +43,19 @@ h3,
 h4,
 .font-display {
   font-family: 'Arial Black', 'Impact', 'Helvetica Neue', Arial, sans-serif;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.05em;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-display {
+    letter-spacing: -0.08em;
+  }
 }
 
 button,
