@@ -44,7 +44,7 @@ export const Hero = () => (
                 <span className="h-px flex-1 bg-white/20" />
               </div>
 
-              <h1 className="text-[4.2rem] font-black leading-[0.82] tracking-[-0.07em] text-white sm:text-[5.2rem] lg:text-[7.5rem] xl:text-[9rem]">
+              <h1 className="text-[2.9rem] font-black leading-[0.82] tracking-[-0.07em] text-white sm:text-[4rem] lg:text-[7.5rem] xl:text-[9rem]">
                 <span className="block">LOCAL</span>
                 <span className="block text-white">BUSINESSES</span>
                 <span className="block text-[#ff6e3c]">BIGGER</span>
@@ -65,19 +65,6 @@ export const Hero = () => (
                 >
                   Get Your Website <FiArrowRight aria-hidden="true" className="text-lg" />
                 </Link>
-
-                <button
-                  type="button"
-                  className="inline-flex items-center gap-3 text-white/85 transition-opacity hover:opacity-90"
-                >
-                  <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/35 bg-white/5 text-lg">
-                    <FiMonitor aria-hidden="true" />
-                  </span>
-                  <span className="text-left text-[0.75rem] font-medium uppercase tracking-[0.2em] text-white/75">
-                    See How It Works
-                    <span className="mt-1 block text-[0.58rem] tracking-[0.18em] text-white/55">Watch 1 min video</span>
-                  </span>
-                </button>
               </div>
             </div>
 

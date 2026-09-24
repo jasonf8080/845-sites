@@ -38,9 +38,9 @@ export const HomePage = () => (
     <WhyChooseUs />
     <Services />
     <MyWork />
-    <ProcessSteps />
+    {/* <ProcessSteps /> */}
     <Reviews />
-    <ServiceArea />
-    <CTASection />
+    {/* <ServiceArea />
+    <CTASection /> */}
   </>
 )

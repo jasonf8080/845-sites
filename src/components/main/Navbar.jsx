@@ -7,7 +7,6 @@ export const Navbar = () => {
 
   const links = [
     { label: 'Home', href: '#home' },
-    { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
     { label: 'My Work', href: '#my-work' },
     { label: 'Reviews', href: '#reviews' },
@@ -31,12 +30,6 @@ export const Navbar = () => {
             </a>
           ))}
 
-          <Link
-            to="/login"
-            className="inline-flex items-center justify-center rounded-full bg-[#ff6e3c] px-5 py-2.5 text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-white transition-opacity hover:opacity-95"
-          >
-            Get Started
-          </Link>
         </div>
 
         <button
@@ -56,12 +49,6 @@ export const Navbar = () => {
               {label}
             </a>
           ))}
-          <Link
-            to="/login"
-            className="mt-2 inline-flex items-center justify-center rounded-full bg-[#ff6e3c] px-5 py-3 text-sm font-medium text-white"
-          >
-            Get Started
-          </Link>
         </div>
       )}
     </header>

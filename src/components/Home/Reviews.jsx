@@ -1,15 +1,15 @@
 const REVIEWS = [
   {
     quote:
-      'Our new website paid for itself in the first month. Customers mention it in constantly, and the quote form brings in steady catering requests every week.',
-    author: 'Maria Gonzalez',
-    role: 'Owner, Gonzalez Family Restaurant — Astoria, TX',
+      'Jason did a great job bringing Gardenside Kitchen to life online. The website really captures the feel of our café and makes it easy for people to see what we offer before they visit. It feels like us, which was exactly what we wanted.',
+    author: 'Tracy Assue',
+    role: 'Gardenside Kitchen',
   },
   {
     quote:
-      'I know nothing about websites and I never had to. 845 Sites handled everything, explained it in plain English, and my booking schedule has been full.',
-    author: 'Jason Miller',
-    role: 'Owner, Miller Home Services — Poughkeepsie, NY',
+      'The new website gives South Salem Winery a much stronger presence online. Jason understood what makes our winery unique and built a site that showcases our wines and our story in a clean, professional way. We’re really happy with how it came out.',
+    author: 'John Vuolo',
+    role: 'South Salem Winery',
   },
 ]
 
@@ -40,20 +40,6 @@ export const Reviews = () => (
             Built to make an impact.
           </p>
 
-          <div className="mt-8 flex items-center gap-4">
-            <button
-              type="button"
-              className="flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-transparent text-[1.35rem] text-white transition-opacity hover:opacity-90"
-            >
-              ‹
-            </button>
-            <button
-              type="button"
-              className="flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-transparent text-[1.35rem] text-white transition-opacity hover:opacity-90"
-            >
-              ›
-            </button>
-          </div>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">

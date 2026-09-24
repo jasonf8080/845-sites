@@ -1,129 +1,147 @@
-export const MyWork = () => (
-  <section className="bg-[#11171c] px-5 py-10 text-white md:px-8 md:py-14">
-    <div className="mx-auto max-w-[1600px]">
-      <div className="mb-8 flex items-center justify-between md:mb-10">
-        <div className="flex items-center gap-4">
-          <span className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/70">04</span>
-          <span className="h-px flex-1 bg-white/20" />
-        </div>
-        <span className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/70">OUR WORK</span>
-      </div>
+import { useMemo, useState } from 'react'
 
-      <div className="grid items-start gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-        <div className="pt-2">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-transparent px-4 py-2 text-[0.75rem] font-medium uppercase tracking-[0.2em] text-[#ff6e3c]">
-            <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#ff6e3c]" />
-            FEATURED PROJECT
-          </div>
+const projects = [
+  {
+    name: 'South Salem Winery',
+    image: '/images/south-salem-winery-reference.jpg',
+    url: 'https://southsalemwinery.com/',
+    description:
+      'A polished wine brand experience built to feel elevated, intimate, and memorable — highlighting tastings, events, and a refined local story.',
+    features: [
+      { label: 'LUXURY BRAND', text: 'Boutique visuals with premium positioning.', icon: '✦' },
+      { label: 'EVENT-READY', text: 'Showcases tastings, reservations, and experiences.', icon: '◍' },
+      { label: 'LOCAL STORY', text: 'Crafted for a Hudson Valley destination audience.', icon: '▣' },
+    ],
+  },
+  {
+    name: 'Gardenside Kitchen',
+    image: '/images/gardenside-reference.jpg',
+    url: 'https://gardensidekitchen.com/',
+    description:
+      'A custom website for a local café in South Salem, NY — showcasing their menu, events, and unique greenhouse setting.',
+    features: [
+      { label: 'LOCAL CAFÉ', text: 'Menu, coffee, pastries & wine.', icon: '☕' },
+      { label: 'CUSTOM DESIGN', text: 'Built around their brand and space.', icon: '✦' },
+      { label: 'BUILT FOR GROWTH', text: 'Mobile-friendly, SEO optimized.', icon: '▣' },
+    ],
+  },
+]
 
-          <h2 className="max-w-[520px] text-[3.3rem] font-black leading-[0.84] tracking-[-0.07em] text-white md:text-[5.2rem] md:tracking-[-0.075em]">
-            IF YOU WANT TO
-            <span className="mt-1 block">PLANT GROW YOU?</span>
-            <span className="mt-1 block">IN THE RIGHT SPOT.</span>
-          </h2>
+export const MyWork = () => {
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [showDetails, setShowDetails] = useState(false)
 
-          <p className="mt-7 max-w-[520px] text-[1.06rem] leading-relaxed text-white/72 md:text-[1.16rem]">
-            We help local businesses elevate their brand with modern, high-performance websites — everything from
-            strategy to design, development, and growth.
-          </p>
+  const activeProject = useMemo(() => projects[activeIndex], [activeIndex])
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center rounded-full bg-[#ff6e3c] px-8 py-4 text-[1.05rem] font-semibold text-white shadow-none transition-opacity hover:opacity-95"
+  const goToProject = (nextIndex) => {
+    setActiveIndex(nextIndex)
+    setShowDetails(false)
+  }
+
+  const goPrev = () => {
+    const nextIndex = (activeIndex - 1 + projects.length) % projects.length
+    goToProject(nextIndex)
+  }
+
+  const goNext = () => {
+    const nextIndex = (activeIndex + 1) % projects.length
+    goToProject(nextIndex)
+  }
+
+  const toggleDetails = () => {
+    setShowDetails((current) => !current)
+  }
+
+  return (
+    <section className="relative overflow-hidden bg-[#0b141b] px-5 py-12 text-white md:px-8 md:py-16">
+      <div className="relative mx-auto max-w-[1500px]">
+        <div className="grid items-center gap-10 xl:grid-cols-[0.95fr_1.05fr]">
+          <div className="max-w-[620px]">
+            <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-[#ff7f45]/50 bg-transparent px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-[#ff7f45]">
+              <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#ff7f45]" />
+              Featured Project
+            </div>
+
+            <h2 className="text-[4rem] font-black leading-[0.8] tracking-[-0.07em] text-white sm:text-[4.7rem] lg:text-[6.2rem]">
+              <span className="block text-white">{activeProject.name.split(' ')[0].toUpperCase()}</span>
+              <span className="block text-white">{activeProject.name.split(' ').slice(1).join(' ').toUpperCase()}</span>
+            </h2>
+
+            <p className="mt-6 max-w-[530px] text-[1.14rem] leading-[1.5] text-white/72 md:text-[1.28rem]">
+              {activeProject.description}
+            </p>
+
+            <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+              <a
+                href={activeProject.url}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center gap-3 rounded-full bg-[#ff6e3c] px-7 py-4 text-[1.02rem] font-semibold text-white shadow-[0_12px_26px_rgba(255,110,60,0.35)] transition-all duration-300 hover:-translate-y-0.5"
+              >
+                {showDetails ? 'Hide Details' : 'View Project'} <span aria-hidden="true">→</span>
+              </a>
+
+              <div className="flex items-center gap-3 rounded-full border border-white/15 bg-white/5 p-2">
+                <button
+                  type="button"
+                  aria-label="Previous project"
+                  onClick={goPrev}
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-[#111b24] text-xl text-white transition hover:border-[#ff7f45]/50 hover:text-[#ff7f45]"
+                >
+                  ←
+                </button>
+                <button
+                  type="button"
+                  aria-label="Next project"
+                  onClick={goNext}
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-[#111b24] text-xl text-white transition hover:border-[#ff7f45]/50 hover:text-[#ff7f45]"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+
+            <div
+              className={`mt-10 space-y-5 transition-all duration-500 ${
+                showDetails ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-4 opacity-0'
+              }`}
             >
-              View Project <span aria-hidden="true" className="ml-2">→</span>
-            </button>
-            <button
-              type="button"
-              className="inline-flex items-center justify-center rounded-full border border-white/20 bg-transparent px-8 py-4 text-[1.05rem] font-semibold text-white transition-opacity hover:opacity-90"
+              {activeProject.features.map((item) => (
+                <div key={item.label} className="flex items-center gap-4 rounded-[16px] border border-white/10 bg-white/3 px-4 py-4 opacity-100 transition-opacity duration-500">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#ff7f45]/60 bg-[#111b24] text-[1.3rem] text-[#ff7f45]">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <div className="text-[0.96rem] font-black uppercase tracking-[-0.04em] text-white md:text-[1.08rem]">
+                      {item.label}
+                    </div>
+                    <div className="mt-1 text-[0.9rem] text-white/68">{item.text}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute inset-0 -z-10 flex items-center justify-center">
+              <div className="h-[420px] w-[420px] rounded-full border border-[#ff7f45]/30" />
+            </div>
+
+            <div
+              key={activeProject.name}
+              className={`mx-auto max-w-[760px] rounded-[28px] border border-[#ff7f45]/40 bg-[#111a22] p-3 shadow-[0_0_30px_rgba(255,119,59,0.12)] transition-all duration-500 ${
+                showDetails ? 'scale-[1.01] opacity-100' : 'scale-[0.99] opacity-90'
+              }`}
             >
-              See More Work
-            </button>
-          </div>
-        </div>
-
-        <div className="rounded-[24px] border border-white/15 bg-[#1b2530] p-3 shadow-[0_0_0_1px_rgba(255,255,255,0.04)]">
-          <div
-            className="relative overflow-hidden rounded-[18px] border border-white/10 bg-cover bg-center"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(17, 23, 28, 0.35), rgba(17, 23, 28, 0.35)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1400&q=80')",
-              minHeight: '500px',
-            }}
-          >
-            <div className="flex items-center justify-between px-5 py-4 text-[0.8rem] text-white/80">
-              <div className="flex items-center gap-2">
-                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-black/20 text-[1.1rem] font-semibold">
-                  G
-                </span>
-                <span className="text-[0.9rem] font-semibold text-white">Gardenside</span>
-              </div>
-
-              <div className="hidden items-center gap-6 md:flex">
-                {['Home', 'About', 'Menu', 'Events', 'Contact'].map((item) => (
-                  <span key={item} className="text-[0.7rem] uppercase tracking-[0.04em] text-white/80">
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div className="px-5 pb-6 pt-10 md:px-8 md:pb-8">
-              <div className="mx-auto max-w-[760px] text-center">
-                <div className="mb-4 inline-flex items-center gap-3 text-[0.7rem] uppercase tracking-[0.4em] text-white/85">
-                  <span className="h-px w-10 bg-white/45" />
-                  EST 2026
-                  <span className="h-px w-10 bg-white/45" />
-                </div>
-
-                <h3 className="text-[2.6rem] font-semibold leading-[0.84] tracking-[-0.07em] text-white md:text-[4.1rem] md:tracking-[-0.065em]">
-                  Gardenside Kitchen &amp; Coffee Bar
-                </h3>
-
-                <div className="mt-5 flex flex-wrap items-center justify-center gap-2 text-[0.64rem] uppercase tracking-[0.22em] text-white/80 md:text-[0.7rem]">
-                  <span>Fresh Coffee</span>
-                  <span className="text-[#d8c9b4]">•</span>
-                  <span>Handcrafted Pastries</span>
-                  <span className="text-[#d8c9b4]">•</span>
-                  <span>Locally Sourced</span>
-                </div>
-
-                <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-                  <button type="button" className="rounded-none border border-white/30 bg-white/10 px-8 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white">
-                    View Menu
-                  </button>
-                  <button type="button" className="rounded-none border border-white/30 bg-transparent px-8 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white">
-                    Our Story
-                  </button>
-                </div>
-              </div>
+              <img
+                src={activeProject.image}
+                alt={`${activeProject.name} website reference`}
+                className="h-[540px] w-full rounded-[20px] object-cover object-center transition-all duration-500"
+              />
             </div>
           </div>
         </div>
       </div>
-
-      <div className="mt-8 grid gap-4 md:grid-cols-4">
-        {[
-          { title: 'CUSTOM BUILT', label: 'No templates', icon: 'code' },
-          { title: 'MOBILE FIRST', label: 'Fully responsive', icon: 'mobile' },
-          { title: 'LOCAL SEO', label: 'Westchester focused', icon: 'pin' },
-          { title: 'FAST + MODERN', label: 'Performance optimized', icon: 'speed' },
-        ].map((stat) => (
-          <div
-            key={stat.label}
-            className="flex items-center gap-4 rounded-[18px] border border-white/15 bg-[rgba(255,255,255,0.02)] px-5 py-5"
-          >
-            <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#ff6e3c] text-[1.5rem] text-[#ff6e3c]">
-              {stat.icon === 'code' ? '</>' : stat.icon === 'mobile' ? '⌂' : stat.icon === 'pin' ? '⌖' : '⌁'}
-            </div>
-            <div>
-              <div className="text-[2rem] font-black leading-none tracking-[-0.07em] text-white md:tracking-[-0.07em]">{stat.title}</div>
-              <div className="mt-1 text-[0.68rem] uppercase tracking-[0.12em] text-white/75">{stat.label}</div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
