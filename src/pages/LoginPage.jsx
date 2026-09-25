@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async'
 import { LoginForm } from '../components/Auth'
 
 export const LoginPage = () => (
-  <section className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center px-6 py-16">
+  <section className="mx-auto flex min-h-[70vh] max-w-2xl flex-col items-center justify-center px-6 py-16 md:px-8 md:py-20">
     <Helmet>
       <title>Sign In | 845 Sites</title>
       <meta
