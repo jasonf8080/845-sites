@@ -5,18 +5,19 @@
 @tailwind utilities;
 
 :root {
-  --paper: #0d141b;
-  --paper-strong: #111b26;
-  --panel: #1a2431;
-  --ink: #edf1f5;
-  --ink-soft: rgba(255,255,255,0.78);
-  --muted: rgba(255,255,255,0.62);
-  --border: rgba(255,255,255,0.15);
-  --primary: #0f1720;
-  --primary-strong: #0b1219;
-  --accent: #ef7a3d;
-  --accent-soft: #f39a68;
-  --button: #1d2c3d;
+  --paper: #efeee9;
+  --paper-strong: #e6e1d8;
+  --panel: #1a1b1d;
+  --panel-soft: #2a2a2d;
+  --ink: #0f1115;
+  --ink-soft: rgba(15, 17, 21, 0.74);
+  --muted: rgba(15, 17, 21, 0.62);
+  --border: rgba(15, 17, 21, 0.15);
+  --primary: #111317;
+  --primary-strong: #090b0d;
+  --accent: #2B2B2C;
+  --accent-soft: #4a4a4b;
+  --button: #2B2B2C;
   --success: #2f6d57;
 }
 
@@ -37,6 +38,17 @@ body {
 
 #root {
   min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+main,
+section,
+header,
+footer,
+article {
+  background-color: var(--paper);
+  color: var(--ink);
 }
 
 h1,
@@ -75,7 +87,12 @@ select {
 
 input::placeholder,
 textarea::placeholder {
-  color: rgba(255,255,255,0.5);
+  color: rgba(15, 17, 21, 0.42);
+}
+
+button,
+a {
+  transition: opacity 0.2s ease, transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
 }
 
 img {

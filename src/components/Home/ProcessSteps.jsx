@@ -50,7 +50,7 @@ export const ProcessSteps = () => {
     <section ref={containerRef} className="relative overflow-hidden bg-[#0d141b] px-5 py-12 text-white md:px-8 md:py-16">
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-7 text-center">
-          <span className="block text-[0.72rem] font-black uppercase tracking-[0.2em] text-[#ff8d59] md:text-[0.8rem]">
+          <span className="block text-[0.72rem] font-black uppercase tracking-[0.2em] text-[var(--accent)] md:text-[0.8rem]">
             OUR PROCESS
           </span>
           <h2 className="mt-3 text-[2.4rem] font-black leading-[0.82] tracking-[-0.07em] text-white md:text-[4.6rem] md:tracking-[-0.08em]">
@@ -74,12 +74,12 @@ export const ProcessSteps = () => {
                   className={`process-step flex flex-col items-center text-center ${isBottomRow ? 'pt-10 md:pt-16' : ''}`}
                 >
                   <div className="mb-3 flex items-center justify-center">
-                    <div className="flex h-[68px] w-[68px] items-center justify-center rounded-full border-[3px] border-[#ff8d59] bg-[#0e1a28] text-[1.7rem] text-[#ff8d59] shadow-[0_0_12px_rgba(255,141,89,0.6)] md:h-[82px] md:w-[82px] md:text-[2rem]">
+                    <div className="flex h-[68px] w-[68px] items-center justify-center rounded-full border-[3px] border-[var(--accent)] bg-[#0e1a28] text-[1.7rem] text-[var(--accent)] shadow-[0_0_12px_rgba(217,195,165,0.5)] md:h-[82px] md:w-[82px] md:text-[2rem]">
                       <Icon aria-hidden="true" />
                     </div>
                   </div>
 
-                  <div className="text-[1.15rem] font-black leading-none tracking-[-0.07em] text-[#ff8d59] md:text-[1.5rem] md:tracking-[-0.06em]">
+                  <div className="text-[1.15rem] font-black leading-none tracking-[-0.07em] text-[var(--accent)] md:text-[1.5rem] md:tracking-[-0.06em]">
                     {String(step.id).padStart(2, '0')}.
                   </div>
 

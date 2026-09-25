@@ -14,7 +14,7 @@ export const CTASection = () => (
 
         <Link
           to="/login"
-          className="inline-flex items-center justify-center gap-2 rounded-full bg-[#ef7a3d] px-7 py-3 text-[0.8rem] font-semibold uppercase tracking-[0.08em] text-white transition-transform hover:scale-[1.02]"
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--button)] px-7 py-3 text-[0.8rem] font-semibold uppercase tracking-[0.08em] text-[var(--ink)] transition-transform hover:scale-[1.02]"
         >
           Start Your Project <FiArrowRight aria-hidden="true" />
         </Link>

@@ -53,12 +53,12 @@ export const MyWork = () => {
   }
 
   return (
-    <section className="relative overflow-hidden bg-[#0b141b] px-5 py-12 text-white md:px-8 md:py-16">
+    <section className="relative overflow-hidden bg-[#050505] px-5 py-12 text-white md:px-8 md:py-16">
       <div className="relative mx-auto max-w-[1500px]">
         <div className="grid items-center gap-10 xl:grid-cols-[0.95fr_1.05fr]">
           <div className="max-w-[620px]">
-            <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-[#ff7f45]/50 bg-transparent px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-[#ff7f45]">
-              <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#ff7f45]" />
+            <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-[#d1d5db]">
+              <span className="inline-block h-2.5 w-2.5 rounded-full bg-[var(--accent)]" />
               Featured Project
             </div>
 
@@ -67,7 +67,7 @@ export const MyWork = () => {
               <span className="block text-white">{activeProject.name.split(' ').slice(1).join(' ').toUpperCase()}</span>
             </h2>
 
-            <p className="mt-6 max-w-[530px] text-[1.14rem] leading-[1.5] text-white/72 md:text-[1.28rem]">
+            <p className="mt-6 max-w-[530px] text-[1.14rem] leading-[1.5] text-[#b3b3b3] md:text-[1.28rem]">
               {activeProject.description}
             </p>
 
@@ -76,17 +76,17 @@ export const MyWork = () => {
                 href={activeProject.url}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-3 rounded-full bg-[#ff6e3c] px-7 py-4 text-[1.02rem] font-semibold text-white shadow-[0_12px_26px_rgba(255,110,60,0.35)] transition-all duration-300 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-3 rounded-full bg-[var(--button)] px-7 py-4 text-[1.02rem] font-semibold text-white shadow-[0_12px_26px_rgba(43,43,44,0.25)] transition-all duration-300 hover:-translate-y-0.5"
               >
                 {showDetails ? 'Hide Details' : 'View Project'} <span aria-hidden="true">→</span>
               </a>
 
-              <div className="flex items-center gap-3 rounded-full border border-white/15 bg-white/5 p-2">
+              <div className="flex items-center gap-3 rounded-full border border-white/10 bg-white/5 p-2">
                 <button
                   type="button"
                   aria-label="Previous project"
                   onClick={goPrev}
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-[#111b24] text-xl text-white transition hover:border-[#ff7f45]/50 hover:text-[#ff7f45]"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-[#101010] text-xl text-white transition hover:border-white/25 hover:text-white"
                 >
                   ←
                 </button>
@@ -94,7 +94,7 @@ export const MyWork = () => {
                   type="button"
                   aria-label="Next project"
                   onClick={goNext}
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-[#111b24] text-xl text-white transition hover:border-[#ff7f45]/50 hover:text-[#ff7f45]"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-[#101010] text-xl text-white transition hover:border-white/25 hover:text-white"
                 >
                   →
                 </button>
@@ -107,15 +107,15 @@ export const MyWork = () => {
               }`}
             >
               {activeProject.features.map((item) => (
-                <div key={item.label} className="flex items-center gap-4 rounded-[16px] border border-white/10 bg-white/3 px-4 py-4 opacity-100 transition-opacity duration-500">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#ff7f45]/60 bg-[#111b24] text-[1.3rem] text-[#ff7f45]">
+                <div key={item.label} className="flex items-center gap-4 rounded-[16px] border border-white/10 bg-white/5 px-4 py-4 opacity-100 transition-opacity duration-500">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-[#101010] text-[1.3rem] text-[var(--accent)]">
                     {item.icon}
                   </div>
                   <div>
                     <div className="text-[0.96rem] font-black uppercase tracking-[-0.04em] text-white md:text-[1.08rem]">
                       {item.label}
                     </div>
-                    <div className="mt-1 text-[0.9rem] text-white/68">{item.text}</div>
+                    <div className="mt-1 text-[0.9rem] text-[#b3b3b3]">{item.text}</div>
                   </div>
                 </div>
               ))}
@@ -124,12 +124,12 @@ export const MyWork = () => {
 
           <div className="relative">
             <div className="absolute inset-0 -z-10 flex items-center justify-center">
-              <div className="h-[420px] w-[420px] rounded-full border border-[#ff7f45]/30" />
+              <div className="h-[420px] w-[420px] rounded-full border border-white/10" />
             </div>
 
             <div
               key={activeProject.name}
-              className={`mx-auto max-w-[760px] rounded-[28px] border border-[#ff7f45]/40 bg-[#111a22] p-3 shadow-[0_0_30px_rgba(255,119,59,0.12)] transition-all duration-500 ${
+              className={`mx-auto max-w-[760px] rounded-[28px] border border-white/10 bg-[#0b0b0b] p-3 shadow-[0_0_30px_rgba(255,255,255,0.04)] transition-all duration-500 ${
                 showDetails ? 'scale-[1.01] opacity-100' : 'scale-[0.99] opacity-90'
               }`}
             >

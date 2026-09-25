@@ -28,26 +28,26 @@ const CARD_DATA = [
 ]
 
 export const WhyChooseUs = () => (
-  <section id="why-us" className="bg-[#11171c] px-5 py-10 text-white md:px-8 md:py-14">
+  <section id="why-us" className="bg-[var(--paper)] px-5 py-10 text-[var(--ink)] md:px-8 md:py-14">
     <div className="mx-auto max-w-[1600px]">
       <div className="mb-8 flex items-center justify-between md:mb-10">
         <div className="flex items-center gap-4">
-          <span className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/70">02</span>
-          <span className="h-px flex-1 bg-white/20" />
+          <span className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--ink-soft)]">02</span>
+          <span className="h-px flex-1 bg-[var(--border)]" />
         </div>
-        <span className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/70">WHY CHOOSE US</span>
+        <span className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--ink-soft)]">WHY CHOOSE US</span>
       </div>
 
       <div className="grid items-start gap-8 lg:grid-cols-[0.92fr_1.08fr]">
         <div className="pt-2">
-          <h2 className="max-w-[700px] text-[3.2rem] font-black leading-[0.86] tracking-[-0.07em] text-white md:text-[5.8rem] md:tracking-[-0.075em]">
+          <h2 className="max-w-[700px] text-[3.2rem] font-black leading-[0.86] tracking-[-0.07em] text-[var(--ink)] md:text-[5.8rem] md:tracking-[-0.075em]">
             BUILT FOR
             <span className="mt-1 block">BUSINESSES</span>
             <span className="mt-1 block">THAT WANT TO</span>
-            <span className="mt-1 block text-[#ff6e3c]">STAND OUT.</span>
+            <span className="mt-1 block text-[var(--accent)]">STAND OUT.</span>
           </h2>
 
-          <p className="mt-8 max-w-[480px] text-[1.05rem] leading-relaxed text-white/72 md:text-[1.25rem]">
+          <p className="mt-8 max-w-[480px] text-[1.05rem] leading-relaxed text-[var(--ink-soft)] md:text-[1.25rem]">
             You get a strategic partner and a tailored online presence, not a rushed template.
           </p>
         </div>
@@ -56,9 +56,9 @@ export const WhyChooseUs = () => (
           {CARD_DATA.map(({ id, icon: Icon, title, text }) => (
             <article
               key={id}
-              className="min-h-[255px] rounded-[18px] border border-white/15 bg-[rgba(255,255,255,0.02)] p-5 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.02)] backdrop-blur-[2px]"
+              className="min-h-[255px] rounded-[18px] border border-[var(--accent-soft)] bg-[var(--accent)] p-5 text-white shadow-[inset_0_0_0_1px_rgba(255,255,255,0.02)]"
             >
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-[10px] border border-white/15 bg-transparent text-[1.8rem] font-bold text-[#ff6e3c]">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-[10px] border border-white/20 bg-white/5 text-[1.8rem] font-bold text-white">
                 <Icon aria-hidden="true" />
               </div>
 
@@ -70,7 +70,7 @@ export const WhyChooseUs = () => (
                 ))}
               </h3>
 
-              <p className="mt-4 max-w-[290px] text-[0.95rem] leading-relaxed text-white/72 md:text-[1.05rem]">
+              <p className="mt-4 max-w-[290px] text-[0.95rem] leading-relaxed text-white/80 md:text-[1.05rem]">
                 {text}
               </p>
             </article>
