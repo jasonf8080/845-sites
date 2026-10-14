@@ -1,3 +1,6 @@
 export { HomePage } from './HomePage'
 export { LoginPage } from './LoginPage'
+export { DashboardPage } from './DashboardPage'
+export { StartPage } from './StartPage'
+export { SubmissionDetailPage } from './SubmissionDetailPage'
 export { NotFoundPage } from './NotFoundPage'

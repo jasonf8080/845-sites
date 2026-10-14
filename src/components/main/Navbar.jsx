@@ -6,8 +6,9 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
   const isLoginPage = pathname === '/login'
+  const isDashboardPage = pathname === '/dashboard'
 
-  if (isLoginPage) {
+  if (isLoginPage || isDashboardPage) {
     return null
   }
 
