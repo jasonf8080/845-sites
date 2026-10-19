@@ -3,9 +3,9 @@ import { Navbar } from './Navbar'
 import { Footer } from './Footer'
 
 export const Layout = () => (
-  <div className="flex min-h-screen flex-col">
+  <div className="flex min-h-screen flex-col bg-transparent">
     <Navbar />
-    <main className="flex-1">
+    <main className="app-shell flex-1">
       <Outlet />
     </main>
     <Footer />

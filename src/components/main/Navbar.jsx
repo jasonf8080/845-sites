@@ -20,10 +20,15 @@ export const Navbar = () => {
   ]
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-[#050505] text-white backdrop-blur-sm">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-[#1f1d1b]/85 text-white backdrop-blur-xl">
       <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-4 py-4 md:px-8">
         <Link to="/" className="flex items-center gap-2 text-white" aria-label="Home">
-          <img src="/logo-mark.png" alt="845 Sites logo" className="h-14 w-auto md:h-16" />
+          <div className="flex items-end gap-1 text-[2.2rem] font-black leading-none tracking-[-0.14em] text-white md:text-[3rem]">
+            <span className="text-[#f7f4f1]">E</span>
+            <span className="text-[#f4a773]">&</span>
+            <span className="text-[#f4efe8]">GHT</span>
+            <span className="text-[#f4a773]">45</span>
+          </div>
         </Link>
 
         {!isLoginPage && (
@@ -32,7 +37,7 @@ export const Navbar = () => {
               <a
                 key={label}
                 href={href}
-                className="text-[0.76rem] font-medium uppercase tracking-[0.12em] text-[#9ca3af] transition-colors hover:text-white"
+                className="text-[0.72rem] font-medium uppercase tracking-[0.15em] text-[#d8d3ce] transition-colors hover:text-white"
               >
                 {label}
               </a>
@@ -40,7 +45,7 @@ export const Navbar = () => {
 
             <Link
               to="/login"
-              className="inline-flex items-center justify-center rounded-full bg-[var(--button)] px-5 py-2.5 text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-white transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center rounded-full bg-[#d97a49] px-5 py-2.5 text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-[#fffaf7] shadow-[0_12px_25px_rgba(217,122,73,0.18)] transition-transform hover:-translate-y-0.5"
             >
               Get Started
             </Link>
@@ -52,7 +57,7 @@ export const Navbar = () => {
             type="button"
             aria-label={open ? 'Close menu' : 'Open menu'}
             onClick={() => setOpen((prev) => !prev)}
-            className="inline-flex items-center justify-center text-[var(--ink)] lg:hidden"
+            className="inline-flex items-center justify-center text-[#f3efe9] lg:hidden"
           >
             {open ? <FiX size={28} /> : <FiMenu size={30} />}
           </button>
@@ -60,15 +65,15 @@ export const Navbar = () => {
       </nav>
 
       {open && !isLoginPage && (
-        <div className="flex flex-col gap-4 border-t border-white/10 bg-[#050505] px-6 py-5 lg:hidden">
+        <div className="flex flex-col gap-4 border-t border-white/10 bg-[#1f1d1b] px-6 py-5 lg:hidden">
           {links.map(({ label, href }) => (
-            <a key={label} href={href} className="text-base font-medium text-[#9ca3af]">
+            <a key={label} href={href} className="text-base font-medium text-[#d8d3ce]">
               {label}
             </a>
           ))}
           <Link
             to="/login"
-            className="mt-2 inline-flex items-center justify-center rounded-full bg-[var(--button)] px-5 py-3 text-sm font-medium text-white"
+            className="mt-2 inline-flex items-center justify-center rounded-full bg-[#d97a49] px-5 py-3 text-sm font-medium text-white"
           >
             Get Started
           </Link>

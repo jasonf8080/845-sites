@@ -134,21 +134,26 @@ export const LoginForm = () => {
   return (
     <div className="flex w-full max-w-2xl flex-col items-center">
       <Link to="/" aria-label="Home" className="mb-6 block md:mb-8">
-        <img src="/logo-mark.png" alt="845 Sites logo" className="h-32 w-auto md:h-40" />
+        <div className="flex items-end gap-1 text-[3.1rem] font-black leading-none tracking-[-0.12em] text-white md:text-[4.2rem]">
+          <span>E</span>
+          <span className="text-[#d97a49]">&</span>
+          <span>GHT</span>
+          <span className="text-[#d97a49]">45</span>
+        </div>
       </Link>
 
-      <h1 className="text-center text-[2.2rem] font-black leading-[0.92] tracking-[-0.07em] text-[var(--ink)] md:text-[3.1rem] md:tracking-[-0.08em]">
+      <h1 className="text-center text-[2.2rem] font-black leading-[0.92] tracking-[-0.07em] text-[#f4efe9] md:text-[3.1rem] md:tracking-[-0.08em]">
         {isSignUp ? 'Create your account' : 'Welcome back'}
       </h1>
 
-      <p className="mt-3 text-[1rem] leading-relaxed text-[var(--ink-soft)] md:text-[1.08rem]">
+      <p className="mt-3 text-[1rem] leading-relaxed text-[#d7d0c9] md:text-[1.08rem]">
         {isSignUp ? 'Sign up to get started' : 'Sign in to continue'}
       </p>
 
-      <div className="mt-12 w-full rounded-[32px] border border-[var(--border)] bg-[var(--paper-strong)] px-6 py-10 text-[var(--ink)] shadow-[0_24px_60px_rgba(15,17,21,0.08)] md:px-12 md:py-14">
+      <div className="mt-12 w-full rounded-[32px] border border-white/10 bg-[rgba(77,71,68,0.32)] px-6 py-10 text-[#f4efe9] shadow-[0_24px_60px_rgba(15,17,21,0.12)] backdrop-blur-sm md:px-12 md:py-14">
         <div className="flex flex-col items-center text-center">
           {!isConfigured && (
-            <p className="mb-5 w-full rounded-full border border-amber-300 bg-amber-50 px-4 py-3 text-left text-sm text-amber-900">
+            <p className="mb-5 w-full rounded-full border border-amber-300/40 bg-amber-50/10 px-4 py-3 text-left text-sm text-amber-100">
               Supabase auth is disabled until you add a valid project URL and publishable key to your .env file.
             </p>
           )}
@@ -158,21 +163,21 @@ export const LoginForm = () => {
               type="button"
               onClick={handleGoogleAuth}
               disabled={isSubmitting || !isConfigured}
-              className="flex w-full items-center justify-center gap-3 rounded-full border border-[var(--border)] bg-[var(--paper)] px-6 py-4 text-[1rem] font-semibold text-[var(--ink)] transition hover:border-[var(--accent)]/40 disabled:cursor-not-allowed disabled:opacity-70"
+              className="flex w-full items-center justify-center gap-3 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-6 py-4 text-[1rem] font-semibold text-[#f4efe9] transition hover:border-[#d97a49]/40 disabled:cursor-not-allowed disabled:opacity-70"
             >
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--ink)] text-[0.85rem] font-black text-white">G</span>
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#f4efe9] text-[0.85rem] font-black text-[#1d1b19]">G</span>
               {isSignUp ? 'Sign up with Google' : 'Sign in with Google'}
             </button>
 
             <div className="flex items-center gap-4 px-1">
-              <span className="h-px flex-1 bg-[var(--border)]" />
-              <span className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-[var(--ink-soft)]">or</span>
-              <span className="h-px flex-1 bg-[var(--border)]" />
+              <span className="h-px flex-1 bg-white/10" />
+              <span className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-[#d7d0c9]">or</span>
+              <span className="h-px flex-1 bg-white/10" />
             </div>
 
             {isSignUp && (
               <div>
-                <label htmlFor="fullName" className="mb-2 block text-sm font-medium text-[var(--ink-soft)]">
+                <label htmlFor="fullName" className="mb-2 block text-sm font-medium text-[#d7d0c9]">
                   Full name
                 </label>
                 <input
@@ -181,14 +186,14 @@ export const LoginForm = () => {
                   value={fullName}
                   onChange={(event) => setFullName(event.target.value)}
                   placeholder="Jane Smith"
-                  className="w-full rounded-full border border-[var(--border)] bg-[var(--paper)] px-6 py-4 text-base text-[var(--ink)] placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:outline-none"
+                  className="warm-field px-6 py-4 text-base placeholder:text-[#d7d0c9]/60"
                   disabled={!isConfigured}
                 />
               </div>
             )}
 
             <div>
-              <label htmlFor="email" className="mb-2 block text-sm font-medium text-[var(--ink-soft)]">
+              <label htmlFor="email" className="mb-2 block text-sm font-medium text-[#d7d0c9]">
                 Email address
               </label>
               <input
@@ -197,13 +202,13 @@ export const LoginForm = () => {
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
                 placeholder="you@example.com"
-                className="w-full rounded-full border border-[var(--border)] bg-[var(--paper)] px-6 py-4 text-base text-[var(--ink)] placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:outline-none"
+                className="warm-field px-6 py-4 text-base placeholder:text-[#d7d0c9]/60"
                 disabled={!isConfigured}
               />
             </div>
 
             <div>
-              <label htmlFor="password" className="mb-2 block text-sm font-medium text-[var(--ink-soft)]">
+              <label htmlFor="password" className="mb-2 block text-sm font-medium text-[#d7d0c9]">
                 Password
               </label>
               <input
@@ -212,14 +217,14 @@ export const LoginForm = () => {
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
                 placeholder="Enter your password"
-                className="w-full rounded-full border border-[var(--border)] bg-[var(--paper)] px-6 py-4 text-base text-[var(--ink)] placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:outline-none"
+                className="warm-field px-6 py-4 text-base placeholder:text-[#d7d0c9]/60"
                 disabled={!isConfigured}
               />
             </div>
 
             {isSignUp && (
               <div>
-                <label htmlFor="confirmPassword" className="mb-2 block text-sm font-medium text-[var(--ink-soft)]">
+                <label htmlFor="confirmPassword" className="mb-2 block text-sm font-medium text-[#d7d0c9]">
                   Confirm password
                 </label>
                 <input
@@ -228,7 +233,7 @@ export const LoginForm = () => {
                   value={confirmPassword}
                   onChange={(event) => setConfirmPassword(event.target.value)}
                   placeholder="Confirm your password"
-                  className="w-full rounded-full border border-[var(--border)] bg-[var(--paper)] px-6 py-4 text-base text-[var(--ink)] placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:outline-none"
+                  className="warm-field px-6 py-4 text-base placeholder:text-[#d7d0c9]/60"
                   disabled={!isConfigured}
                 />
               </div>
@@ -237,7 +242,7 @@ export const LoginForm = () => {
             {status.message && (
               <p
                 className={`text-sm ${
-                  status.type === 'error' ? 'text-red-600' : 'text-green-700'
+                  status.type === 'error' ? 'text-red-400' : 'text-emerald-300'
                 }`}
               >
                 {status.message}
@@ -247,12 +252,12 @@ export const LoginForm = () => {
             <button
               type="submit"
               disabled={isSubmitting || !isConfigured}
-              className="w-full rounded-full bg-[var(--button)] px-5 py-4 text-base font-semibold uppercase tracking-[0.12em] text-white transition-opacity hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-70"
+              className="warm-button-primary w-full px-5 py-4 text-base font-semibold uppercase tracking-[0.12em] disabled:cursor-not-allowed disabled:opacity-70"
             >
               {isSubmitting ? 'Please wait...' : isSignUp ? 'Sign Up' : 'Sign In'}
             </button>
 
-            <p className="pt-2 text-center text-[0.95rem] text-[var(--ink-soft)]">
+            <p className="pt-2 text-center text-[0.95rem] text-[#d7d0c9]">
               {isSignUp ? 'Already have an account?' : "Don't have an account?"}{' '}
               <button
                 type="button"

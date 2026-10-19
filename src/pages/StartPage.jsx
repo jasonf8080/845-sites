@@ -270,48 +270,48 @@ export const StartPage = () => {
     <>
       <div className="mt-8 grid gap-5 md:grid-cols-2">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
-            Business name <span className="text-[#d14a3c]">*</span>
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+            Business name <span className="text-[#e9a272]">*</span>
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[rgba(17,17,17,0.45)]">
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">
               ▣
             </span>
             <input
               name="businessName"
               value={formData.businessName}
               onChange={(event) => updateFormData('businessName', event.target.value)}
-              className="w-full rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] py-4 pl-11 pr-4 text-[1.03rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
+              className="warm-field py-4 pl-11 pr-4 text-[1.03rem]"
               placeholder="e.g. Acme Studio"
             />
           </div>
         </div>
 
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
-            Business type / Industry <span className="text-[#d14a3c]">*</span>
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+            Business type / Industry <span className="text-[#e9a272]">*</span>
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[rgba(17,17,17,0.45)]">
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">
               ▣
             </span>
             <select
               name="businessType"
               value={formData.businessType}
               onChange={(event) => updateFormData('businessType', event.target.value)}
-              className="w-full appearance-none rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] py-4 pl-11 pr-10 text-[1.03rem] text-[rgba(17,17,17,0.72)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
+              className="warm-field appearance-none py-4 pl-11 pr-10 text-[1.03rem] text-[#f4efe9]"
               defaultValue=""
             >
-              <option value="" disabled>
+              <option value="" disabled className="bg-[#201d1b] text-[#f4efe9]">
                 Select an industry
               </option>
-              <option value="restaurant">Restaurant</option>
-              <option value="retail">Retail</option>
-              <option value="service">Service</option>
-              <option value="healthcare">Healthcare</option>
-              <option value="professional">Professional</option>
+              <option value="restaurant" className="bg-[#201d1b] text-[#f4efe9]">Restaurant</option>
+              <option value="retail" className="bg-[#201d1b] text-[#f4efe9]">Retail</option>
+              <option value="service" className="bg-[#201d1b] text-[#f4efe9]">Service</option>
+              <option value="healthcare" className="bg-[#201d1b] text-[#f4efe9]">Healthcare</option>
+              <option value="professional" className="bg-[#201d1b] text-[#f4efe9]">Professional</option>
             </select>
-            <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-lg text-[rgba(17,17,17,0.6)]">
+            <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-lg text-[#d7d0c9]">
               ▾
             </span>
           </div>
@@ -320,33 +320,33 @@ export const StartPage = () => {
 
       <div className="mt-5 grid gap-5 md:grid-cols-2">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
             Tagline / Slogan
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[rgba(17,17,17,0.45)]">
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">
               ✦
             </span>
             <input
               name="businessTagline"
               value={formData.businessTagline}
               onChange={(event) => updateFormData('businessTagline', event.target.value)}
-              className="w-full rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] py-4 pl-11 pr-4 text-[1.03rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
+              className="warm-field py-4 pl-11 pr-4 text-[1.03rem]"
               placeholder="If you don't have one, we can create one for you."
             />
           </div>
         </div>
 
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
             Current website (if any)
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[rgba(17,17,17,0.45)]">
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">
               🔗
             </span>
             <input
-              className="w-full rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] py-4 pl-11 pr-4 text-[1.03rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
+              className="warm-field py-4 pl-11 pr-4 text-[1.03rem]"
               placeholder="https://..."
             />
           </div>
@@ -354,22 +354,22 @@ export const StartPage = () => {
       </div>
 
       <div className="mt-5">
-        <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
-          About your business <span className="text-[#d14a3c]">*</span>
+        <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+          About your business <span className="text-[#e9a272]">*</span>
         </label>
         <div className="relative">
-          <span className="pointer-events-none absolute left-4 top-4 text-[1.12rem] text-[rgba(17,17,17,0.45)]">
+          <span className="pointer-events-none absolute left-4 top-4 text-[1.12rem] text-[#d7d0c9]">
             ▣
           </span>
           <textarea
             name="aboutBusiness"
             value={formData.aboutBusiness}
             onChange={(event) => updateFormData('aboutBusiness', event.target.value)}
-            className="min-h-[120px] w-full resize-none rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] pl-11 pr-4 pt-4 pb-3 text-[1.03rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
+            className="warm-field min-h-[120px] resize-none pl-11 pr-4 pt-4 pb-3 text-[1.03rem]"
             placeholder="Tell us about your company — who you are, when you started, what you do, and your mission."
           />
         </div>
-        <div className="mt-2 text-right text-[0.78rem] text-[rgba(17,17,17,0.56)]">0/500</div>
+        <div className="mt-2 text-right text-[0.78rem] text-[#d7d0c9]">0/500</div>
       </div>
     </>
   )
@@ -378,61 +378,61 @@ export const StartPage = () => {
     <>
       <div className="mt-8 space-y-8">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
-            What services or products do you offer? <span className="text-[#d14a3c]">*</span>
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+            What services or products do you offer? <span className="text-[#e9a272]">*</span>
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-4 text-[1.2rem] text-[rgba(17,17,17,0.45)]">
+            <span className="pointer-events-none absolute left-4 top-4 text-[1.2rem] text-[#d7d0c9]">
               ✎
             </span>
             <textarea
               name="services"
               value={formData.services}
               onChange={(event) => updateFormData('services', event.target.value)}
-              className="min-h-[94px] w-full resize-none rounded-[18px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] pl-11 pr-4 pt-4 pb-3 text-[1.03rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
+              className="warm-field min-h-[94px] resize-none pl-11 pr-4 pt-4 pb-3 text-[1.03rem]"
               placeholder="List your main services or products. Example: interior painting, roofing, counters, catering, coffee & pastries, etc."
             />
           </div>
-          <div className="mt-2 text-right text-[0.78rem] text-[rgba(17,17,17,0.56)]">0/500</div>
+          <div className="mt-2 text-right text-[0.78rem] text-[#d7d0c9]">0/500</div>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-2">
           <div>
-            <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
+            <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
               Is there anything specific you want featured prominently on the website?
             </label>
             <div className="relative">
-              <span className="pointer-events-none absolute left-4 top-4 text-[1.2rem] text-[rgba(17,17,17,0.45)]">
+              <span className="pointer-events-none absolute left-4 top-4 text-[1.2rem] text-[#d7d0c9]">
                 ✦
               </span>
               <textarea
                 name="highlight"
                 value={formData.highlight}
                 onChange={(event) => updateFormData('highlight', event.target.value)}
-                className="min-h-[94px] w-full resize-none rounded-[18px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] pl-11 pr-4 pt-4 pb-3 text-[1.03rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
+                className="warm-field min-h-[94px] resize-none pl-11 pr-4 pt-4 pb-3 text-[1.03rem]"
                 placeholder="Example: a particular service, special offer, online ordering, free estimates, reservations, your phone number, etc."
               />
             </div>
-            <div className="mt-2 text-right text-[0.78rem] text-[rgba(17,17,17,0.56)]">0/500</div>
+            <div className="mt-2 text-right text-[0.78rem] text-[#d7d0c9]">0/500</div>
           </div>
 
           <div>
-            <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
+            <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
               Why should customers choose you?
             </label>
             <div className="relative">
-              <span className="pointer-events-none absolute left-4 top-4 text-[1.2rem] text-[rgba(17,17,17,0.45)]">
+              <span className="pointer-events-none absolute left-4 top-4 text-[1.2rem] text-[#d7d0c9]">
                 ❤
               </span>
               <textarea
                 name="whyChooseYou"
                 value={formData.whyChooseYou}
                 onChange={(event) => updateFormData('whyChooseYou', event.target.value)}
-                className="min-h-[94px] w-full resize-none rounded-[18px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] pl-11 pr-4 pt-4 pb-3 text-[1.03rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
+                className="warm-field min-h-[94px] resize-none pl-11 pr-4 pt-4 pb-3 text-[1.03rem]"
                 placeholder="Share what makes you unique..."
               />
             </div>
-            <div className="mt-2 text-right text-[0.78rem] text-[rgba(17,17,17,0.56)]">0/500</div>
+            <div className="mt-2 text-right text-[0.78rem] text-[#d7d0c9]">0/500</div>
           </div>
         </div>
 
@@ -556,12 +556,12 @@ export const StartPage = () => {
   const selectedColorPalette = colorPalettes.find((palette) => palette.label === formData.websiteColors) || null
 
   const renderDesignStyle = () => (
-    <div className="mt-8 space-y-8">
+    <div className="mt-8 space-y-8 text-[#f4efe9]">
       <div>
-        <h3 className="mb-2 text-[1.05rem] font-medium text-[#111111]">
-          WHAT KIND OF LOOK DO YOU WANT FOR YOUR WEBSITE? <span className="text-[#d14a3c]">*</span>
+        <h3 className="mb-2 text-[1.05rem] font-medium text-[#f4efe9]">
+          WHAT KIND OF LOOK DO YOU WANT FOR YOUR WEBSITE? <span className="text-[#e9a272]">*</span>
         </h3>
-        <p className="mb-4 text-[0.98rem] text-[rgba(17,17,17,0.65)]">
+        <p className="mb-4 text-[0.98rem] text-[#d7d0c9]">
           Select the style that feels closest to your brand.
         </p>
 
@@ -574,47 +574,37 @@ export const StartPage = () => {
                 key={`${option.label}-${index}`}
                 type="button"
                 onClick={() => updateFormData('designStyle', option.label)}
-                className={`flex min-h-[112px] w-full items-start justify-between rounded-[16px] border p-4 text-left transition ${
-                  isSelected
-                    ? 'border-[#111111] bg-[#f4efe9] shadow-[0_0_0_1px_rgba(17,17,17,0.08)]'
-                    : 'border-[rgba(17,17,17,0.18)] bg-[#f1efe9] hover:border-[rgba(17,17,17,0.35)]'
-                }`}
+                className={`warm-option flex min-h-[112px] w-full items-start justify-between p-4 text-left transition ${isSelected ? 'is-selected' : ''}`}
               >
                 <div className="flex-1 pr-4">
-                  <div className="text-[1.1rem] font-bold leading-tight tracking-[-0.04em] text-[#111111]">{option.label}</div>
-                  <div className="mt-2 text-[0.92rem] leading-relaxed text-[rgba(17,17,17,0.7)]">{option.description}</div>
+                  <div className="text-[1.1rem] font-bold leading-tight tracking-[-0.04em] text-[#f7f4f1]">{option.label}</div>
+                  <div className="mt-2 text-[0.92rem] leading-relaxed text-[#d7d0c9]">{option.description}</div>
                 </div>
-                <span
-                  className={`mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border ${
-                    isSelected ? 'border-[#111111] bg-[#111111]' : 'border-[rgba(17,17,17,0.35)] bg-transparent'
-                  }`}
-                >
-                  {isSelected && <span className="h-2.5 w-2.5 rounded-full bg-[#f7f4f1]" />}
-                </span>
+                <span className="warm-radio mt-1 shrink-0" aria-hidden="true" />
               </button>
             )
           })}
         </div>
       </div>
 
-      <div className="rounded-[18px] border border-[rgba(17,17,17,0.12)] bg-[#f3f0eb] p-4 md:p-5">
+      <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-5">
         <div className="mb-3 flex items-center justify-between gap-3">
           <div>
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[#605d59]">Selected style</p>
-            <h4 className="mt-1 text-[2.4rem] font-black leading-none tracking-[-0.07em] text-[#111111]">{selectedDesignOption.label.toUpperCase()}</h4>
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[#d7d0c9]">Selected style</p>
+            <h4 className="mt-1 text-[2.4rem] font-black leading-none tracking-[-0.07em] text-[#f7f4f1]">{selectedDesignOption.label.toUpperCase()}</h4>
           </div>
-          <span className="inline-flex items-center justify-center rounded-full border border-[rgba(17,17,17,0.18)] bg-[#f9f6f3] px-3 py-1.5 text-[0.78rem] font-medium text-[#171717]">
+          <span className="inline-flex items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1.5 text-[0.78rem] font-medium text-[#f7f4f1]">
             4 options
           </span>
         </div>
 
-        <p className="mb-5 text-[1.02rem] leading-relaxed text-[rgba(17,17,17,0.7)]">
+        <p className="mb-5 text-[1.02rem] leading-relaxed text-[#d7d0c9]">
           Here are a few variations of the {selectedDesignOption.label.toLowerCase()} style. You can choose one, and we&apos;ll customize it for your business.
         </p>
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {selectedDesignOption.previews.map((preview, index) => (
-            <div key={`${selectedDesignOption.label}-${preview.name}-${index}`} className="rounded-[14px] border border-[rgba(17,17,17,0.08)] bg-[#f8f5f2]">
+            <div key={`${selectedDesignOption.label}-${preview.name}-${index}`} className="overflow-hidden rounded-[14px] border border-white/10 bg-[rgba(255,255,255,0.03)]">
               <div className="relative overflow-hidden rounded-t-[14px] bg-[linear-gradient(135deg,#1e1d1c_0%,#3a3a3d_28%,#a3633a_100%)] p-3">
                 <div className="mb-4 flex items-center justify-between text-[0.55rem] uppercase tracking-[0.18em] text-white/80">
                   <span>{selectedDesignOption.label.toUpperCase().slice(0, 3)}</span>
@@ -631,10 +621,10 @@ export const StartPage = () => {
 
               <div className="p-3">
                 <div className="flex items-center gap-2">
-                  <span className="h-4 w-4 rounded-full border border-[rgba(17,17,17,0.25)] bg-transparent" />
-                  <span className="text-[0.98rem] font-semibold text-[#111111]">{preview.name}</span>
+                  <span className="h-4 w-4 rounded-full border border-white/25 bg-transparent" />
+                  <span className="text-[0.98rem] font-semibold text-[#f7f4f1]">{preview.name}</span>
                 </div>
-                <p className="mt-2 text-[0.9rem] leading-relaxed text-[rgba(17,17,17,0.72)]">{preview.blurb}</p>
+                <p className="mt-2 text-[0.9rem] leading-relaxed text-[#d7d0c9]">{preview.blurb}</p>
               </div>
             </div>
           ))}
@@ -643,31 +633,26 @@ export const StartPage = () => {
 
       <div className="space-y-8">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
             Are there any websites you like the look of?
           </label>
-          <p className="mb-3 text-[0.98rem] text-[rgba(17,17,17,0.65)]">
+          <p className="mb-3 text-[0.98rem] text-[#d7d0c9]">
             Paste links to any websites you like. They don&apos;t have to be businesses similar to yours.
           </p>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.12rem] text-[rgba(17,17,17,0.45)]">
-              🔗
-            </span>
-            <input
-              className="w-full rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] py-4 pl-11 pr-4 text-[1.03rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
-              placeholder="https://..."
-            />
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.12rem] text-[#d7d0c9]">🔗</span>
+            <input className="warm-field py-4 pl-11 pr-4 text-[1.03rem]" placeholder="https://..." />
           </div>
-          <button type="button" className="mt-4 inline-flex items-center gap-2 text-[1rem] font-medium text-[#111111]">
+          <button type="button" className="mt-4 inline-flex items-center gap-2 text-[1rem] font-medium text-[#f4efe9]">
             <span className="text-xl">＋</span> Add another link
           </button>
         </div>
 
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
             What colors would you like on your website?
           </label>
-          <p className="mb-3 text-[0.98rem] text-[rgba(17,17,17,0.65)]">
+          <p className="mb-3 text-[0.98rem] text-[#d7d0c9]">
             Choose a palette that feels close to your brand. We&apos;ll customize the exact colors for you.
           </p>
 
@@ -682,29 +667,23 @@ export const StartPage = () => {
                   onClick={() => updateFormData('websiteColors', palette.label)}
                   className={`rounded-[16px] border p-3 text-left transition ${
                     isSelected
-                      ? 'border-[#111111] bg-[#f5efe9] shadow-[0_0_0_1px_rgba(17,17,17,0.08)]'
-                      : 'border-[rgba(17,17,17,0.18)] bg-[#efeee9] hover:border-[rgba(17,17,17,0.35)]'
+                      ? 'border-[#d97a49] bg-[rgba(255,255,255,0.06)] shadow-[0_0_0_1px_rgba(217,122,73,0.18)]'
+                      : 'border-white/10 bg-[rgba(255,255,255,0.03)] hover:border-white/20'
                   }`}
                 >
                   <div className="flex gap-2">
                     {palette.swatches.map((swatch) => (
                       <span
                         key={`${palette.label}-${swatch}`}
-                        className="h-10 flex-1 rounded-[6px] border border-[rgba(17,17,17,0.08)]"
+                        className="h-10 flex-1 rounded-[6px] border border-white/5"
                         style={{ backgroundColor: swatch }}
                       />
                     ))}
                   </div>
 
                   <div className="mt-3 flex items-center justify-between gap-3">
-                    <span className="text-[1.1rem] font-semibold text-[#111111]">{palette.label}</span>
-                    <span
-                      className={`flex h-5 w-5 items-center justify-center rounded-full border ${
-                        isSelected ? 'border-[#111111] bg-[#111111]' : 'border-[rgba(17,17,17,0.35)] bg-transparent'
-                      }`}
-                    >
-                      {isSelected && <span className="h-2.5 w-2.5 rounded-full bg-[#f7f4f1]" />}
-                    </span>
+                    <span className="text-[1.1rem] font-semibold text-[#f7f4f1]">{palette.label}</span>
+                    <span className={`warm-radio ${isSelected ? 'is-selected' : ''}`} aria-hidden="true" />
                   </div>
                 </button>
               )
@@ -714,15 +693,11 @@ export const StartPage = () => {
           <button
             type="button"
             onClick={() => updateFormData('websiteColors', '')}
-            className={`mt-4 inline-flex items-center gap-3 rounded-[14px] border px-4 py-3 text-left text-[1rem] font-medium text-[#111111] transition ${
-              !selectedColorPalette ? 'border-[#111111] bg-[#f4efe9]' : 'border-[rgba(17,17,17,0.18)] bg-transparent'
+            className={`mt-4 inline-flex items-center gap-3 rounded-[14px] border px-4 py-3 text-left text-[1rem] font-medium text-[#f4efe9] transition ${
+              !selectedColorPalette ? 'border-[#d97a49] bg-[rgba(255,255,255,0.06)]' : 'border-white/10 bg-transparent'
             }`}
           >
-            <span className={`flex h-5 w-5 items-center justify-center rounded-full border ${
-              !selectedColorPalette ? 'border-[#111111] bg-[#111111]' : 'border-[rgba(17,17,17,0.35)] bg-transparent'
-            }`}>
-              {!selectedColorPalette && <span className="h-2.5 w-2.5 rounded-full bg-[#f7f4f1]" />}
-            </span>
+            <span className={`warm-radio ${!selectedColorPalette ? 'is-selected' : ''}`} aria-hidden="true" />
             I&apos;m not sure — choose for me
           </button>
         </div>
@@ -734,10 +709,10 @@ export const StartPage = () => {
     <div className="mt-8 space-y-8">
       <div className="grid gap-6 lg:grid-cols-2">
         <div>
-          <h3 className="mb-2 text-[1.05rem] font-medium text-[#111111]">
+          <h3 className="mb-2 text-[1.05rem] font-medium text-[#f4efe9]">
             Upload Photos for Your Website
           </h3>
-          <p className="mb-4 text-[0.98rem] text-[rgba(17,17,17,0.65)]">
+          <p className="mb-4 text-[0.98rem] text-[#d7d0c9]">
             Upload photos of your work, products, team, storefront, restaurant completed projects, or anything else you&apos;d like us to use. Don&apos;t worry about choosing where each photo should go — we&apos;ll handle that.
           </p>
 
@@ -752,40 +727,40 @@ export const StartPage = () => {
 
           <label
             htmlFor="project-photo-upload"
-            className="flex min-h-[180px] cursor-pointer flex-col items-center justify-center rounded-[18px] border-2 border-dashed border-[rgba(17,17,17,0.28)] bg-[#f2f0ed] px-4 py-6 text-center transition hover:border-[#111111] hover:bg-[#f0ede9]"
+            className="flex min-h-[180px] cursor-pointer flex-col items-center justify-center rounded-[18px] border-2 border-dashed border-white/15 bg-[rgba(255,255,255,0.03)] px-4 py-6 text-center transition hover:border-[#d97a49] hover:bg-[rgba(255,255,255,0.05)]"
           >
-            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full border border-[rgba(17,17,17,0.2)] bg-[#efeee9] text-[1.75rem] text-[#111111]">
+            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] text-[1.75rem] text-[#f4efe9]">
               ⤴
             </div>
-            <p className="text-[1.1rem] font-medium text-[#111111]">Drag and drop photos here</p>
-            <p className="mt-1 text-[0.95rem] text-[rgba(17,17,17,0.68)]">or click to upload</p>
+            <p className="text-[1.1rem] font-medium text-[#f4efe9]">Drag and drop photos here</p>
+            <p className="mt-1 text-[0.95rem] text-[#d7d0c9]">or click to upload</p>
           </label>
 
           {formData.uploadedPhotos?.length > 0 && (
             <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
               {formData.uploadedPhotos.slice(0, 6).map((photo, index) => (
-                <div key={`${photo.name}-${index}`} className="overflow-hidden rounded-[12px] border border-[rgba(17,17,17,0.12)] bg-white">
+                <div key={`${photo.name}-${index}`} className="overflow-hidden rounded-[12px] border border-white/10 bg-[#201d1b]">
                   <img src={photo.dataUrl} alt={`Uploaded project preview ${index + 1}`} className="h-24 w-full object-cover" />
                 </div>
               ))}
               {formData.uploadedPhotos.length > 6 && (
-                <div className="flex h-24 items-center justify-center rounded-[12px] border border-dashed border-[rgba(17,17,17,0.2)] bg-[#f2f0ed] text-[0.8rem] font-medium text-[#3a3936]">
+                <div className="flex h-24 items-center justify-center rounded-[12px] border border-dashed border-white/15 bg-[rgba(255,255,255,0.03)] text-[0.8rem] font-medium text-[#d7d0c9]">
                   +{formData.uploadedPhotos.length - 6} more
                 </div>
               )}
             </div>
           )}
 
-          <p className="mt-3 text-[0.94rem] text-[rgba(17,17,17,0.66)]">
+          <p className="mt-3 text-[0.94rem] text-[#d7d0c9]">
             You can upload multiple photos (JPG, PNG, WebP).
           </p>
         </div>
 
         <div>
-          <h3 className="mb-2 text-[1.05rem] font-medium text-[#111111]">
-            Do you already have a logo? <span className="text-[#d14a3c]">*</span>
+          <h3 className="mb-2 text-[1.05rem] font-medium text-[#f4efe9]">
+            Do you already have a logo? <span className="text-[#e9a272]">*</span>
           </h3>
-          <p className="mb-4 text-[0.98rem] text-[rgba(17,17,17,0.65)]">
+          <p className="mb-4 text-[0.98rem] text-[#d7d0c9]">
             If yes, please upload it. If no, we can use text or create a simple logo for you.
           </p>
 
@@ -798,33 +773,25 @@ export const StartPage = () => {
                 key={option.label}
                 type="button"
                 onClick={() => updateFormData('hasLogo', option.value)}
-                className={`flex w-full items-start gap-3 rounded-[14px] border p-3 text-left transition ${
-                  formData.hasLogo === option.value
-                    ? 'border-[rgba(17,17,17,0.18)] bg-[#f5f1eb]'
-                    : 'border-[rgba(17,17,17,0.18)] bg-[#efeee9]'
-                }`}
+                className={`warm-option flex w-full items-start gap-3 p-3 text-left ${formData.hasLogo === option.value ? 'is-selected' : ''}`}
               >
-                <span className={`mt-0.5 flex h-5 w-5 items-center justify-center rounded-full border ${
-                  formData.hasLogo === option.value ? 'border-[#111111] bg-[#111111]' : 'border-[rgba(17,17,17,0.35)] bg-transparent'
-                }`}>
-                  {formData.hasLogo === option.value && <span className="h-2.5 w-2.5 rounded-full bg-[#f7f4f1]" />}
-                </span>
-                <span className="flex-1 text-[1rem] text-[#111111]">{option.label}</span>
+                <span className="warm-radio mt-0.5" aria-hidden="true" />
+                <span className="flex-1 text-[1rem] text-[#f4efe9]">{option.label}</span>
               </button>
             ))}
           </div>
 
           {formData.hasLogo && (
-            <div className="mt-4 space-y-3 rounded-[14px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] p-3">
+            <div className="mt-4 space-y-3 rounded-[14px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-3">
               <input id="brand-logo-upload" type="file" accept="image/*" onChange={handleLogoUpload} className="hidden" />
-              <label htmlFor="brand-logo-upload" className="flex cursor-pointer items-center gap-3 rounded-[10px] border border-dashed border-[rgba(17,17,17,0.2)] bg-[#f6f3ef] p-3">
-                <span className="text-[1.15rem] text-[#111111]">⇪</span>
-                <span className="text-[1rem] text-[#111111]">Upload logo</span>
+              <label htmlFor="brand-logo-upload" className="flex cursor-pointer items-center gap-3 rounded-[10px] border border-dashed border-white/15 bg-[rgba(255,255,255,0.03)] p-3">
+                <span className="text-[1.15rem] text-[#f4efe9]">⇪</span>
+                <span className="text-[1rem] text-[#f4efe9]">Upload logo</span>
               </label>
-              <p className="text-[0.9rem] text-[rgba(17,17,17,0.7)]">PNG, JPG, or SVG</p>
+              <p className="text-[0.9rem] text-[#d7d0c9]">PNG, JPG, or SVG</p>
 
               {formData.logo?.dataUrl && (
-                <div className="overflow-hidden rounded-[12px] border border-[rgba(17,17,17,0.12)] bg-white p-3">
+                <div className="overflow-hidden rounded-[12px] border border-white/10 bg-[#201d1b] p-3">
                   <img src={formData.logo.dataUrl} alt="Uploaded brand logo" className="mx-auto max-h-28 w-auto object-contain" />
                 </div>
               )}
@@ -834,63 +801,54 @@ export const StartPage = () => {
       </div>
 
       <div>
-        <h3 className="mb-2 text-[1.05rem] font-medium text-[#111111]">
+        <h3 className="mb-2 text-[1.05rem] font-medium text-[#f4efe9]">
           Customer Reviews / Testimonials
         </h3>
-        <p className="mb-4 text-[0.98rem] text-[rgba(17,17,17,0.65)]">
+        <p className="mb-4 text-[0.98rem] text-[#d7d0c9]">
           Paste any reviews or testimonials you&apos;d like featured on your website. You can also leave this blank.
         </p>
 
         <div className="relative">
-          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.2rem] text-[rgba(17,17,17,0.45)]">
+          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.2rem] text-[#d7d0c9]">
             ◌
           </span>
-          <input
-            className="w-full rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] py-4 pl-11 pr-4 text-[1.03rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
-            placeholder="Paste reviews or write them here..."
-          />
+          <input className="warm-field py-4 pl-11 pr-4 text-[1.03rem]" placeholder="Paste reviews or write them here..." />
         </div>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-2">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
             Are there any websites you like the look of?
           </label>
-          <p className="mb-3 text-[0.98rem] text-[rgba(17,17,17,0.65)]">
+          <p className="mb-3 text-[0.98rem] text-[#d7d0c9]">
             Paste links to any websites you like. They don&apos;t have to be businesses similar to yours.
           </p>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.12rem] text-[rgba(17,17,17,0.45)]">
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.12rem] text-[#d7d0c9]">
               🔗
             </span>
-            <input
-              className="w-full rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] py-4 pl-11 pr-4 text-[1.03rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
-              placeholder="https://..."
-            />
+            <input className="warm-field py-4 pl-11 pr-4 text-[1.03rem]" placeholder="https://..." />
           </div>
-          <button type="button" className="mt-4 inline-flex items-center gap-2 text-[1rem] font-medium text-[#111111]">
+          <button type="button" className="mt-4 inline-flex items-center gap-2 text-[1rem] font-medium text-[#f4efe9]">
             <span className="text-xl">＋</span> Add another link
           </button>
         </div>
 
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
             Anything else we should know?
           </label>
-          <p className="mb-3 text-[0.98rem] text-[rgba(17,17,17,0.65)]">
+          <p className="mb-3 text-[0.98rem] text-[#d7d0c9]">
             Tell us anything else you&apos;d like us to consider while designing your website.
           </p>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-4 text-[1.12rem] text-[rgba(17,17,17,0.45)]">
+            <span className="pointer-events-none absolute left-4 top-4 text-[1.12rem] text-[#d7d0c9]">
               ✎
             </span>
-            <textarea
-              className="min-h-[110px] w-full resize-none rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] pl-11 pr-4 pt-4 pb-3 text-[1.03rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
-              placeholder="Let us know any additional details..."
-            />
+            <textarea className="warm-field min-h-[110px] resize-none pl-11 pr-4 pt-4 pb-3 text-[1.03rem]" placeholder="Let us know any additional details..." />
           </div>
-          <div className="mt-2 text-right text-[0.78rem] text-[rgba(17,17,17,0.56)]">0/1000</div>
+          <div className="mt-2 text-right text-[0.78rem] text-[#d7d0c9]">0/1000</div>
         </div>
       </div>
     </div>
@@ -900,32 +858,32 @@ export const StartPage = () => {
     <div className="mt-8 space-y-6">
       <div className="grid gap-5 lg:grid-cols-2">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
-            Phone number <span className="text-[#d14a3c]">*</span>
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+            Phone number <span className="text-[#e9a272]">*</span>
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[rgba(17,17,17,0.45)]">◔</span>
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">◔</span>
             <input
               name="phone"
               value={formData.phone}
               onChange={(event) => updateFormData('phone', event.target.value)}
-              className="w-full rounded-[14px] border border-[rgba(17,17,17,0.18)] bg-[#f2f0ed] py-4 pl-11 pr-4 text-[1rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
+              className="warm-field py-4 pl-11 pr-4 text-[1rem]"
               placeholder="e.g. (845) 123-4567"
             />
           </div>
         </div>
 
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
-            Business email <span className="text-[#d14a3c]">*</span>
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+            Business email <span className="text-[#e9a272]">*</span>
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[rgba(17,17,17,0.45)]">✉</span>
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">✉</span>
             <input
               name="email"
               value={formData.email}
               onChange={(event) => updateFormData('email', event.target.value)}
-              className="w-full rounded-[14px] border border-[rgba(17,17,17,0.18)] bg-[#f2f0ed] py-4 pl-11 pr-4 text-[1rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
+              className="warm-field py-4 pl-11 pr-4 text-[1rem]"
               placeholder="e.g. info@yourbusiness.com"
             />
           </div>
@@ -934,16 +892,16 @@ export const StartPage = () => {
 
       <div className="grid gap-5 lg:grid-cols-2">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
             Business address
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[rgba(17,17,17,0.45)]">⌖</span>
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">⌖</span>
             <input
               name="address"
               value={formData.address}
               onChange={(event) => updateFormData('address', event.target.value)}
-              className="w-full rounded-[14px] border border-[rgba(17,17,17,0.18)] bg-[#f2f0ed] py-4 pl-11 pr-4 text-[1rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none transition focus:border-[#111111] focus:ring-2 focus:ring-[rgba(17,17,17,0.08)]"
+              className="warm-field py-4 pl-11 pr-4 text-[1rem]"
               placeholder="e.g. 123 Main St, Poughkeepsie, NY 12601"
             />
           </div>
@@ -954,18 +912,18 @@ export const StartPage = () => {
 
       <div className="grid gap-5 lg:grid-cols-2">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
             Business hours
           </label>
-          <p className="mb-3 text-[0.9rem] text-[rgba(17,17,17,0.64)]">
+          <p className="mb-3 text-[0.9rem] text-[#d7d0c9]">
             Enter your regular business hours. You can add a note if hours vary.
           </p>
 
           <div className="space-y-3">
             {formData.businessHours.map((entry) => (
-              <div key={entry.day} className="flex flex-col gap-3 rounded-[14px] border border-[rgba(17,17,17,0.12)] bg-[#f7f5f1] p-3 sm:flex-row sm:items-center sm:gap-3 sm:bg-transparent sm:border-0 sm:p-0">
-                <div className="flex items-center gap-2 text-[0.98rem] text-[#111111] sm:min-w-[110px]">
-                  <span className="text-[1.08rem] text-[rgba(17,17,17,0.45)]">◔</span>
+              <div key={entry.day} className="flex flex-col gap-3 rounded-[14px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-3 sm:flex-row sm:items-center sm:gap-3 sm:bg-transparent sm:border-0 sm:p-0">
+                <div className="flex items-center gap-2 text-[0.98rem] text-[#f4efe9] sm:min-w-[110px]">
+                  <span className="text-[1.08rem] text-[#d7d0c9]">◔</span>
                   {entry.day}
                 </div>
 
@@ -974,23 +932,23 @@ export const StartPage = () => {
                     value={entry.open}
                     onChange={(event) => updateBusinessHours(entry.day, 'open', event.target.value)}
                     disabled={entry.closed}
-                    className="w-full rounded-[10px] border border-[rgba(17,17,17,0.18)] bg-[#f2f0ed] px-3 py-2.5 text-[0.96rem] text-[#111111] outline-none focus:border-[#111111] disabled:cursor-not-allowed disabled:opacity-50 sm:min-w-[110px]"
+                    className="warm-field px-3 py-2.5 text-[0.96rem] sm:min-w-[110px]"
                   >
                     {BUSINESS_HOUR_TIMES.map((time) => (
-                      <option key={time} value={time}>
+                      <option key={time} value={time} className="bg-[#201d1b] text-[#f4efe9]">
                         {time}
                       </option>
                     ))}
                   </select>
-                  <span className="hidden text-[0.96rem] text-[rgba(17,17,17,0.7)] sm:block">–</span>
+                  <span className="hidden text-[0.96rem] text-[#d7d0c9] sm:block">–</span>
                   <select
                     value={entry.closed ? 'Closed' : entry.close}
                     onChange={(event) => updateBusinessHours(entry.day, 'close', event.target.value)}
                     disabled={entry.closed}
-                    className="w-full rounded-[10px] border border-[rgba(17,17,17,0.18)] bg-[#f2f0ed] px-3 py-2.5 text-[0.96rem] text-[#111111] outline-none focus:border-[#111111] disabled:cursor-not-allowed disabled:opacity-50 sm:min-w-[110px]"
+                    className="warm-field px-3 py-2.5 text-[0.96rem] sm:min-w-[110px]"
                   >
                     {BUSINESS_HOUR_TIMES.filter((time) => BUSINESS_HOUR_TIMES.indexOf(time) >= BUSINESS_HOUR_TIMES.indexOf(entry.open)).map((time) => (
-                      <option key={time} value={time}>
+                      <option key={time} value={time} className="bg-[#201d1b] text-[#f4efe9]">
                         {time}
                       </option>
                     ))}
@@ -1001,7 +959,7 @@ export const StartPage = () => {
                   type="button"
                   onClick={() => updateBusinessHours(entry.day, 'closed', !entry.closed)}
                   className={`relative h-6 w-11 self-start rounded-full border transition sm:self-auto ${
-                    entry.closed ? 'border-[rgba(17,17,17,0.25)] bg-[#e7e1d9]' : 'border-[#111111] bg-[#111111]'
+                    entry.closed ? 'border-white/20 bg-[rgba(255,255,255,0.06)]' : 'border-[#d97a49] bg-[#d97a49]'
                   }`}
                   aria-label={`Toggle ${entry.day}`}
                 >
@@ -1012,7 +970,7 @@ export const StartPage = () => {
                   />
                 </button>
 
-                <button type="button" className="self-end text-[1.25rem] leading-none text-[rgba(17,17,17,0.6)] sm:self-auto">
+                <button type="button" className="self-end text-[1.25rem] leading-none text-[#d7d0c9] sm:self-auto">
                   +
                 </button>
               </div>
@@ -1021,10 +979,10 @@ export const StartPage = () => {
         </div>
 
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#111111]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
             Social media (optional)
           </label>
-          <p className="mb-3 text-[0.9rem] text-[rgba(17,17,17,0.64)]">
+          <p className="mb-3 text-[0.9rem] text-[#d7d0c9]">
             Share your social media profiles so we can link them on your site.
           </p>
 
@@ -1036,12 +994,12 @@ export const StartPage = () => {
               'TikTok username or link',
               'YouTube channel link',
             ].map((label, index) => (
-              <div key={label} className="flex flex-col gap-3 rounded-[12px] border border-[rgba(17,17,17,0.18)] bg-[#f2f0ed] px-3 py-3 sm:flex-row sm:items-center sm:gap-2">
-                <span className="flex h-7 w-7 items-center justify-center rounded-[8px] border border-[rgba(17,17,17,0.18)] bg-[#efeee9] text-[0.9rem] text-[#111111] sm:flex-none">
+              <div key={label} className="flex flex-col gap-3 rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-3 sm:flex-row sm:items-center sm:gap-2">
+                <span className="flex h-7 w-7 items-center justify-center rounded-[8px] border border-white/10 bg-[rgba(255,255,255,0.03)] text-[0.9rem] text-[#f4efe9] sm:flex-none">
                   {['◎', 'f', 'in', '♪', '▶'][index]}
                 </span>
                 <input
-                  className="w-full min-w-0 bg-transparent text-[0.98rem] text-[#111111] placeholder:text-[rgba(17,17,17,0.42)] outline-none"
+                  className="w-full min-w-0 bg-transparent text-[0.98rem] text-[#f4efe9] placeholder:text-[#d7d0c9]/60 outline-none"
                   placeholder={label}
                 />
               </div>
@@ -1069,142 +1027,142 @@ export const StartPage = () => {
       </div>
 
       <div className="grid gap-4 xl:grid-cols-3">
-        <div className="rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#f3f1ee] p-3">
+        <div className="rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-3">
           <div className="mb-3 flex items-center justify-between">
-            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[#111111]">
+            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[#f4efe9]">
               <span className="text-[1.1rem]">▣</span>
               Business Info
             </div>
           </div>
-          <div className="space-y-2 text-[0.9rem] text-[rgba(17,17,17,0.8)]">
+          <div className="space-y-2 text-[0.9rem] text-[#d7d0c9]">
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.58)]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
                 Business name
-                {!isFilled(formData.businessName) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#b33f31]">Required</span>}
+                {!isFilled(formData.businessName) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <p className="mt-1 text-[#111111]">{formData.businessName || 'Not provided yet'}</p>
+              <p className="mt-1 text-[#f4efe9]">{formData.businessName || 'Not provided yet'}</p>
             </div>
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.58)]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
                 Business type
-                {!isFilled(formData.businessType) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#b33f31]">Required</span>}
+                {!isFilled(formData.businessType) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <p className="mt-1 text-[#111111]">{formData.businessType || 'Not selected yet'}</p>
+              <p className="mt-1 text-[#f4efe9]">{formData.businessType || 'Not selected yet'}</p>
             </div>
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.58)]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
                 Tagline
-                {!isFilled(formData.businessTagline) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#b33f31]">Optional</span>}
+                {!isFilled(formData.businessTagline) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Optional</span>}
               </p>
-              <p className="mt-1 text-[#111111]">{formData.businessTagline || 'No tagline provided'}</p>
+              <p className="mt-1 text-[#f4efe9]">{formData.businessTagline || 'No tagline provided'}</p>
             </div>
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.58)]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
                 About your business
-                {!isFilled(formData.aboutBusiness) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#b33f31]">Required</span>}
+                {!isFilled(formData.aboutBusiness) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <p className="mt-1 text-[#111111]">{formData.aboutBusiness || 'Not provided yet'}</p>
+              <p className="mt-1 text-[#f4efe9]">{formData.aboutBusiness || 'Not provided yet'}</p>
             </div>
           </div>
         </div>
 
-        <div className="rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#f3f1ee] p-3">
+        <div className="rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-3">
           <div className="mb-3 flex items-center justify-between">
-            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[#111111]">
+            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[#f4efe9]">
               <span className="text-[1.1rem]">≡</span>
               Services &amp; Details
             </div>
           </div>
-          <div className="space-y-3 text-[0.9rem] text-[rgba(17,17,17,0.8)]">
+          <div className="space-y-3 text-[0.9rem] text-[#d7d0c9]">
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.58)]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
                 Main services
-                {!isFilled(formData.services) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#b33f31]">Required</span>}
+                {!isFilled(formData.services) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <p className="mt-1 text-[#111111]">{formData.services || 'Not provided yet'}</p>
+              <p className="mt-1 text-[#f4efe9]">{formData.services || 'Not provided yet'}</p>
             </div>
             <div>
-              <p className="text-[0.76rem] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.58)]">Featured on website</p>
-              <p className="mt-1 text-[#111111]">{formData.highlight || 'No featured item provided'}</p>
+              <p className="text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">Featured on website</p>
+              <p className="mt-1 text-[#f4efe9]">{formData.highlight || 'No featured item provided'}</p>
             </div>
             <div>
-              <p className="text-[0.76rem] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.58)]">Why choose you</p>
-              <p className="mt-1 text-[#111111]">{formData.whyChooseYou || 'Not provided yet'}</p>
+              <p className="text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">Why choose you</p>
+              <p className="mt-1 text-[#f4efe9]">{formData.whyChooseYou || 'Not provided yet'}</p>
             </div>
           </div>
         </div>
 
-        <div className="rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#f3f1ee] p-3">
+        <div className="rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-3">
           <div className="mb-3 flex items-center justify-between">
-            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[#111111]">
+            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[#f4efe9]">
               <span className="text-[1.1rem]">◌</span>
               Design &amp; Style
             </div>
           </div>
-          <div className="space-y-3 text-[0.9rem] text-[rgba(17,17,17,0.8)]">
+          <div className="space-y-3 text-[0.9rem] text-[#d7d0c9]">
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.58)]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
                 Look and feel
-                {!isFilled(formData.designStyle) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#b33f31]">Required</span>}
+                {!isFilled(formData.designStyle) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
-                <span className="rounded-[8px] border border-[rgba(17,17,17,0.18)] bg-[#f8f5f2] px-2 py-1 text-[#111111]">
+                <span className="rounded-[8px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-2 py-1 text-[#f4efe9]">
                   {formData.designStyle || 'Professional'}
                 </span>
               </div>
             </div>
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.58)]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
                 Color theme
-                {!isFilled(formData.websiteColors) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#b33f31]">Required</span>}
+                {!isFilled(formData.websiteColors) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <div className="mt-2 flex flex-wrap items-center gap-3 rounded-[12px] border border-[rgba(17,17,17,0.12)] bg-[#f8f5f2] p-2.5">
+              <div className="mt-2 flex flex-wrap items-center gap-3 rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-2.5">
                 {selectedColorPalette ? (
                   <>
                     <div className="flex gap-1.5">
                       {selectedColorPalette.swatches.map((swatch) => (
                         <span
                           key={`${selectedColorPalette.label}-${swatch}`}
-                          className="h-7 w-7 rounded-[6px] border border-[rgba(17,17,17,0.08)]"
+                          className="h-7 w-7 rounded-[6px] border border-white/10"
                           style={{ backgroundColor: swatch }}
                         />
                       ))}
                     </div>
-                    <span className="text-[#111111]">{selectedColorPalette.label}</span>
+                    <span className="text-[#f4efe9]">{selectedColorPalette.label}</span>
                   </>
                 ) : (
-                  <span className="text-[#111111]">Not selected yet</span>
+                  <span className="text-[#f4efe9]">Not selected yet</span>
                 )}
               </div>
             </div>
           </div>
         </div>
 
-        <div className="rounded-[16px] border border-[rgba(17,17,17,0.18)] bg-[#f3f1ee] p-3">
+        <div className="rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-3">
           <div className="mb-3 flex items-center justify-between">
-            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[#111111]">
+            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[#f4efe9]">
               <span className="text-[1.1rem]">⌖</span>
               Contact &amp; Location
             </div>
           </div>
-          <div className="space-y-2 text-[0.9rem] text-[rgba(17,17,17,0.8)]">
+          <div className="space-y-2 text-[0.9rem] text-[#d7d0c9]">
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.58)]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
                 Phone number
-                {!isFilled(formData.phone) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#b33f31]">Required</span>}
+                {!isFilled(formData.phone) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <p className="mt-1 text-[#111111]">{formData.phone || '(845) 000-0000'}</p>
+              <p className="mt-1 text-[#f4efe9]">{formData.phone || '(845) 000-0000'}</p>
             </div>
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.58)]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
                 Email
-                {!isFilled(formData.email) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#b33f31]">Required</span>}
+                {!isFilled(formData.email) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <p className="mt-1 text-[#111111]">{formData.email || 'No email provided'}</p>
+              <p className="mt-1 text-[#f4efe9]">{formData.email || 'No email provided'}</p>
             </div>
             <div>
-              <p className="text-[0.76rem] uppercase tracking-[0.12em] text-[rgba(17,17,17,0.58)]">Address</p>
-              <p className="mt-1 text-[#111111]">{formData.address || 'No address provided'}</p>
+              <p className="text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">Address</p>
+              <p className="mt-1 text-[#f4efe9]">{formData.address || 'No address provided'}</p>
             </div>
           </div>
         </div>
@@ -1214,62 +1172,62 @@ export const StartPage = () => {
 
   const renderFullForm = () => (
     <div className="space-y-6">
-      <div className="rounded-[20px] border border-[rgba(17,17,17,0.12)] bg-[#f5f2ee] p-4 md:p-6">
+      <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#111111] text-[0.75rem] font-semibold text-[#f7f4f1]">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
             1
           </div>
-          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#111111]">Business Information</h3>
+          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f7f4f1]">Business Information</h3>
         </div>
         {renderBusinessInfo()}
       </div>
 
-      <div className="rounded-[20px] border border-[rgba(17,17,17,0.12)] bg-[#f5f2ee] p-4 md:p-6">
+      <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#111111] text-[0.75rem] font-semibold text-[#f7f4f1]">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
             2
           </div>
-          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#111111]">Services &amp; Details</h3>
+          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f7f4f1]">Services &amp; Details</h3>
         </div>
         {renderServicesDetails()}
       </div>
 
-      <div className="rounded-[20px] border border-[rgba(17,17,17,0.12)] bg-[#f5f2ee] p-4 md:p-6">
+      <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#111111] text-[0.75rem] font-semibold text-[#f7f4f1]">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
             3
           </div>
-          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#111111]">Design &amp; Style</h3>
+          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f7f4f1]">Design &amp; Style</h3>
         </div>
         {renderDesignStyle()}
       </div>
 
-      <div className="rounded-[20px] border border-[rgba(17,17,17,0.12)] bg-[#f5f2ee] p-4 md:p-6">
+      <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#111111] text-[0.75rem] font-semibold text-[#f7f4f1]">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
             4
           </div>
-          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#111111]">Content &amp; Media</h3>
+          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f7f4f1]">Content &amp; Media</h3>
         </div>
         {renderContentMedia()}
       </div>
 
-      <div className="rounded-[20px] border border-[rgba(17,17,17,0.12)] bg-[#f5f2ee] p-4 md:p-6">
+      <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#111111] text-[0.75rem] font-semibold text-[#f7f4f1]">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
             5
           </div>
-          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#111111]">Contact &amp; Location</h3>
+          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f7f4f1]">Contact &amp; Location</h3>
         </div>
         {renderContactLocation()}
       </div>
 
-      <div className="rounded-[20px] border border-[rgba(17,17,17,0.12)] bg-[#f5f2ee] p-4 md:p-6">
+      <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#111111] text-[0.75rem] font-semibold text-[#f7f4f1]">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
             6
           </div>
-          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#111111]">Review &amp; Submit</h3>
+          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f7f4f1]">Review &amp; Submit</h3>
         </div>
         {renderReviewSubmit()}
       </div>
@@ -1277,7 +1235,7 @@ export const StartPage = () => {
   )
 
   return (
-    <section className="min-h-screen bg-[#efeee9] px-4 py-8 text-[var(--ink)] md:px-8 md:py-10">
+    <section className="min-h-screen bg-transparent px-4 py-8 text-[#f4efe9] md:px-8 md:py-10">
       <Helmet>
         <title>Start a project | 845 Sites</title>
         <meta
@@ -1287,49 +1245,49 @@ export const StartPage = () => {
       </Helmet>
 
       <div className="mx-auto max-w-[1280px] text-center">
-        <p className="mb-4 text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-[#111111]">
+        <p className="mb-4 text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-[#d7d0c9]">
           Let&apos;s get started
         </p>
-        <h1 className="font-display text-[3.2rem] leading-[0.9] tracking-[-0.08em] text-[#111111] md:text-[6.1rem]">
+        <h1 className="font-display text-[3.2rem] leading-[0.9] tracking-[-0.08em] text-[#f7f4f1] md:text-[6.1rem]">
           Start your next
           <span className="block">website project</span>
         </h1>
-        <p className="mx-auto mt-6 max-w-[760px] text-[1.08rem] leading-relaxed text-[rgba(17,17,17,0.72)] md:text-[1.35rem]">
+        <p className="mx-auto mt-6 max-w-[760px] text-[1.08rem] leading-relaxed text-[#d7d0c9] md:text-[1.35rem]">
           Tell us about your business and goals, and we&apos;ll help build the right site for you.
         </p>
       </div>
 
-      <div className="mx-auto mt-10 max-w-[1260px] rounded-[28px] border border-[rgba(15,17,21,0.12)] bg-[#f7f4f1] p-4 shadow-[0_24px_60px_rgba(15,17,21,0.06)] md:p-5">
+      <div className="mx-auto mt-10 max-w-[1260px] rounded-[28px] border border-white/10 bg-[rgba(77,71,68,0.28)] p-4 shadow-[0_24px_60px_rgba(15,17,21,0.12)] backdrop-blur-sm md:p-5">
         <div className="flex-1 px-3 py-4 md:px-8 md:py-7">
-          <div className="mb-5 text-[0.72rem] font-semibold uppercase tracking-[0.25em] text-[#1c1c1c]">
+          <div className="mb-5 text-[0.72rem] font-semibold uppercase tracking-[0.25em] text-[#d7d0c9]">
             Full project form
           </div>
 
-          <h2 className="font-display text-[2.3rem] leading-[0.92] tracking-[-0.07em] text-[#111111] md:text-[3rem]">
+          <h2 className="font-display text-[2.3rem] leading-[0.92] tracking-[-0.07em] text-[#f7f4f1] md:text-[3rem]">
             Tell us about your business
           </h2>
 
-          <p className="mt-3 text-[1.08rem] text-[rgba(17,17,17,0.7)]">
+          <p className="mt-3 text-[1.08rem] text-[#d7d0c9]">
             Fill out the details below and we&apos;ll use this information to design your website.
           </p>
 
           {renderFullForm()}
 
           {submitError && (
-            <div className="mt-6 rounded-[14px] border border-[rgba(209,74,60,0.2)] bg-[rgba(209,74,60,0.08)] px-4 py-3 text-[0.92rem] text-[#8f382d]">
+            <div className="mt-6 rounded-[14px] border border-red-400/25 bg-red-500/10 px-4 py-3 text-[0.92rem] text-red-200">
               {submitError}
             </div>
           )}
 
-          <div className="mt-10 flex items-center justify-end border-t border-[rgba(17,17,17,0.12)] pt-6">
+          <div className="mt-10 flex items-center justify-end border-t border-white/10 pt-6">
             <button
               type="button"
               onClick={handleSubmitProject}
               disabled={!canSubmit || isSubmitting}
               className={`rounded-[16px] px-6 py-3 text-[1.08rem] font-semibold shadow-[0_12px_24px_rgba(17,17,17,0.14)] transition ${
                 canSubmit && !isSubmitting
-                  ? 'bg-[#111111] text-[#f7f4f1] hover:bg-[#222222]'
-                  : 'cursor-not-allowed bg-[#8c8c8c] text-[rgba(247,244,241,0.72)] opacity-70'
+                  ? 'bg-[#d97a49] text-[#fffaf7] hover:bg-[#e18c5f]'
+                  : 'cursor-not-allowed bg-[rgba(255,255,255,0.08)] text-[rgba(247,244,241,0.72)] opacity-70'
               }`}
             >
               {isSubmitting ? 'Submitting...' : <>Submit My Information <span aria-hidden="true">→</span></>}
