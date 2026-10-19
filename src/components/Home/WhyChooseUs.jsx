@@ -56,13 +56,13 @@ export const WhyChooseUs = () => (
           {CARD_DATA.map(({ id, icon: Icon, title, text }) => (
             <article
               key={id}
-              className="min-h-[255px] rounded-[18px] border border-[var(--accent-soft)] bg-[var(--accent)] p-5 text-white shadow-[inset_0_0_0_1px_rgba(255,255,255,0.02)]"
+              className="min-h-[255px] rounded-[22px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[#f4efe9] shadow-[0_18px_45px_rgba(0,0,0,0.14)]"
             >
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-[10px] border border-white/20 bg-white/5 text-[1.8rem] font-bold text-white">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#e78a5e]/70 bg-[rgba(231,138,94,0.08)] text-[1.6rem] text-[#f59d6c]">
                 <Icon aria-hidden="true" />
               </div>
 
-              <h3 className="max-w-[245px] text-[1.85rem] font-black leading-[0.96] tracking-[-0.07em] text-white md:text-[2.6rem] md:tracking-[-0.07em]">
+              <h3 className="max-w-[245px] text-[1.85rem] font-black leading-[0.96] tracking-[-0.07em] text-white md:text-[2.5rem] md:tracking-[-0.07em]">
                 {title.split('\n').map((line, index) => (
                   <span key={line + index} className="block">
                     {line}
@@ -70,7 +70,7 @@ export const WhyChooseUs = () => (
                 ))}
               </h3>
 
-              <p className="mt-4 max-w-[290px] text-[0.95rem] leading-relaxed text-white/80 md:text-[1.05rem]">
+              <p className="mt-4 max-w-[290px] text-[0.95rem] leading-relaxed text-[#d7d0c9] md:text-[1.05rem]">
                 {text}
               </p>
             </article>

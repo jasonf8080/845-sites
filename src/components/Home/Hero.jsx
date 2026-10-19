@@ -25,9 +25,17 @@ const FEATURE_ITEMS = [
 ]
 
 export const Hero = () => (
-  <section id="home" className="relative overflow-hidden bg-[#201d1b] px-5 pb-8 pt-6 text-white md:px-8 md:pb-10 md:pt-8">
+  <section
+    id="home"
+    className="relative overflow-hidden bg-[#201d1b] px-5 pb-8 pt-6 text-white md:px-8 md:pb-10 md:pt-8"
+    style={{
+      backgroundImage: "linear-gradient(90deg, rgba(13,10,8,0.82) 0%, rgba(26,22,18,0.68) 42%, rgba(13,10,8,0.78) 100%), url('/images/header.png')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+    }}
+  >
     <div className="pointer-events-none absolute inset-0">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(166,122,86,0.18),transparent_18%),radial-gradient(circle_at_70%_60%,rgba(255,255,255,0.05),transparent_18%),linear-gradient(90deg,#201d1b_0%,#2a2624_40%,#201d1b_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(166,122,86,0.18),transparent_18%),radial-gradient(circle_at_70%_60%,rgba(255,255,255,0.05),transparent_18%)]" />
       <div className="absolute -left-[10%] top-[8%] h-[72%] w-[72%] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.04),rgba(255,255,255,0.01)_30%,transparent_68%)] blur-3xl" />
       <div className="absolute right-[8%] top-[18%] h-[50%] w-[50%] rounded-full border border-white/10" />
       <div className="absolute right-[11%] top-[21%] h-[42%] w-[42%] rounded-full border border-white/8" />
