@@ -1177,7 +1177,7 @@ export const StartPage = () => {
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
             1
           </div>
-          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f7f4f1]">Business Information</h3>
+          <h3 className="heading-card text-[#f7f4f1]">BUSINESS INFORMATION</h3>
         </div>
         {renderBusinessInfo()}
       </div>
@@ -1187,7 +1187,7 @@ export const StartPage = () => {
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
             2
           </div>
-          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f7f4f1]">Services &amp; Details</h3>
+          <h3 className="heading-card text-[#f7f4f1]">SERVICES &amp; DETAILS</h3>
         </div>
         {renderServicesDetails()}
       </div>
@@ -1197,7 +1197,7 @@ export const StartPage = () => {
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
             3
           </div>
-          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f7f4f1]">Design &amp; Style</h3>
+          <h3 className="heading-card text-[#f7f4f1]">DESIGN &amp; STYLE</h3>
         </div>
         {renderDesignStyle()}
       </div>
@@ -1207,7 +1207,7 @@ export const StartPage = () => {
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
             4
           </div>
-          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f7f4f1]">Content &amp; Media</h3>
+          <h3 className="heading-card text-[#f7f4f1]">CONTENT &amp; MEDIA</h3>
         </div>
         {renderContentMedia()}
       </div>
@@ -1217,7 +1217,7 @@ export const StartPage = () => {
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
             5
           </div>
-          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f7f4f1]">Contact &amp; Location</h3>
+          <h3 className="heading-card text-[#f7f4f1]">CONTACT &amp; LOCATION</h3>
         </div>
         {renderContactLocation()}
       </div>
@@ -1227,7 +1227,7 @@ export const StartPage = () => {
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
             6
           </div>
-          <h3 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f7f4f1]">Review &amp; Submit</h3>
+          <h3 className="heading-card text-[#f7f4f1]">REVIEW &amp; SUBMIT</h3>
         </div>
         {renderReviewSubmit()}
       </div>
@@ -1244,17 +1244,30 @@ export const StartPage = () => {
         />
       </Helmet>
 
-      <div className="mx-auto max-w-[1280px] text-center">
-        <p className="mb-4 text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-[#d7d0c9]">
-          Let&apos;s get started
-        </p>
-        <h1 className="font-display text-[3.2rem] leading-[0.9] tracking-[-0.08em] text-[#f7f4f1] md:text-[6.1rem]">
-          Start your next
-          <span className="block">website project</span>
-        </h1>
-        <p className="mx-auto mt-6 max-w-[760px] text-[1.08rem] leading-relaxed text-[#d7d0c9] md:text-[1.35rem]">
-          Tell us about your business and goals, and we&apos;ll help build the right site for you.
-        </p>
+      <div className="mx-auto max-w-[1280px]">
+        <div className="mb-6 flex items-center justify-start">
+          <button
+            type="button"
+            onClick={() => navigate('/dashboard')}
+            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-2.5 text-[0.72rem] font-semibold uppercase tracking-[0.14em] text-[#f4efe9] transition hover:border-[#d97a49]/40 hover:text-white"
+          >
+            <span aria-hidden="true">←</span>
+            Back to Dashboard
+          </button>
+        </div>
+
+        <div className="text-center">
+          <p className="mb-4 text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-[#d7d0c9]">
+            Let&apos;s get started
+          </p>
+          <h1 className="heading-hero text-[#f7f4f1]">
+            START YOUR NEXT
+            <span className="block">WEBSITE PROJECT</span>
+          </h1>
+          <p className="text-lead mx-auto mt-6 max-w-[760px] text-[#d7d0c9]">
+            Tell us about your business and goals, and we&apos;ll help build the right site for you.
+          </p>
+        </div>
       </div>
 
       <div className="mx-auto mt-10 max-w-[1260px] rounded-[28px] border border-white/10 bg-[rgba(77,71,68,0.28)] p-4 shadow-[0_24px_60px_rgba(15,17,21,0.12)] backdrop-blur-sm md:p-5">
@@ -1263,11 +1276,11 @@ export const StartPage = () => {
             Full project form
           </div>
 
-          <h2 className="font-display text-[2.3rem] leading-[0.92] tracking-[-0.07em] text-[#f7f4f1] md:text-[3rem]">
-            Tell us about your business
+          <h2 className="heading-section text-[#f7f4f1]">
+            TELL US ABOUT YOUR BUSINESS
           </h2>
 
-          <p className="mt-3 text-[1.08rem] text-[#d7d0c9]">
+          <p className="text-body-lg mt-3 text-[#d7d0c9]">
             Fill out the details below and we&apos;ll use this information to design your website.
           </p>
 

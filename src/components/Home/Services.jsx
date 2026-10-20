@@ -36,14 +36,14 @@ export const Services = () => (
 
       <div className="grid gap-8 xl:grid-cols-[0.85fr_1.1fr_1.1fr]">
         <div className="flex flex-col justify-between pt-2">
-          <h2 className="max-w-[420px] text-[3.1rem] font-black leading-[0.82] tracking-[-0.07em] text-[var(--ink)] md:text-[5.1rem] md:tracking-[-0.075em]">
+          <h2 className="heading-section max-w-[420px] text-[var(--ink)]">
             SIMPLE,
             <span className="mt-1 block">HONEST</span>
             <span className="mt-1 block">PRICING.</span>
           </h2>
 
           <div className="mt-8 max-w-[380px]">
-            <p className="text-[1.04rem] leading-relaxed text-[var(--ink-soft)] md:text-[1.18rem]">
+            <p className="text-body-lg text-[var(--ink-soft)]">
               No surprises, no confusing tiers, just a streamlined path from concept to launch.
             </p>
 

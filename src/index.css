@@ -63,14 +63,94 @@ select {
   box-sizing: border-box;
 }
 
+:root {
+  --heading-hero: clamp(3.15rem, 7vw, 9rem);
+  --heading-page: clamp(2.35rem, 4vw, 5.25rem);
+  --heading-section: clamp(2.1rem, 3vw, 4.2rem);
+  --heading-card: clamp(1.4rem, 2vw, 2.75rem);
+  --heading-subcard: clamp(1.1rem, 1.5vw, 1.8rem);
+  --text-lead: clamp(1.08rem, 1.5vw, 1.65rem);
+  --text-body: 1rem;
+  --text-body-lg: 1.08rem;
+  --text-label: 0.72rem;
+  --tracking-display: -0.08em;
+  --tracking-tight: -0.06em;
+  --tracking-label: 0.22em;
+}
+
 h1,
 h2,
 h3,
 h4,
-.font-display {
+.font-display,
+.heading-hero,
+.heading-page,
+.heading-section,
+.heading-card,
+.heading-subcard,
+.text-eyebrow,
+.text-label {
   font-family: 'Plus Jakarta Sans', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+h1,
+.heading-hero {
+  font-size: var(--heading-hero);
+  font-weight: 900;
+  line-height: 0.82;
+  letter-spacing: var(--tracking-display);
+}
+
+h2,
+.heading-page,
+.heading-section {
+  font-size: var(--heading-section);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: var(--tracking-tight);
+}
+
+h3,
+.heading-card {
+  font-size: var(--heading-card);
+  font-weight: 900;
+  line-height: 0.94;
+  letter-spacing: var(--tracking-tight);
+}
+
+h4,
+.heading-subcard {
+  font-size: var(--heading-subcard);
   font-weight: 800;
+  line-height: 1;
+  letter-spacing: var(--tracking-tight);
+}
+
+.text-lead {
+  font-size: var(--text-lead);
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.text-body {
+  font-size: var(--text-body);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.text-body-lg {
+  font-size: var(--text-body-lg);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.text-label,
+.text-eyebrow {
+  font-size: var(--text-label);
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  line-height: 1.3;
 }
 
 p,

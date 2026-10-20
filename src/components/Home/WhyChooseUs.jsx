@@ -40,14 +40,14 @@ export const WhyChooseUs = () => (
 
       <div className="grid items-start gap-8 lg:grid-cols-[0.92fr_1.08fr]">
         <div className="pt-2">
-          <h2 className="max-w-[700px] text-[3.2rem] font-black leading-[0.86] tracking-[-0.07em] text-[var(--ink)] md:text-[5.8rem] md:tracking-[-0.075em]">
+          <h2 className="heading-section max-w-[700px] text-[var(--ink)]">
             BUILT FOR
             <span className="mt-1 block">BUSINESSES</span>
             <span className="mt-1 block">THAT WANT TO</span>
             <span className="mt-1 block text-[var(--accent)]">STAND OUT.</span>
           </h2>
 
-          <p className="mt-8 max-w-[480px] text-[1.05rem] leading-relaxed text-[var(--ink-soft)] md:text-[1.25rem]">
+          <p className="text-body-lg mt-8 max-w-[480px] text-[var(--ink-soft)]">
             You get a strategic partner and a tailored online presence, not a rushed template.
           </p>
         </div>

@@ -26,7 +26,7 @@ export const Reviews = () => (
 
       <div className="grid items-start gap-8 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="pt-2">
-          <h2 className="max-w-[560px] text-[3.2rem] font-black leading-[0.86] tracking-[-0.07em] text-[var(--ink)] md:text-[5.4rem] md:tracking-[-0.075em]">
+          <h2 className="heading-section max-w-[560px] text-[var(--ink)]">
             OWNERS WHO
             <span className="mt-1 block">STOPPED</span>
             <span className="mt-1 block">WORRYING</span>
@@ -34,7 +34,7 @@ export const Reviews = () => (
             <span className="mt-1 block">WEBSITE.</span>
           </h2>
 
-          <p className="mt-8 max-w-[500px] text-[1.05rem] leading-relaxed text-[var(--ink-soft)] md:text-[1.18rem]">
+          <p className="text-body-lg mt-8 max-w-[500px] text-[var(--ink-soft)]">
             Real feedback from real business owners.
             <br />
             Built to make an impact.

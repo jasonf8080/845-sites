@@ -455,12 +455,12 @@ export const DashboardPage = () => {
               Website in Progress
             </div>
 
-            <h1 className="text-[3rem] font-black leading-[0.82] tracking-[-0.08em] text-[#f4efe9] sm:text-[4.5rem] lg:text-[5.5rem]">
+            <h1 className="heading-page text-[#f4efe9]">
               YOUR WEBSITE
               <span className="block">IS ON THE WAY</span>
             </h1>
 
-            <p className="mt-4 max-w-[520px] text-[1.02rem] leading-relaxed text-[#d7d0c9] sm:text-[1.12rem]">
+            <p className="text-body-lg mt-4 max-w-[520px] text-[#d7d0c9]">
               Thanks for your submission! We&apos;re building your website and will notify you as soon as it&apos;s ready for your review.
             </p>
           </div>
@@ -560,10 +560,10 @@ export const DashboardPage = () => {
     <div className="rounded-[24px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 sm:p-5 lg:p-6">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <h1 className="text-[2.4rem] font-black leading-[0.9] tracking-[-0.08em] text-[#f4efe9] sm:text-[3rem] md:text-[3.8rem]">
-            Welcome back, {greetingFirstName}
+          <h1 className="heading-page text-[#f4efe9]">
+            WELCOME BACK, {greetingFirstName.toUpperCase()}
           </h1>
-          <p className="mt-3 text-base text-[#d7d0c9] sm:text-[1.1rem]">
+          <p className="text-body-lg mt-3 text-[#d7d0c9]">
             Here&apos;s an overview of your website and account.
           </p>
         </div>

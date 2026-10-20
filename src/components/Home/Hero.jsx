@@ -34,35 +34,29 @@ export const Hero = () => (
       backgroundPosition: 'center center',
     }}
   >
-    <div className="pointer-events-none absolute inset-0">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(166,122,86,0.18),transparent_18%),radial-gradient(circle_at_70%_60%,rgba(255,255,255,0.05),transparent_18%)]" />
-      <div className="absolute -left-[10%] top-[8%] h-[72%] w-[72%] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.04),rgba(255,255,255,0.01)_30%,transparent_68%)] blur-3xl" />
-      <div className="absolute right-[8%] top-[18%] h-[50%] w-[50%] rounded-full border border-white/10" />
-      <div className="absolute right-[11%] top-[21%] h-[42%] w-[42%] rounded-full border border-white/8" />
-      <div className="absolute right-[10%] top-[18%] h-[52%] w-[52%] rounded-full border border-white/8" />
-    </div>
+    
 
     <div className="relative mx-auto max-w-[1500px]">
       <div className="flex min-h-[calc(100vh-120px)] flex-col justify-between">
         <div className="relative z-10 pt-4 xl:pt-8">
           <div className="grid items-start gap-8 xl:grid-cols-[1.2fr_0.8fr]">
             <div className="max-w-[820px]">
-              <div className="mb-5 flex items-center gap-4 text-[0.68rem] font-medium uppercase tracking-[0.24em] text-[#d8d1c9] md:text-[0.72rem]">
+              <div className="text-eyebrow mb-5 flex items-center gap-4 text-[#d8d1c9]">
                 <span>Websites for real businesses</span>
                 <span className="h-px flex-1 bg-white/15" />
               </div>
 
-              <h1 className="text-[2.9rem] font-black leading-[0.82] tracking-[-0.07em] text-white sm:text-[4rem] lg:text-[7.5rem] xl:text-[9rem]">
+              <h1 className="heading-hero text-white">
                 <span className="block">LOCAL</span>
                 <span className="block text-white">BUSINESSES</span>
                 <span className="block text-[#d7d0c9]">BIGGER</span>
               </h1>
 
-              <p className="mt-6 text-[1.15rem] font-medium leading-[1.35] text-white md:text-[1.65rem] md:leading-[1.25]">
+              <p className="text-lead mt-6 font-medium text-white">
                 Modern websites, built for growth.
               </p>
 
-              <p className="mt-4 max-w-[620px] text-[1.06rem] leading-[1.5] text-[#d7d0c9] md:text-[1.2rem]">
+              <p className="text-body-lg mt-4 max-w-[620px] text-[#d7d0c9]">
                 We help Hudson Valley businesses stand out online with custom websites, local SEO, and modern design — so you can get more customers and focus on what you do best.
               </p>
 
