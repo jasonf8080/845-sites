@@ -65,7 +65,7 @@ export const SubmissionDetailPage = () => {
 
   if (loading || isLoadingSubmission) {
     return (
-      <div className="flex min-h-[50vh] items-center justify-center px-6 py-16 text-sm font-medium text-[#5d5c57]">
+      <div className="flex min-h-[50vh] items-center justify-center px-6 py-16 text-sm font-medium text-[var(--text-soft)]">
         Loading submission...
       </div>
     )
@@ -102,26 +102,26 @@ export const SubmissionDetailPage = () => {
 
   const statusTone =
     submission.status === 'New'
-      ? 'bg-[#dfeaf8] text-[#1d5e8b]'
+      ? 'bg-[rgba(130,173,250,0.15)] text-[var(--accent)]'
       : submission.status === 'In Progress'
-        ? 'bg-[#f4e4c9] text-[#986d2d]'
-        : 'bg-[#dceee0] text-[#2a6a43]'
+        ? 'bg-[rgba(130,173,250,0.1)] text-[var(--text)]'
+        : 'bg-[rgba(136,196,160,0.16)] text-[#9fd8b7]'
 
   const statusDot =
     submission.status === 'New'
-      ? 'bg-[#1f79d8]'
+      ? 'bg-[var(--accent)]'
       : submission.status === 'In Progress'
-        ? 'bg-[#cf8f14]'
-        : 'bg-[#4ea66a]'
+        ? 'bg-[var(--accent-soft)]'
+        : 'bg-[#9fd8b7]'
 
   return (
-    <div className="min-h-screen bg-[#f2f0ee] px-4 py-6 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[var(--app-bg)] px-4 py-6 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-[1500px]">
         <div className="mb-5 flex items-center justify-between gap-4">
           <button
             type="button"
             onClick={() => navigate('/dashboard')}
-            className="inline-flex items-center gap-2 text-[0.85rem] font-medium text-[#1a1b1d]"
+            className="inline-flex items-center gap-2 text-[0.85rem] font-medium text-[var(--text)]"
           >
             <FiArrowLeft size={14} />
             Back to submissions
@@ -129,7 +129,7 @@ export const SubmissionDetailPage = () => {
 
           <button
             type="button"
-            className="inline-flex items-center gap-2 rounded-[10px] border border-[#171717] bg-[#171717] px-4 py-2.5 text-[0.82rem] font-semibold text-white"
+            className="inline-flex items-center gap-2 rounded-[10px] border border-white/15 bg-[var(--surface-raise)] px-4 py-2.5 text-[0.82rem] font-semibold text-white"
           >
             <FiDownload size={14} />
             Export
@@ -138,7 +138,7 @@ export const SubmissionDetailPage = () => {
 
         <div className="mb-4 flex items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <div className="text-[2.5rem] font-black leading-none tracking-[-0.08em] text-[#171717]">
+            <div className="text-[2.5rem] font-black leading-none tracking-[-0.08em] text-[var(--text-strong)]">
               {formatValue(submission.business, 'Business not added')}
             </div>
             <span className={`inline-flex items-center gap-2 rounded-full px-2.5 py-1 text-[0.72rem] font-semibold ${statusTone}`}>
@@ -150,14 +150,14 @@ export const SubmissionDetailPage = () => {
           <div className="flex items-center gap-3">
             <button
               type="button"
-              className="rounded-[10px] border border-[#d7d4ce] bg-[#f8f6f3] px-3 py-2 text-[0.82rem] font-medium text-[#1d1d1b]"
+              className="rounded-[10px] border border-white/15 bg-[var(--surface-2)] px-3 py-2 text-[0.82rem] font-medium text-[var(--text)]"
             >
               Mark as In Progress
             </button>
           </div>
         </div>
 
-        <div className="mb-4 flex items-center gap-2 text-[0.8rem] text-[#676661]">
+        <div className="mb-4 flex items-center gap-2 text-[0.8rem] text-[var(--text-soft)]">
           Submitted on {formatValue(submission.submitted, 'Date not added')} at {formatValue(submission.time, 'Time not added')}
         </div>
 
@@ -167,7 +167,7 @@ export const SubmissionDetailPage = () => {
               key={tab}
               type="button"
               className={`rounded-full px-3 py-2 text-[0.8rem] font-medium ${
-                index === 0 ? 'bg-[#171717] text-white' : 'bg-[#f3f1ee] text-[#5d5c57]'
+                index === 0 ? 'bg-[var(--surface-raise)] text-white' : 'bg-[var(--surface-1)] text-[var(--text-soft)]'
               }`}
             >
               {tab}
@@ -177,10 +177,10 @@ export const SubmissionDetailPage = () => {
 
         <div className="grid gap-5 xl:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]">
           <div className="space-y-5">
-            <div className="rounded-[14px] border border-[#e4dfd9] bg-[#f6f4f2] p-4">
+            <div className="rounded-[14px] border border-white/12 bg-[var(--surface-1)] p-4">
               <div className="mb-4 flex items-center justify-between">
-                <div className="text-[1.1rem] font-semibold text-[#171717]">Business Information</div>
-                <button type="button" className="inline-flex items-center gap-1 rounded-full border border-[#d8d4ce] bg-[#f8f6f2] px-2 py-1 text-[0.76rem] font-medium text-[#171717]">
+                <div className="text-[1.1rem] font-semibold text-[var(--text)]">Business Information</div>
+                <button type="button" className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-[var(--surface-2)] px-2 py-1 text-[0.76rem] font-medium text-[var(--text)]">
                   <FiEdit3 size={12} />
                   Edit
                 </button>
@@ -188,70 +188,70 @@ export const SubmissionDetailPage = () => {
 
               <div className="grid gap-4 md:grid-cols-2">
                 <div>
-                  <div className="mb-1 text-[0.7rem] uppercase tracking-[0.08em] text-[#6c6a65]">Business name</div>
-                  <div className="text-[0.96rem] font-medium text-[#171717]">{formatValue(submission.business, 'Business not added')}</div>
+                  <div className="mb-1 text-[0.7rem] uppercase tracking-[0.08em] text-[var(--text-muted)]">Business name</div>
+                  <div className="text-[0.96rem] font-medium text-[var(--text)]">{formatValue(submission.business, 'Business not added')}</div>
                 </div>
                 <div>
-                  <div className="mb-1 text-[0.7rem] uppercase tracking-[0.08em] text-[#6c6a65]">Business type</div>
-                  <div className="text-[0.96rem] font-medium text-[#171717]">{formatValue(submission.type, 'Business type not added')}</div>
+                  <div className="mb-1 text-[0.7rem] uppercase tracking-[0.08em] text-[var(--text-muted)]">Business type</div>
+                  <div className="text-[0.96rem] font-medium text-[var(--text)]">{formatValue(submission.type, 'Business type not added')}</div>
                 </div>
                 <div className="md:col-span-2">
-                  <div className="mb-1 text-[0.7rem] uppercase tracking-[0.08em] text-[#6c6a65]">Tagline / Slogan</div>
-                  <div className="text-[0.96rem] font-medium text-[#171717]">{formatValue(submission.tagline, 'Tagline not added')}</div>
+                  <div className="mb-1 text-[0.7rem] uppercase tracking-[0.08em] text-[var(--text-muted)]">Tagline / Slogan</div>
+                  <div className="text-[0.96rem] font-medium text-[var(--text)]">{formatValue(submission.tagline, 'Tagline not added')}</div>
                 </div>
                 <div className="md:col-span-2">
-                  <div className="mb-1 text-[0.7rem] uppercase tracking-[0.08em] text-[#6c6a65]">About your business</div>
-                  <p className="text-[0.9rem] leading-relaxed text-[#3f3d39]">
+                  <div className="mb-1 text-[0.7rem] uppercase tracking-[0.08em] text-[var(--text-muted)]">About your business</div>
+                  <p className="text-[0.9rem] leading-relaxed text-[var(--text-soft)]">
                     {formatValue(submission.aboutBusiness, 'About business not added')}
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="rounded-[14px] border border-[#e4dfd9] bg-[#f6f4f2] p-4">
+            <div className="rounded-[14px] border border-white/12 bg-[var(--surface-1)] p-4">
               <div className="mb-3 flex items-center justify-between">
-                <div className="text-[1.1rem] font-semibold text-[#171717]">Services &amp; Details</div>
-                <button type="button" className="inline-flex items-center gap-1 rounded-full border border-[#d8d4ce] bg-[#f8f6f2] px-2 py-1 text-[0.76rem] font-medium text-[#171717]">
+                <div className="text-[1.1rem] font-semibold text-[var(--text)]">Services &amp; Details</div>
+                <button type="button" className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-[var(--surface-2)] px-2 py-1 text-[0.76rem] font-medium text-[var(--text)]">
                   <FiEdit3 size={12} />
                   Edit
                 </button>
               </div>
               <div className="grid gap-4 md:grid-cols-2">
                 <div>
-                  <div className="mb-2 text-[0.7rem] uppercase tracking-[0.08em] text-[#6c6a65]">Main services / products</div>
-                  <p className="text-[0.9rem] text-[#36352f]">{formatValue(submission.services, 'Services not added')}</p>
+                  <div className="mb-2 text-[0.7rem] uppercase tracking-[0.08em] text-[var(--text-muted)]">Main services / products</div>
+                  <p className="text-[0.9rem] text-[var(--text-soft)]">{formatValue(submission.services, 'Services not added')}</p>
                 </div>
                 <div>
-                  <div className="mb-2 text-[0.7rem] uppercase tracking-[0.08em] text-[#6c6a65]">Service area</div>
-                  <p className="text-[0.9rem] text-[#36352f]">{formatValue(submission.city || submission.location, 'Service area not added')}</p>
-                  <div className="mt-3 flex items-center gap-2 text-[0.9rem] text-[#4a4944]">
+                  <div className="mb-2 text-[0.7rem] uppercase tracking-[0.08em] text-[var(--text-muted)]">Service area</div>
+                  <p className="text-[0.9rem] text-[var(--text-soft)]">{formatValue(submission.city || submission.location, 'Service area not added')}</p>
+                  <div className="mt-3 flex items-center gap-2 text-[0.9rem] text-[var(--text-soft)]">
                     <FiMapPin size={13} />
                     {formatValue(submission.city || submission.location, 'Location not added')}
                   </div>
                 </div>
                 <div className="md:col-span-2">
-                  <div className="mb-2 text-[0.7rem] uppercase tracking-[0.08em] text-[#6c6a65]">Featured on website</div>
-                  <p className="text-[0.9rem] text-[#36352f]">{formatValue(submission.highlight, 'Featured details not added')}</p>
+                  <div className="mb-2 text-[0.7rem] uppercase tracking-[0.08em] text-[var(--text-muted)]">Featured on website</div>
+                  <p className="text-[0.9rem] text-[var(--text-soft)]">{formatValue(submission.highlight, 'Featured details not added')}</p>
                 </div>
                 <div className="md:col-span-2">
-                  <div className="mb-2 text-[0.7rem] uppercase tracking-[0.08em] text-[#6c6a65]">Why should customers choose you?</div>
-                  <p className="text-[0.9rem] text-[#36352f]">{formatValue(submission.whyChooseYou, 'Reason not added')}</p>
+                  <div className="mb-2 text-[0.7rem] uppercase tracking-[0.08em] text-[var(--text-muted)]">Why should customers choose you?</div>
+                  <p className="text-[0.9rem] text-[var(--text-soft)]">{formatValue(submission.whyChooseYou, 'Reason not added')}</p>
                 </div>
               </div>
             </div>
 
-            <div className="rounded-[14px] border border-[#e4dfd9] bg-[#f6f4f2] p-4">
+            <div className="rounded-[14px] border border-white/12 bg-[var(--surface-1)] p-4">
               <div className="mb-3 flex items-center justify-between">
-                <div className="text-[1.1rem] font-semibold text-[#171717]">Content &amp; Media</div>
-                <button type="button" className="inline-flex items-center gap-1 rounded-full border border-[#d8d4ce] bg-[#f8f6f2] px-2 py-1 text-[0.76rem] font-medium text-[#171717]">
+                <div className="text-[1.1rem] font-semibold text-[var(--text)]">Content &amp; Media</div>
+                <button type="button" className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-[var(--surface-2)] px-2 py-1 text-[0.76rem] font-medium text-[var(--text)]">
                   <FiEdit3 size={12} />
                   Edit
                 </button>
               </div>
 
               {submission.logo?.dataUrl && (
-                <div className="mb-4 rounded-[12px] border border-[#e1ddd6] bg-white p-3">
-                  <div className="mb-2 text-[0.7rem] uppercase tracking-[0.08em] text-[#6c6a65]">Uploaded logo</div>
+                <div className="mb-4 rounded-[12px] border border-white/12 bg-[var(--surface-2)] p-3">
+                  <div className="mb-2 text-[0.7rem] uppercase tracking-[0.08em] text-[var(--text-muted)]">Uploaded logo</div>
                   <img src={submission.logo.dataUrl} alt="Business logo preview" className="mx-auto max-h-24 w-auto object-contain" />
                 </div>
               )}
@@ -259,12 +259,12 @@ export const SubmissionDetailPage = () => {
               {Array.isArray(submission.photos) && submission.photos.length > 0 ? (
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-5">
                   {submission.photos.slice(0, 10).map((photo, index) => (
-                    <div key={`${photo.name || 'photo'}-${index}`} className="overflow-hidden rounded-[10px] border border-[#e1ddd6] bg-[#f2f0ee]">
+                    <div key={`${photo.name || 'photo'}-${index}`} className="overflow-hidden rounded-[10px] border border-white/12 bg-[var(--surface-0)]">
                       <img src={photo.dataUrl || photo.url || photo} alt={`Project upload ${index + 1}`} className="h-20 w-full object-cover" />
                     </div>
                   ))}
                   {submission.photos.length > 10 && (
-                    <div className="flex h-20 items-center justify-center rounded-[10px] border border-dashed border-[#d0c9c3] bg-[#f3f1ee] text-[0.8rem] font-medium text-[#5d5c57]">
+                    <div className="flex h-20 items-center justify-center rounded-[10px] border border-dashed border-white/20 bg-[var(--surface-2)] text-[0.8rem] font-medium text-[var(--text-soft)]">
                       +{submission.photos.length - 10} photos
                     </div>
                   )}
@@ -272,11 +272,11 @@ export const SubmissionDetailPage = () => {
               ) : (
                 <div className="grid grid-cols-5 gap-3">
                   {[1,2,3,4,5].map((item) => (
-                    <div key={item} className="flex h-20 items-center justify-center overflow-hidden rounded-[10px] border border-[#e1ddd6] bg-[linear-gradient(135deg,#f7dfe6,#e4d7cf)] text-[0.7rem] font-semibold text-[#3d3c39]">
+                    <div key={item} className="flex h-20 items-center justify-center overflow-hidden rounded-[10px] border border-white/12 bg-[var(--surface-2)] text-[0.7rem] font-semibold text-[var(--text-soft)]">
                       <FiImage size={22} />
                     </div>
                   ))}
-                  <div className="flex h-20 items-center justify-center rounded-[10px] border border-dashed border-[#d0c9c3] bg-[#f3f1ee] text-[0.8rem] font-medium text-[#5d5c57]">
+                  <div className="flex h-20 items-center justify-center rounded-[10px] border border-dashed border-white/20 bg-[var(--surface-2)] text-[0.8rem] font-medium text-[var(--text-soft)]">
                     + 8 photos
                   </div>
                 </div>
@@ -285,41 +285,41 @@ export const SubmissionDetailPage = () => {
           </div>
 
           <div className="space-y-5">
-            <div className="rounded-[14px] border border-[#e4dfd9] bg-[#f6f4f2] p-4">
+            <div className="rounded-[14px] border border-white/12 bg-[var(--surface-1)] p-4">
               <div className="mb-3 flex items-center justify-between">
-                <div className="text-[1.1rem] font-semibold text-[#171717]">Contact &amp; Location</div>
-                <button type="button" className="inline-flex items-center gap-1 rounded-full border border-[#d8d4ce] bg-[#f8f6f2] px-2 py-1 text-[0.76rem] font-medium text-[#171717]">
+                <div className="text-[1.1rem] font-semibold text-[var(--text)]">Contact &amp; Location</div>
+                <button type="button" className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-[var(--surface-2)] px-2 py-1 text-[0.76rem] font-medium text-[var(--text)]">
                   <FiEdit3 size={12} />
                   Edit
                 </button>
               </div>
 
-              <div className="space-y-3 text-[0.88rem] text-[#474540]">
+              <div className="space-y-3 text-[0.88rem] text-[var(--text-soft)]">
                 <div className="flex items-start justify-between gap-3">
-                  <span className="text-[#676661]">Phone number</span>
-                  <span className="font-medium text-[#171717]">{formatValue(submission.phone, 'Phone not added')}</span>
+                  <span className="text-[var(--text-muted)]">Phone number</span>
+                  <span className="font-medium text-[var(--text)]">{formatValue(submission.phone, 'Phone not added')}</span>
                 </div>
                 <div className="flex items-start justify-between gap-3">
-                  <span className="text-[#676661]">Business email</span>
-                  <span className="font-medium text-[#171717]">{formatValue(submission.email, 'Email not added')}</span>
+                  <span className="text-[var(--text-muted)]">Business email</span>
+                  <span className="font-medium text-[var(--text)]">{formatValue(submission.email, 'Email not added')}</span>
                 </div>
                 <div className="flex items-start justify-between gap-3">
-                  <span className="text-[#676661]">Address</span>
-                  <span className="font-medium text-[#171717] text-right">{formatValue(submission.address, 'Address not added')}</span>
+                  <span className="text-[var(--text-muted)]">Address</span>
+                  <span className="font-medium text-[var(--text)] text-right">{formatValue(submission.address, 'Address not added')}</span>
                 </div>
                 <div className="flex items-start justify-between gap-3">
-                  <span className="text-[#676661]">Business hours</span>
-                  <span className="font-medium text-[#171717] text-right">{formatValue(submission.hours, 'Hours not added')}</span>
+                  <span className="text-[var(--text-muted)]">Business hours</span>
+                  <span className="font-medium text-[var(--text)] text-right">{formatValue(submission.hours, 'Hours not added')}</span>
                 </div>
               </div>
             </div>
 
-            <div className="rounded-[14px] border border-[#e4dfd9] bg-[#f6f4f2] p-4">
+            <div className="rounded-[14px] border border-white/12 bg-[var(--surface-1)] p-4">
               <div className="mb-3 flex items-center justify-between">
-                <div className="text-[1.1rem] font-semibold text-[#171717]">Social media</div>
+                <div className="text-[1.1rem] font-semibold text-[var(--text)]">Social media</div>
               </div>
 
-              <div className="space-y-2 text-[0.82rem] text-[#4a4944]">
+              <div className="space-y-2 text-[0.82rem] text-[var(--text-soft)]">
                 <div className="flex items-center gap-2"><FiGlobe size={14} /> https://instagram.com/mandysnails</div>
                 <div className="flex items-center gap-2"><FiFacebook size={14} /> https://facebook.com/mandysnails</div>
                 <div className="flex items-center gap-2"><FiLink size={14} /> https://tiktok.com/@mandysnails</div>
@@ -327,23 +327,23 @@ export const SubmissionDetailPage = () => {
               </div>
             </div>
 
-            <div className="rounded-[14px] border border-[#e4dfd9] bg-[#f6f4f2] p-4">
+            <div className="rounded-[14px] border border-white/12 bg-[var(--surface-1)] p-4">
               <div className="mb-3 flex items-center justify-between">
-                <div className="text-[1.1rem] font-semibold text-[#171717]">Design &amp; Style</div>
-                <button type="button" className="inline-flex items-center gap-1 rounded-full border border-[#d8d4ce] bg-[#f8f6f2] px-2 py-1 text-[0.76rem] font-medium text-[#171717]">
+                <div className="text-[1.1rem] font-semibold text-[var(--text)]">Design &amp; Style</div>
+                <button type="button" className="inline-flex items-center gap-1 rounded-full border border-white/15 bg-[var(--surface-2)] px-2 py-1 text-[0.76rem] font-medium text-[var(--text)]">
                   <FiEdit3 size={12} />
                   Edit
                 </button>
               </div>
 
-              <div className="space-y-3 text-[0.9rem] text-[#2e2d2a]">
+              <div className="space-y-3 text-[0.9rem] text-[var(--text-soft)]">
                 <div className="flex flex-wrap gap-2">
                   {submission.designStyle ? (
-                    <span className="rounded-full border border-[#d6d2cc] bg-white px-2.5 py-1 text-[0.72rem]">
+                    <span className="rounded-full border border-white/15 bg-[var(--surface-2)] px-2.5 py-1 text-[0.72rem]">
                       {submission.designStyle}
                     </span>
                   ) : (
-                    <span className="rounded-full border border-[#d6d2cc] bg-white px-2.5 py-1 text-[0.72rem] text-[#5d5c57]">
+                    <span className="rounded-full border border-white/15 bg-[var(--surface-2)] px-2.5 py-1 text-[0.72rem] text-[var(--text-soft)]">
                       No style selected
                     </span>
                   )}
@@ -351,11 +351,11 @@ export const SubmissionDetailPage = () => {
               </div>
             </div>
 
-            <div className="rounded-[14px] border border-[#e4dfd9] bg-[#f6f4f2] p-4">
+            <div className="rounded-[14px] border border-white/12 bg-[var(--surface-1)] p-4">
               <div className="mb-3 flex items-center justify-between">
-                <div className="text-[1.1rem] font-semibold text-[#171717]">Additional notes</div>
+                <div className="text-[1.1rem] font-semibold text-[var(--text)]">Additional notes</div>
               </div>
-              <p className="text-[0.9rem] text-[#36352f]">{formatValue(submission.notes || submission.additionalNotes, 'No additional notes added')}</p>
+              <p className="text-[0.9rem] text-[var(--text-soft)]">{formatValue(submission.notes || submission.additionalNotes, 'No additional notes added')}</p>
             </div>
           </div>
         </div>

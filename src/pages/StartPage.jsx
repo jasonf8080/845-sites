@@ -236,7 +236,7 @@ export const StartPage = () => {
         .map((part) => part[0]?.toUpperCase() || '')
         .join('')
         .slice(0, 2) || 'NS',
-      avatarBg: 'bg-[#f1e2d7]',
+      avatarBg: 'bg-[var(--accent-subtle)]',
       phone,
       email,
       address,
@@ -270,11 +270,11 @@ export const StartPage = () => {
     <>
       <div className="mt-8 grid gap-5 md:grid-cols-2">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
-            Business name <span className="text-[#e9a272]">*</span>
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
+            Business name <span className="text-[var(--accent-soft)]">*</span>
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[var(--text-soft)]">
               ▣
             </span>
             <input
@@ -288,30 +288,30 @@ export const StartPage = () => {
         </div>
 
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
-            Business type / Industry <span className="text-[#e9a272]">*</span>
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
+            Business type / Industry <span className="text-[var(--accent-soft)]">*</span>
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[var(--text-soft)]">
               ▣
             </span>
             <select
               name="businessType"
               value={formData.businessType}
               onChange={(event) => updateFormData('businessType', event.target.value)}
-              className="warm-field appearance-none py-4 pl-11 pr-10 text-[1.03rem] text-[#f4efe9]"
+              className="warm-field appearance-none py-4 pl-11 pr-10 text-[1.03rem] text-[var(--text)]"
               defaultValue=""
             >
-              <option value="" disabled className="bg-[#201d1b] text-[#f4efe9]">
+              <option value="" disabled className="bg-[var(--app-bg-strong)] text-[var(--text)]">
                 Select an industry
               </option>
-              <option value="restaurant" className="bg-[#201d1b] text-[#f4efe9]">Restaurant</option>
-              <option value="retail" className="bg-[#201d1b] text-[#f4efe9]">Retail</option>
-              <option value="service" className="bg-[#201d1b] text-[#f4efe9]">Service</option>
-              <option value="healthcare" className="bg-[#201d1b] text-[#f4efe9]">Healthcare</option>
-              <option value="professional" className="bg-[#201d1b] text-[#f4efe9]">Professional</option>
+              <option value="restaurant" className="bg-[var(--app-bg-strong)] text-[var(--text)]">Restaurant</option>
+              <option value="retail" className="bg-[var(--app-bg-strong)] text-[var(--text)]">Retail</option>
+              <option value="service" className="bg-[var(--app-bg-strong)] text-[var(--text)]">Service</option>
+              <option value="healthcare" className="bg-[var(--app-bg-strong)] text-[var(--text)]">Healthcare</option>
+              <option value="professional" className="bg-[var(--app-bg-strong)] text-[var(--text)]">Professional</option>
             </select>
-            <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-lg text-[#d7d0c9]">
+            <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-lg text-[var(--text-soft)]">
               ▾
             </span>
           </div>
@@ -320,11 +320,11 @@ export const StartPage = () => {
 
       <div className="mt-5 grid gap-5 md:grid-cols-2">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
             Tagline / Slogan
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[var(--text-soft)]">
               ✦
             </span>
             <input
@@ -338,11 +338,11 @@ export const StartPage = () => {
         </div>
 
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
             Current website (if any)
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[var(--text-soft)]">
               🔗
             </span>
             <input
@@ -354,11 +354,11 @@ export const StartPage = () => {
       </div>
 
       <div className="mt-5">
-        <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
-          About your business <span className="text-[#e9a272]">*</span>
+        <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
+          About your business <span className="text-[var(--accent-soft)]">*</span>
         </label>
         <div className="relative">
-          <span className="pointer-events-none absolute left-4 top-4 text-[1.12rem] text-[#d7d0c9]">
+          <span className="pointer-events-none absolute left-4 top-4 text-[1.12rem] text-[var(--text-soft)]">
             ▣
           </span>
           <textarea
@@ -369,7 +369,7 @@ export const StartPage = () => {
             placeholder="Tell us about your company — who you are, when you started, what you do, and your mission."
           />
         </div>
-        <div className="mt-2 text-right text-[0.78rem] text-[#d7d0c9]">0/500</div>
+        <div className="mt-2 text-right text-[0.78rem] text-[var(--text-soft)]">0/500</div>
       </div>
     </>
   )
@@ -378,11 +378,11 @@ export const StartPage = () => {
     <>
       <div className="mt-8 space-y-8">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
-            What services or products do you offer? <span className="text-[#e9a272]">*</span>
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
+            What services or products do you offer? <span className="text-[var(--accent-soft)]">*</span>
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-4 text-[1.2rem] text-[#d7d0c9]">
+            <span className="pointer-events-none absolute left-4 top-4 text-[1.2rem] text-[var(--text-soft)]">
               ✎
             </span>
             <textarea
@@ -393,16 +393,16 @@ export const StartPage = () => {
               placeholder="List your main services or products. Example: interior painting, roofing, counters, catering, coffee & pastries, etc."
             />
           </div>
-          <div className="mt-2 text-right text-[0.78rem] text-[#d7d0c9]">0/500</div>
+          <div className="mt-2 text-right text-[0.78rem] text-[var(--text-soft)]">0/500</div>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-2">
           <div>
-            <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+            <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
               Is there anything specific you want featured prominently on the website?
             </label>
             <div className="relative">
-              <span className="pointer-events-none absolute left-4 top-4 text-[1.2rem] text-[#d7d0c9]">
+              <span className="pointer-events-none absolute left-4 top-4 text-[1.2rem] text-[var(--text-soft)]">
                 ✦
               </span>
               <textarea
@@ -413,15 +413,15 @@ export const StartPage = () => {
                 placeholder="Example: a particular service, special offer, online ordering, free estimates, reservations, your phone number, etc."
               />
             </div>
-            <div className="mt-2 text-right text-[0.78rem] text-[#d7d0c9]">0/500</div>
+            <div className="mt-2 text-right text-[0.78rem] text-[var(--text-soft)]">0/500</div>
           </div>
 
           <div>
-            <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+            <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
               Why should customers choose you?
             </label>
             <div className="relative">
-              <span className="pointer-events-none absolute left-4 top-4 text-[1.2rem] text-[#d7d0c9]">
+              <span className="pointer-events-none absolute left-4 top-4 text-[1.2rem] text-[var(--text-soft)]">
                 ❤
               </span>
               <textarea
@@ -432,7 +432,7 @@ export const StartPage = () => {
                 placeholder="Share what makes you unique..."
               />
             </div>
-            <div className="mt-2 text-right text-[0.78rem] text-[#d7d0c9]">0/500</div>
+            <div className="mt-2 text-right text-[0.78rem] text-[var(--text-soft)]">0/500</div>
           </div>
         </div>
 
@@ -556,12 +556,12 @@ export const StartPage = () => {
   const selectedColorPalette = colorPalettes.find((palette) => palette.label === formData.websiteColors) || null
 
   const renderDesignStyle = () => (
-    <div className="mt-8 space-y-8 text-[#f4efe9]">
+    <div className="mt-8 space-y-8 text-[var(--text)]">
       <div>
-        <h3 className="mb-2 text-[1.05rem] font-medium text-[#f4efe9]">
-          WHAT KIND OF LOOK DO YOU WANT FOR YOUR WEBSITE? <span className="text-[#e9a272]">*</span>
+        <h3 className="mb-2 text-[1.05rem] font-medium text-[var(--text)]">
+          WHAT KIND OF LOOK DO YOU WANT FOR YOUR WEBSITE? <span className="text-[var(--accent-soft)]">*</span>
         </h3>
-        <p className="mb-4 text-[0.98rem] text-[#d7d0c9]">
+        <p className="mb-4 text-[0.98rem] text-[var(--text-soft)]">
           Select the style that feels closest to your brand.
         </p>
 
@@ -577,8 +577,8 @@ export const StartPage = () => {
                 className={`warm-option flex min-h-[112px] w-full items-start justify-between p-4 text-left transition ${isSelected ? 'is-selected' : ''}`}
               >
                 <div className="flex-1 pr-4">
-                  <div className="text-[1.1rem] font-bold leading-tight tracking-[-0.04em] text-[#f7f4f1]">{option.label}</div>
-                  <div className="mt-2 text-[0.92rem] leading-relaxed text-[#d7d0c9]">{option.description}</div>
+                  <div className="text-[1.1rem] font-bold leading-tight tracking-[-0.04em] text-[var(--text-strong)]">{option.label}</div>
+                  <div className="mt-2 text-[0.92rem] leading-relaxed text-[var(--text-soft)]">{option.description}</div>
                 </div>
                 <span className="warm-radio mt-1 shrink-0" aria-hidden="true" />
               </button>
@@ -590,15 +590,15 @@ export const StartPage = () => {
       <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-5">
         <div className="mb-3 flex items-center justify-between gap-3">
           <div>
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[#d7d0c9]">Selected style</p>
-            <h4 className="mt-1 text-[2.4rem] font-black leading-none tracking-[-0.07em] text-[#f7f4f1]">{selectedDesignOption.label.toUpperCase()}</h4>
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--text-soft)]">Selected style</p>
+            <h4 className="mt-1 text-[2.4rem] font-black leading-none tracking-[-0.07em] text-[var(--text-strong)]">{selectedDesignOption.label.toUpperCase()}</h4>
           </div>
-          <span className="inline-flex items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1.5 text-[0.78rem] font-medium text-[#f7f4f1]">
+          <span className="inline-flex items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1.5 text-[0.78rem] font-medium text-[var(--text-strong)]">
             4 options
           </span>
         </div>
 
-        <p className="mb-5 text-[1.02rem] leading-relaxed text-[#d7d0c9]">
+        <p className="mb-5 text-[1.02rem] leading-relaxed text-[var(--text-soft)]">
           Here are a few variations of the {selectedDesignOption.label.toLowerCase()} style. You can choose one, and we&apos;ll customize it for your business.
         </p>
 
@@ -622,9 +622,9 @@ export const StartPage = () => {
               <div className="p-3">
                 <div className="flex items-center gap-2">
                   <span className="h-4 w-4 rounded-full border border-white/25 bg-transparent" />
-                  <span className="text-[0.98rem] font-semibold text-[#f7f4f1]">{preview.name}</span>
+                  <span className="text-[0.98rem] font-semibold text-[var(--text-strong)]">{preview.name}</span>
                 </div>
-                <p className="mt-2 text-[0.9rem] leading-relaxed text-[#d7d0c9]">{preview.blurb}</p>
+                <p className="mt-2 text-[0.9rem] leading-relaxed text-[var(--text-soft)]">{preview.blurb}</p>
               </div>
             </div>
           ))}
@@ -633,26 +633,26 @@ export const StartPage = () => {
 
       <div className="space-y-8">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
             Are there any websites you like the look of?
           </label>
-          <p className="mb-3 text-[0.98rem] text-[#d7d0c9]">
+          <p className="mb-3 text-[0.98rem] text-[var(--text-soft)]">
             Paste links to any websites you like. They don&apos;t have to be businesses similar to yours.
           </p>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.12rem] text-[#d7d0c9]">🔗</span>
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.12rem] text-[var(--text-soft)]">🔗</span>
             <input className="warm-field py-4 pl-11 pr-4 text-[1.03rem]" placeholder="https://..." />
           </div>
-          <button type="button" className="mt-4 inline-flex items-center gap-2 text-[1rem] font-medium text-[#f4efe9]">
+          <button type="button" className="mt-4 inline-flex items-center gap-2 text-[1rem] font-medium text-[var(--text)]">
             <span className="text-xl">＋</span> Add another link
           </button>
         </div>
 
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
             What colors would you like on your website?
           </label>
-          <p className="mb-3 text-[0.98rem] text-[#d7d0c9]">
+          <p className="mb-3 text-[0.98rem] text-[var(--text-soft)]">
             Choose a palette that feels close to your brand. We&apos;ll customize the exact colors for you.
           </p>
 
@@ -667,7 +667,7 @@ export const StartPage = () => {
                   onClick={() => updateFormData('websiteColors', palette.label)}
                   className={`rounded-[16px] border p-3 text-left transition ${
                     isSelected
-                      ? 'border-[#d97a49] bg-[rgba(255,255,255,0.06)] shadow-[0_0_0_1px_rgba(217,122,73,0.18)]'
+                      ? 'border-[var(--accent)] bg-[rgba(255,255,255,0.06)] shadow-[0_0_0_1px_rgba(217,122,73,0.18)]'
                       : 'border-white/10 bg-[rgba(255,255,255,0.03)] hover:border-white/20'
                   }`}
                 >
@@ -682,7 +682,7 @@ export const StartPage = () => {
                   </div>
 
                   <div className="mt-3 flex items-center justify-between gap-3">
-                    <span className="text-[1.1rem] font-semibold text-[#f7f4f1]">{palette.label}</span>
+                    <span className="text-[1.1rem] font-semibold text-[var(--text-strong)]">{palette.label}</span>
                     <span className={`warm-radio ${isSelected ? 'is-selected' : ''}`} aria-hidden="true" />
                   </div>
                 </button>
@@ -693,8 +693,8 @@ export const StartPage = () => {
           <button
             type="button"
             onClick={() => updateFormData('websiteColors', '')}
-            className={`mt-4 inline-flex items-center gap-3 rounded-[14px] border px-4 py-3 text-left text-[1rem] font-medium text-[#f4efe9] transition ${
-              !selectedColorPalette ? 'border-[#d97a49] bg-[rgba(255,255,255,0.06)]' : 'border-white/10 bg-transparent'
+            className={`mt-4 inline-flex items-center gap-3 rounded-[14px] border px-4 py-3 text-left text-[1rem] font-medium text-[var(--text)] transition ${
+              !selectedColorPalette ? 'border-[var(--accent)] bg-[rgba(255,255,255,0.06)]' : 'border-white/10 bg-transparent'
             }`}
           >
             <span className={`warm-radio ${!selectedColorPalette ? 'is-selected' : ''}`} aria-hidden="true" />
@@ -709,10 +709,10 @@ export const StartPage = () => {
     <div className="mt-8 space-y-8">
       <div className="grid gap-6 lg:grid-cols-2">
         <div>
-          <h3 className="mb-2 text-[1.05rem] font-medium text-[#f4efe9]">
+          <h3 className="mb-2 text-[1.05rem] font-medium text-[var(--text)]">
             Upload Photos for Your Website
           </h3>
-          <p className="mb-4 text-[0.98rem] text-[#d7d0c9]">
+          <p className="mb-4 text-[0.98rem] text-[var(--text-soft)]">
             Upload photos of your work, products, team, storefront, restaurant completed projects, or anything else you&apos;d like us to use. Don&apos;t worry about choosing where each photo should go — we&apos;ll handle that.
           </p>
 
@@ -727,40 +727,40 @@ export const StartPage = () => {
 
           <label
             htmlFor="project-photo-upload"
-            className="flex min-h-[180px] cursor-pointer flex-col items-center justify-center rounded-[18px] border-2 border-dashed border-white/15 bg-[rgba(255,255,255,0.03)] px-4 py-6 text-center transition hover:border-[#d97a49] hover:bg-[rgba(255,255,255,0.05)]"
+            className="flex min-h-[180px] cursor-pointer flex-col items-center justify-center rounded-[18px] border-2 border-dashed border-white/15 bg-[rgba(255,255,255,0.03)] px-4 py-6 text-center transition hover:border-[var(--accent)] hover:bg-[rgba(255,255,255,0.05)]"
           >
-            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] text-[1.75rem] text-[#f4efe9]">
+            <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] text-[1.75rem] text-[var(--text)]">
               ⤴
             </div>
-            <p className="text-[1.1rem] font-medium text-[#f4efe9]">Drag and drop photos here</p>
-            <p className="mt-1 text-[0.95rem] text-[#d7d0c9]">or click to upload</p>
+            <p className="text-[1.1rem] font-medium text-[var(--text)]">Drag and drop photos here</p>
+            <p className="mt-1 text-[0.95rem] text-[var(--text-soft)]">or click to upload</p>
           </label>
 
           {formData.uploadedPhotos?.length > 0 && (
             <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
               {formData.uploadedPhotos.slice(0, 6).map((photo, index) => (
-                <div key={`${photo.name}-${index}`} className="overflow-hidden rounded-[12px] border border-white/10 bg-[#201d1b]">
+                <div key={`${photo.name}-${index}`} className="overflow-hidden rounded-[12px] border border-white/10 bg-[var(--app-bg-strong)]">
                   <img src={photo.dataUrl} alt={`Uploaded project preview ${index + 1}`} className="h-24 w-full object-cover" />
                 </div>
               ))}
               {formData.uploadedPhotos.length > 6 && (
-                <div className="flex h-24 items-center justify-center rounded-[12px] border border-dashed border-white/15 bg-[rgba(255,255,255,0.03)] text-[0.8rem] font-medium text-[#d7d0c9]">
+                <div className="flex h-24 items-center justify-center rounded-[12px] border border-dashed border-white/15 bg-[rgba(255,255,255,0.03)] text-[0.8rem] font-medium text-[var(--text-soft)]">
                   +{formData.uploadedPhotos.length - 6} more
                 </div>
               )}
             </div>
           )}
 
-          <p className="mt-3 text-[0.94rem] text-[#d7d0c9]">
+          <p className="mt-3 text-[0.94rem] text-[var(--text-soft)]">
             You can upload multiple photos (JPG, PNG, WebP).
           </p>
         </div>
 
         <div>
-          <h3 className="mb-2 text-[1.05rem] font-medium text-[#f4efe9]">
-            Do you already have a logo? <span className="text-[#e9a272]">*</span>
+          <h3 className="mb-2 text-[1.05rem] font-medium text-[var(--text)]">
+            Do you already have a logo? <span className="text-[var(--accent-soft)]">*</span>
           </h3>
-          <p className="mb-4 text-[0.98rem] text-[#d7d0c9]">
+          <p className="mb-4 text-[0.98rem] text-[var(--text-soft)]">
             If yes, please upload it. If no, we can use text or create a simple logo for you.
           </p>
 
@@ -776,7 +776,7 @@ export const StartPage = () => {
                 className={`warm-option flex w-full items-start gap-3 p-3 text-left ${formData.hasLogo === option.value ? 'is-selected' : ''}`}
               >
                 <span className="warm-radio mt-0.5" aria-hidden="true" />
-                <span className="flex-1 text-[1rem] text-[#f4efe9]">{option.label}</span>
+                <span className="flex-1 text-[1rem] text-[var(--text)]">{option.label}</span>
               </button>
             ))}
           </div>
@@ -785,13 +785,13 @@ export const StartPage = () => {
             <div className="mt-4 space-y-3 rounded-[14px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-3">
               <input id="brand-logo-upload" type="file" accept="image/*" onChange={handleLogoUpload} className="hidden" />
               <label htmlFor="brand-logo-upload" className="flex cursor-pointer items-center gap-3 rounded-[10px] border border-dashed border-white/15 bg-[rgba(255,255,255,0.03)] p-3">
-                <span className="text-[1.15rem] text-[#f4efe9]">⇪</span>
-                <span className="text-[1rem] text-[#f4efe9]">Upload logo</span>
+                <span className="text-[1.15rem] text-[var(--text)]">⇪</span>
+                <span className="text-[1rem] text-[var(--text)]">Upload logo</span>
               </label>
-              <p className="text-[0.9rem] text-[#d7d0c9]">PNG, JPG, or SVG</p>
+              <p className="text-[0.9rem] text-[var(--text-soft)]">PNG, JPG, or SVG</p>
 
               {formData.logo?.dataUrl && (
-                <div className="overflow-hidden rounded-[12px] border border-white/10 bg-[#201d1b] p-3">
+                <div className="overflow-hidden rounded-[12px] border border-white/10 bg-[var(--app-bg-strong)] p-3">
                   <img src={formData.logo.dataUrl} alt="Uploaded brand logo" className="mx-auto max-h-28 w-auto object-contain" />
                 </div>
               )}
@@ -801,15 +801,15 @@ export const StartPage = () => {
       </div>
 
       <div>
-        <h3 className="mb-2 text-[1.05rem] font-medium text-[#f4efe9]">
+        <h3 className="mb-2 text-[1.05rem] font-medium text-[var(--text)]">
           Customer Reviews / Testimonials
         </h3>
-        <p className="mb-4 text-[0.98rem] text-[#d7d0c9]">
+        <p className="mb-4 text-[0.98rem] text-[var(--text-soft)]">
           Paste any reviews or testimonials you&apos;d like featured on your website. You can also leave this blank.
         </p>
 
         <div className="relative">
-          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.2rem] text-[#d7d0c9]">
+          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.2rem] text-[var(--text-soft)]">
             ◌
           </span>
           <input className="warm-field py-4 pl-11 pr-4 text-[1.03rem]" placeholder="Paste reviews or write them here..." />
@@ -818,37 +818,37 @@ export const StartPage = () => {
 
       <div className="grid gap-6 lg:grid-cols-2">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
             Are there any websites you like the look of?
           </label>
-          <p className="mb-3 text-[0.98rem] text-[#d7d0c9]">
+          <p className="mb-3 text-[0.98rem] text-[var(--text-soft)]">
             Paste links to any websites you like. They don&apos;t have to be businesses similar to yours.
           </p>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.12rem] text-[#d7d0c9]">
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.12rem] text-[var(--text-soft)]">
               🔗
             </span>
             <input className="warm-field py-4 pl-11 pr-4 text-[1.03rem]" placeholder="https://..." />
           </div>
-          <button type="button" className="mt-4 inline-flex items-center gap-2 text-[1rem] font-medium text-[#f4efe9]">
+          <button type="button" className="mt-4 inline-flex items-center gap-2 text-[1rem] font-medium text-[var(--text)]">
             <span className="text-xl">＋</span> Add another link
           </button>
         </div>
 
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
             Anything else we should know?
           </label>
-          <p className="mb-3 text-[0.98rem] text-[#d7d0c9]">
+          <p className="mb-3 text-[0.98rem] text-[var(--text-soft)]">
             Tell us anything else you&apos;d like us to consider while designing your website.
           </p>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-4 text-[1.12rem] text-[#d7d0c9]">
+            <span className="pointer-events-none absolute left-4 top-4 text-[1.12rem] text-[var(--text-soft)]">
               ✎
             </span>
             <textarea className="warm-field min-h-[110px] resize-none pl-11 pr-4 pt-4 pb-3 text-[1.03rem]" placeholder="Let us know any additional details..." />
           </div>
-          <div className="mt-2 text-right text-[0.78rem] text-[#d7d0c9]">0/1000</div>
+          <div className="mt-2 text-right text-[0.78rem] text-[var(--text-soft)]">0/1000</div>
         </div>
       </div>
     </div>
@@ -858,11 +858,11 @@ export const StartPage = () => {
     <div className="mt-8 space-y-6">
       <div className="grid gap-5 lg:grid-cols-2">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
-            Phone number <span className="text-[#e9a272]">*</span>
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
+            Phone number <span className="text-[var(--accent-soft)]">*</span>
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">◔</span>
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[var(--text-soft)]">◔</span>
             <input
               name="phone"
               value={formData.phone}
@@ -874,11 +874,11 @@ export const StartPage = () => {
         </div>
 
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
-            Business email <span className="text-[#e9a272]">*</span>
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
+            Business email <span className="text-[var(--accent-soft)]">*</span>
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">✉</span>
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[var(--text-soft)]">✉</span>
             <input
               name="email"
               value={formData.email}
@@ -892,11 +892,11 @@ export const StartPage = () => {
 
       <div className="grid gap-5 lg:grid-cols-2">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
             Business address
           </label>
           <div className="relative">
-            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[#d7d0c9]">⌖</span>
+            <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[1.08rem] text-[var(--text-soft)]">⌖</span>
             <input
               name="address"
               value={formData.address}
@@ -912,18 +912,18 @@ export const StartPage = () => {
 
       <div className="grid gap-5 lg:grid-cols-2">
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
             Business hours
           </label>
-          <p className="mb-3 text-[0.9rem] text-[#d7d0c9]">
+          <p className="mb-3 text-[0.9rem] text-[var(--text-soft)]">
             Enter your regular business hours. You can add a note if hours vary.
           </p>
 
           <div className="space-y-3">
             {formData.businessHours.map((entry) => (
               <div key={entry.day} className="flex flex-col gap-3 rounded-[14px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-3 sm:flex-row sm:items-center sm:gap-3 sm:bg-transparent sm:border-0 sm:p-0">
-                <div className="flex items-center gap-2 text-[0.98rem] text-[#f4efe9] sm:min-w-[110px]">
-                  <span className="text-[1.08rem] text-[#d7d0c9]">◔</span>
+                <div className="flex items-center gap-2 text-[0.98rem] text-[var(--text)] sm:min-w-[110px]">
+                  <span className="text-[1.08rem] text-[var(--text-soft)]">◔</span>
                   {entry.day}
                 </div>
 
@@ -935,12 +935,12 @@ export const StartPage = () => {
                     className="warm-field px-3 py-2.5 text-[0.96rem] sm:min-w-[110px]"
                   >
                     {BUSINESS_HOUR_TIMES.map((time) => (
-                      <option key={time} value={time} className="bg-[#201d1b] text-[#f4efe9]">
+                      <option key={time} value={time} className="bg-[var(--app-bg-strong)] text-[var(--text)]">
                         {time}
                       </option>
                     ))}
                   </select>
-                  <span className="hidden text-[0.96rem] text-[#d7d0c9] sm:block">–</span>
+                  <span className="hidden text-[0.96rem] text-[var(--text-soft)] sm:block">–</span>
                   <select
                     value={entry.closed ? 'Closed' : entry.close}
                     onChange={(event) => updateBusinessHours(entry.day, 'close', event.target.value)}
@@ -948,7 +948,7 @@ export const StartPage = () => {
                     className="warm-field px-3 py-2.5 text-[0.96rem] sm:min-w-[110px]"
                   >
                     {BUSINESS_HOUR_TIMES.filter((time) => BUSINESS_HOUR_TIMES.indexOf(time) >= BUSINESS_HOUR_TIMES.indexOf(entry.open)).map((time) => (
-                      <option key={time} value={time} className="bg-[#201d1b] text-[#f4efe9]">
+                      <option key={time} value={time} className="bg-[var(--app-bg-strong)] text-[var(--text)]">
                         {time}
                       </option>
                     ))}
@@ -959,7 +959,7 @@ export const StartPage = () => {
                   type="button"
                   onClick={() => updateBusinessHours(entry.day, 'closed', !entry.closed)}
                   className={`relative h-6 w-11 self-start rounded-full border transition sm:self-auto ${
-                    entry.closed ? 'border-white/20 bg-[rgba(255,255,255,0.06)]' : 'border-[#d97a49] bg-[#d97a49]'
+                    entry.closed ? 'border-white/20 bg-[rgba(255,255,255,0.06)]' : 'border-[var(--accent)] bg-[var(--accent)]'
                   }`}
                   aria-label={`Toggle ${entry.day}`}
                 >
@@ -970,7 +970,7 @@ export const StartPage = () => {
                   />
                 </button>
 
-                <button type="button" className="self-end text-[1.25rem] leading-none text-[#d7d0c9] sm:self-auto">
+                <button type="button" className="self-end text-[1.25rem] leading-none text-[var(--text-soft)] sm:self-auto">
                   +
                 </button>
               </div>
@@ -979,10 +979,10 @@ export const StartPage = () => {
         </div>
 
         <div>
-          <label className="mb-2 block text-[1.04rem] font-medium text-[#f4efe9]">
+          <label className="mb-2 block text-[1.04rem] font-medium text-[var(--text)]">
             Social media (optional)
           </label>
-          <p className="mb-3 text-[0.9rem] text-[#d7d0c9]">
+          <p className="mb-3 text-[0.9rem] text-[var(--text-soft)]">
             Share your social media profiles so we can link them on your site.
           </p>
 
@@ -995,11 +995,11 @@ export const StartPage = () => {
               'YouTube channel link',
             ].map((label, index) => (
               <div key={label} className="flex flex-col gap-3 rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-3 sm:flex-row sm:items-center sm:gap-2">
-                <span className="flex h-7 w-7 items-center justify-center rounded-[8px] border border-white/10 bg-[rgba(255,255,255,0.03)] text-[0.9rem] text-[#f4efe9] sm:flex-none">
+                <span className="flex h-7 w-7 items-center justify-center rounded-[8px] border border-white/10 bg-[rgba(255,255,255,0.03)] text-[0.9rem] text-[var(--text)] sm:flex-none">
                   {['◎', 'f', 'in', '♪', '▶'][index]}
                 </span>
                 <input
-                  className="w-full min-w-0 bg-transparent text-[0.98rem] text-[#f4efe9] placeholder:text-[#d7d0c9]/60 outline-none"
+                  className="w-full min-w-0 bg-transparent text-[0.98rem] text-[var(--text)] placeholder:text-[var(--text-soft)]/60 outline-none"
                   placeholder={label}
                 />
               </div>
@@ -1029,90 +1029,90 @@ export const StartPage = () => {
       <div className="grid gap-4 xl:grid-cols-3">
         <div className="rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-3">
           <div className="mb-3 flex items-center justify-between">
-            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[#f4efe9]">
+            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[var(--text)]">
               <span className="text-[1.1rem]">▣</span>
               Business Info
             </div>
           </div>
-          <div className="space-y-2 text-[0.9rem] text-[#d7d0c9]">
+          <div className="space-y-2 text-[0.9rem] text-[var(--text-soft)]">
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[var(--text-soft)]">
                 Business name
                 {!isFilled(formData.businessName) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <p className="mt-1 text-[#f4efe9]">{formData.businessName || 'Not provided yet'}</p>
+              <p className="mt-1 text-[var(--text)]">{formData.businessName || 'Not provided yet'}</p>
             </div>
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[var(--text-soft)]">
                 Business type
                 {!isFilled(formData.businessType) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <p className="mt-1 text-[#f4efe9]">{formData.businessType || 'Not selected yet'}</p>
+              <p className="mt-1 text-[var(--text)]">{formData.businessType || 'Not selected yet'}</p>
             </div>
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[var(--text-soft)]">
                 Tagline
                 {!isFilled(formData.businessTagline) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Optional</span>}
               </p>
-              <p className="mt-1 text-[#f4efe9]">{formData.businessTagline || 'No tagline provided'}</p>
+              <p className="mt-1 text-[var(--text)]">{formData.businessTagline || 'No tagline provided'}</p>
             </div>
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[var(--text-soft)]">
                 About your business
                 {!isFilled(formData.aboutBusiness) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <p className="mt-1 text-[#f4efe9]">{formData.aboutBusiness || 'Not provided yet'}</p>
+              <p className="mt-1 text-[var(--text)]">{formData.aboutBusiness || 'Not provided yet'}</p>
             </div>
           </div>
         </div>
 
         <div className="rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-3">
           <div className="mb-3 flex items-center justify-between">
-            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[#f4efe9]">
+            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[var(--text)]">
               <span className="text-[1.1rem]">≡</span>
               Services &amp; Details
             </div>
           </div>
-          <div className="space-y-3 text-[0.9rem] text-[#d7d0c9]">
+          <div className="space-y-3 text-[0.9rem] text-[var(--text-soft)]">
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[var(--text-soft)]">
                 Main services
                 {!isFilled(formData.services) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <p className="mt-1 text-[#f4efe9]">{formData.services || 'Not provided yet'}</p>
+              <p className="mt-1 text-[var(--text)]">{formData.services || 'Not provided yet'}</p>
             </div>
             <div>
-              <p className="text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">Featured on website</p>
-              <p className="mt-1 text-[#f4efe9]">{formData.highlight || 'No featured item provided'}</p>
+              <p className="text-[0.76rem] uppercase tracking-[0.12em] text-[var(--text-soft)]">Featured on website</p>
+              <p className="mt-1 text-[var(--text)]">{formData.highlight || 'No featured item provided'}</p>
             </div>
             <div>
-              <p className="text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">Why choose you</p>
-              <p className="mt-1 text-[#f4efe9]">{formData.whyChooseYou || 'Not provided yet'}</p>
+              <p className="text-[0.76rem] uppercase tracking-[0.12em] text-[var(--text-soft)]">Why choose you</p>
+              <p className="mt-1 text-[var(--text)]">{formData.whyChooseYou || 'Not provided yet'}</p>
             </div>
           </div>
         </div>
 
         <div className="rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-3">
           <div className="mb-3 flex items-center justify-between">
-            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[#f4efe9]">
+            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[var(--text)]">
               <span className="text-[1.1rem]">◌</span>
               Design &amp; Style
             </div>
           </div>
-          <div className="space-y-3 text-[0.9rem] text-[#d7d0c9]">
+          <div className="space-y-3 text-[0.9rem] text-[var(--text-soft)]">
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[var(--text-soft)]">
                 Look and feel
                 {!isFilled(formData.designStyle) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
-                <span className="rounded-[8px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-2 py-1 text-[#f4efe9]">
+                <span className="rounded-[8px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-2 py-1 text-[var(--text)]">
                   {formData.designStyle || 'Professional'}
                 </span>
               </div>
             </div>
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[var(--text-soft)]">
                 Color theme
                 {!isFilled(formData.websiteColors) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
@@ -1128,10 +1128,10 @@ export const StartPage = () => {
                         />
                       ))}
                     </div>
-                    <span className="text-[#f4efe9]">{selectedColorPalette.label}</span>
+                    <span className="text-[var(--text)]">{selectedColorPalette.label}</span>
                   </>
                 ) : (
-                  <span className="text-[#f4efe9]">Not selected yet</span>
+                  <span className="text-[var(--text)]">Not selected yet</span>
                 )}
               </div>
             </div>
@@ -1140,29 +1140,29 @@ export const StartPage = () => {
 
         <div className="rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-3">
           <div className="mb-3 flex items-center justify-between">
-            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[#f4efe9]">
+            <div className="flex items-center gap-2 text-[0.98rem] font-medium text-[var(--text)]">
               <span className="text-[1.1rem]">⌖</span>
               Contact &amp; Location
             </div>
           </div>
-          <div className="space-y-2 text-[0.9rem] text-[#d7d0c9]">
+          <div className="space-y-2 text-[0.9rem] text-[var(--text-soft)]">
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[var(--text-soft)]">
                 Phone number
                 {!isFilled(formData.phone) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <p className="mt-1 text-[#f4efe9]">{formData.phone || '(845) 000-0000'}</p>
+              <p className="mt-1 text-[var(--text)]">{formData.phone || '(845) 000-0000'}</p>
             </div>
             <div>
-              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">
+              <p className="flex items-center gap-2 text-[0.76rem] uppercase tracking-[0.12em] text-[var(--text-soft)]">
                 Email
                 {!isFilled(formData.email) && <span className="rounded-full bg-[rgba(209,74,60,0.12)] px-2 py-0.5 text-[0.66rem] font-semibold text-[#f3b198]">Required</span>}
               </p>
-              <p className="mt-1 text-[#f4efe9]">{formData.email || 'No email provided'}</p>
+              <p className="mt-1 text-[var(--text)]">{formData.email || 'No email provided'}</p>
             </div>
             <div>
-              <p className="text-[0.76rem] uppercase tracking-[0.12em] text-[#d7d0c9]">Address</p>
-              <p className="mt-1 text-[#f4efe9]">{formData.address || 'No address provided'}</p>
+              <p className="text-[0.76rem] uppercase tracking-[0.12em] text-[var(--text-soft)]">Address</p>
+              <p className="mt-1 text-[var(--text)]">{formData.address || 'No address provided'}</p>
             </div>
           </div>
         </div>
@@ -1174,60 +1174,60 @@ export const StartPage = () => {
     <div className="space-y-6">
       <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--accent)] text-[0.75rem] font-semibold text-[#17191d]">
             1
           </div>
-          <h3 className="heading-card text-[#f7f4f1]">BUSINESS INFORMATION</h3>
+          <h3 className="heading-card text-[var(--text-strong)]">BUSINESS INFORMATION</h3>
         </div>
         {renderBusinessInfo()}
       </div>
 
       <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--accent)] text-[0.75rem] font-semibold text-[#17191d]">
             2
           </div>
-          <h3 className="heading-card text-[#f7f4f1]">SERVICES &amp; DETAILS</h3>
+          <h3 className="heading-card text-[var(--text-strong)]">SERVICES &amp; DETAILS</h3>
         </div>
         {renderServicesDetails()}
       </div>
 
       <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--accent)] text-[0.75rem] font-semibold text-[#17191d]">
             3
           </div>
-          <h3 className="heading-card text-[#f7f4f1]">DESIGN &amp; STYLE</h3>
+          <h3 className="heading-card text-[var(--text-strong)]">DESIGN &amp; STYLE</h3>
         </div>
         {renderDesignStyle()}
       </div>
 
       <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--accent)] text-[0.75rem] font-semibold text-[#17191d]">
             4
           </div>
-          <h3 className="heading-card text-[#f7f4f1]">CONTENT &amp; MEDIA</h3>
+          <h3 className="heading-card text-[var(--text-strong)]">CONTENT &amp; MEDIA</h3>
         </div>
         {renderContentMedia()}
       </div>
 
       <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--accent)] text-[0.75rem] font-semibold text-[#17191d]">
             5
           </div>
-          <h3 className="heading-card text-[#f7f4f1]">CONTACT &amp; LOCATION</h3>
+          <h3 className="heading-card text-[var(--text-strong)]">CONTACT &amp; LOCATION</h3>
         </div>
         {renderContactLocation()}
       </div>
 
       <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 md:p-6">
         <div className="mb-5 flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#d97a49] text-[0.75rem] font-semibold text-[#fffaf7]">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--accent)] text-[0.75rem] font-semibold text-[#17191d]">
             6
           </div>
-          <h3 className="heading-card text-[#f7f4f1]">REVIEW &amp; SUBMIT</h3>
+          <h3 className="heading-card text-[var(--text-strong)]">REVIEW &amp; SUBMIT</h3>
         </div>
         {renderReviewSubmit()}
       </div>
@@ -1235,7 +1235,7 @@ export const StartPage = () => {
   )
 
   return (
-    <section className="min-h-screen bg-transparent px-4 py-8 text-[#f4efe9] md:px-8 md:py-10">
+    <section className="min-h-screen bg-transparent px-4 py-8 text-[var(--text)] md:px-8 md:py-10">
       <Helmet>
         <title>Start a project | 845 Sites</title>
         <meta
@@ -1249,7 +1249,7 @@ export const StartPage = () => {
           <button
             type="button"
             onClick={() => navigate('/dashboard')}
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-2.5 text-[0.72rem] font-semibold uppercase tracking-[0.14em] text-[#f4efe9] transition hover:border-[#d97a49]/40 hover:text-white"
+            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-2.5 text-[0.72rem] font-semibold uppercase tracking-[0.14em] text-[var(--text)] transition hover:border-[var(--accent)]/40 hover:text-white"
           >
             <span aria-hidden="true">←</span>
             Back to Dashboard
@@ -1257,14 +1257,14 @@ export const StartPage = () => {
         </div>
 
         <div className="text-center">
-          <p className="mb-4 text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-[#d7d0c9]">
+          <p className="mb-4 text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-[var(--text-soft)]">
             Let&apos;s get started
           </p>
-          <h1 className="heading-hero text-[#f7f4f1]">
+          <h1 className="heading-hero text-[var(--text-strong)]">
             START YOUR NEXT
             <span className="block">WEBSITE PROJECT</span>
           </h1>
-          <p className="text-lead mx-auto mt-6 max-w-[760px] text-[#d7d0c9]">
+          <p className="text-lead mx-auto mt-6 max-w-[760px] text-[var(--text-soft)]">
             Tell us about your business and goals, and we&apos;ll help build the right site for you.
           </p>
         </div>
@@ -1272,15 +1272,15 @@ export const StartPage = () => {
 
       <div className="mx-auto mt-10 max-w-[1260px] rounded-[28px] border border-white/10 bg-[rgba(77,71,68,0.28)] p-4 shadow-[0_24px_60px_rgba(15,17,21,0.12)] backdrop-blur-sm md:p-5">
         <div className="flex-1 px-3 py-4 md:px-8 md:py-7">
-          <div className="mb-5 text-[0.72rem] font-semibold uppercase tracking-[0.25em] text-[#d7d0c9]">
+          <div className="mb-5 text-[0.72rem] font-semibold uppercase tracking-[0.25em] text-[var(--text-soft)]">
             Full project form
           </div>
 
-          <h2 className="heading-section text-[#f7f4f1]">
+          <h2 className="heading-section text-[var(--text-strong)]">
             TELL US ABOUT YOUR BUSINESS
           </h2>
 
-          <p className="text-body-lg mt-3 text-[#d7d0c9]">
+          <p className="text-body-lg mt-3 text-[var(--text-soft)]">
             Fill out the details below and we&apos;ll use this information to design your website.
           </p>
 
@@ -1299,7 +1299,7 @@ export const StartPage = () => {
               disabled={!canSubmit || isSubmitting}
               className={`rounded-[16px] px-6 py-3 text-[1.08rem] font-semibold shadow-[0_12px_24px_rgba(17,17,17,0.14)] transition ${
                 canSubmit && !isSubmitting
-                  ? 'bg-[#d97a49] text-[#fffaf7] hover:bg-[#e18c5f]'
+                  ? 'bg-[var(--accent)] text-[#17191d] hover:bg-[var(--accent-hover)]'
                   : 'cursor-not-allowed bg-[rgba(255,255,255,0.08)] text-[rgba(247,244,241,0.72)] opacity-70'
               }`}
             >

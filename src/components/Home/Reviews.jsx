@@ -46,13 +46,13 @@ export const Reviews = () => (
           {REVIEWS.map((review) => (
             <article
               key={review.author}
-              className="rounded-[24px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-6 py-6 text-[#f4efe9] shadow-[0_18px_45px_rgba(0,0,0,0.14)] md:px-8 md:py-8"
+              className="rounded-[24px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-6 py-6 text-[var(--text)] shadow-[0_18px_45px_rgba(0,0,0,0.14)] md:px-8 md:py-8"
             >
               <div className="flex items-start justify-between gap-4">
-                <div className="text-[1.75rem] tracking-[0.12em] text-[#f59d6c] md:text-[2.15rem]">★★★★★</div>
+                <div className="text-[1.75rem] tracking-[0.12em] text-[var(--accent)] md:text-[2.15rem]">★★★★★</div>
               </div>
 
-              <p className="mt-6 max-w-[430px] text-[1.05rem] leading-relaxed text-[#f4efe9] md:text-[1.18rem]">
+              <p className="mt-6 max-w-[430px] text-[1.05rem] leading-relaxed text-[var(--text)] md:text-[1.18rem]">
                 “{review.quote}”
               </p>
 
@@ -60,7 +60,7 @@ export const Reviews = () => (
 
               <div className="mt-6">
                 <p className="text-[1.02rem] font-black uppercase tracking-[-0.05em] text-white md:text-[1.1rem] md:tracking-[-0.04em]">{review.author.toUpperCase()}</p>
-                <p className="mt-2 max-w-[290px] text-[0.72rem] uppercase tracking-[0.12em] text-[#d7d0c9] md:text-[0.82rem]">
+                <p className="mt-2 max-w-[290px] text-[0.72rem] uppercase tracking-[0.12em] text-[var(--text-soft)] md:text-[0.82rem]">
                   {review.role.toUpperCase()}
                 </p>
               </div>

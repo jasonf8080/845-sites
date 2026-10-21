@@ -450,51 +450,51 @@ export const DashboardPage = () => {
       <div className="rounded-[26px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 sm:p-6 lg:p-8">
         <div className="grid gap-6 lg:grid-cols-[1.35fr_1fr] lg:items-center">
           <div className="rounded-[22px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-4 py-5 sm:px-5 sm:py-6">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1.5 text-[0.8rem] font-medium text-[#f4efe9]">
-              <span className="flex h-5 w-5 items-center justify-center rounded-full border border-[#d97a49] text-[0.7rem] text-[#d97a49]">◔</span>
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1.5 text-[0.8rem] font-medium text-[var(--text)]">
+              <span className="flex h-5 w-5 items-center justify-center rounded-full border border-[var(--accent)] text-[0.7rem] text-[var(--accent)]">◔</span>
               Website in Progress
             </div>
 
-            <h1 className="heading-page text-[#f4efe9]">
+            <h1 className="heading-page text-[var(--text)]">
               YOUR WEBSITE
               <span className="block">IS ON THE WAY</span>
             </h1>
 
-            <p className="text-body-lg mt-4 max-w-[520px] text-[#d7d0c9]">
+            <p className="text-body-lg mt-4 max-w-[520px] text-[var(--text-soft)]">
               Thanks for your submission! We&apos;re building your website and will notify you as soon as it&apos;s ready for your review.
             </p>
           </div>
 
           <div className="relative min-h-[260px]">
-            <div className="absolute left-3 top-6 rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-3 py-1.5 text-[0.8rem] font-medium text-[#f4efe9] shadow-sm">
+            <div className="absolute left-3 top-6 rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-3 py-1.5 text-[0.8rem] font-medium text-[var(--text)] shadow-sm">
               Custom Design
             </div>
-            <div className="absolute right-5 top-20 rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-3 py-1.5 text-[0.8rem] font-medium text-[#f4efe9] shadow-sm">
+            <div className="absolute right-5 top-20 rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-3 py-1.5 text-[0.8rem] font-medium text-[var(--text)] shadow-sm">
               Your Photos
             </div>
 
-            <div className="absolute right-0 top-[120px] rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-3 py-1.5 text-[0.8rem] font-medium text-[#f4efe9] shadow-sm">
+            <div className="absolute right-0 top-[120px] rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-3 py-1.5 text-[0.8rem] font-medium text-[var(--text)] shadow-sm">
               SEO Optimized
             </div>
 
-            <div className="absolute left-8 bottom-0 rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-3 py-1.5 text-[0.8rem] font-medium text-[#f4efe9] shadow-sm">
+            <div className="absolute left-8 bottom-0 rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-3 py-1.5 text-[0.8rem] font-medium text-[var(--text)] shadow-sm">
               Mobile Ready
             </div>
 
             <div className="ml-auto h-[260px] w-full max-w-[500px] rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-3 shadow-[0_10px_22px_rgba(15,17,21,0.04)]">
               <div className="flex h-full flex-col rounded-[14px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-3">
                 <div className="flex items-center gap-2 pb-2">
-                  <span className="h-3 w-3 rounded-full bg-[#e76f51]" />
-                  <span className="h-3 w-3 rounded-full bg-[#e9b66c]" />
-                  <span className="h-3 w-3 rounded-full bg-[#8dc87d]" />
+                  <span className="h-3 w-3 rounded-full bg-[var(--accent)]" />
+                  <span className="h-3 w-3 rounded-full bg-[var(--accent-soft)]" />
+                  <span className="h-3 w-3 rounded-full bg-[#88c4a0]" />
                 </div>
                 <div className="flex flex-1 gap-3">
-                  <div className="flex-1 rounded-[10px] border border-white/10 bg-[linear-gradient(180deg,#2d2927_0%,#201d1b_100%)] p-3">
-                    <div className="h-20 rounded-[8px] bg-[linear-gradient(135deg,#38322f_0%,#201d1b_100%)]" />
+                  <div className="flex-1 rounded-[10px] border border-white/10 bg-[linear-gradient(180deg,#1d2025_0%,#17191d_100%)] p-3">
+                    <div className="h-20 rounded-[8px] bg-[linear-gradient(135deg,#22252a_0%,#17191d_100%)]" />
                     <div className="mt-4 space-y-2">
-                      <div className="h-3 w-3/4 rounded-full bg-[#5a514c]" />
-                      <div className="h-3 w-2/3 rounded-full bg-[#5a514c]" />
-                      <div className="h-3 w-1/2 rounded-full bg-[#5a514c]" />
+                      <div className="h-3 w-3/4 rounded-full bg-[#3a3f49]" />
+                      <div className="h-3 w-2/3 rounded-full bg-[#3a3f49]" />
+                      <div className="h-3 w-1/2 rounded-full bg-[#3a3f49]" />
                     </div>
                   </div>
                 </div>
@@ -517,17 +517,17 @@ export const DashboardPage = () => {
               <div className="mb-3 flex w-full items-center justify-center">
                 <div className={`flex h-11 w-11 items-center justify-center rounded-full border text-[1rem] font-semibold ${
                   index === 0
-                    ? 'border-[#d97a49] bg-[#d97a49] text-white'
+                    ? 'border-[var(--accent)] bg-[var(--accent)] text-white'
                     : index < 2
-                      ? 'border-[#d9b39d] bg-[#f0d9ca] text-[#1a1a1a]'
-                      : 'border-white/10 bg-[rgba(255,255,255,0.04)] text-[#f4efe9]'
+                      ? 'border-[var(--accent)]/40 bg-[var(--accent-subtle)] text-[#17191d]'
+                      : 'border-white/10 bg-[rgba(255,255,255,0.04)] text-[var(--text)]'
                 }`}>
                   {step.icon}
                 </div>
-                {index < 4 && <div className={`h-0.5 flex-1 ${index === 0 ? 'bg-[#d97a49]' : 'bg-white/10'}`} />}
+                {index < 4 && <div className={`h-0.5 flex-1 ${index === 0 ? 'bg-[var(--accent)]' : 'bg-white/10'}`} />}
               </div>
-              <div className="text-[1.02rem] font-semibold text-[#f4efe9]">{step.label}</div>
-              <div className="mt-1 whitespace-pre-line text-[0.8rem] leading-[1.3] text-[#d7d0c9]">{step.meta}</div>
+              <div className="text-[1.02rem] font-semibold text-[var(--text)]">{step.label}</div>
+              <div className="mt-1 whitespace-pre-line text-[0.8rem] leading-[1.3] text-[var(--text-soft)]">{step.meta}</div>
             </div>
           ))}
         </div>
@@ -541,12 +541,12 @@ export const DashboardPage = () => {
           { title: 'Need Help?', body: 'Have a question about your project? We\'re here to help.', button: 'Contact Support', icon: '?' },
         ].map((item) => (
           <div key={item.title} className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#f0d8c7] text-[1.2rem] font-semibold text-[#1c1b1a]">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--accent-subtle)] text-[1.2rem] font-semibold text-[var(--text)]">
               {item.icon}
             </div>
-            <h3 className="text-[1.15rem] font-semibold text-[#f4efe9]">{item.title}</h3>
-            <p className="mt-2 text-[0.96rem] leading-relaxed text-[#d7d0c9]">{item.body}</p>
-            <button type="button" className="mt-5 inline-flex items-center gap-2 rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-2.5 text-[0.9rem] font-semibold text-[#f4efe9]">
+            <h3 className="text-[1.15rem] font-semibold text-[var(--text)]">{item.title}</h3>
+            <p className="mt-2 text-[0.96rem] leading-relaxed text-[var(--text-soft)]">{item.body}</p>
+            <button type="button" className="mt-5 inline-flex items-center gap-2 rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-2.5 text-[0.9rem] font-semibold text-[var(--text)]">
               {item.button}
               <span aria-hidden="true">→</span>
             </button>
@@ -560,10 +560,10 @@ export const DashboardPage = () => {
     <div className="rounded-[24px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 sm:p-5 lg:p-6">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <h1 className="heading-page text-[#f4efe9]">
+          <h1 className="heading-page text-[var(--text)]">
             WELCOME BACK, {greetingFirstName.toUpperCase()}
           </h1>
-          <p className="text-body-lg mt-3 text-[#d7d0c9]">
+          <p className="text-body-lg mt-3 text-[var(--text-soft)]">
             Here&apos;s an overview of your website and account.
           </p>
         </div>
@@ -571,7 +571,7 @@ export const DashboardPage = () => {
         <button
           type="button"
           onClick={() => navigate('/start')}
-          className="inline-flex items-center justify-center gap-2 rounded-[16px] border border-[#d97a49] bg-[#d97a49] px-4 py-3 text-sm font-semibold text-white shadow-[0_12px_24px_rgba(18,18,20,0.18)] transition hover:opacity-95 sm:px-5 sm:py-4 sm:text-[1.02rem]"
+          className="inline-flex items-center justify-center gap-2 rounded-[16px] border border-[var(--accent)] bg-[var(--accent)] px-4 py-3 text-sm font-semibold text-white shadow-[0_12px_24px_rgba(18,18,20,0.18)] transition hover:opacity-95 sm:px-5 sm:py-4 sm:text-[1.02rem]"
         >
           <FiPlus size={18} strokeWidth={2.4} />
           New Website
@@ -581,56 +581,56 @@ export const DashboardPage = () => {
       <div className="mb-6 grid gap-5 xl:grid-cols-[minmax(0,1.65fr)_260px]">
         <div className="rounded-[24px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 shadow-[0_12px_24px_rgba(20,20,20,0.08)]">
           <div className="flex items-center justify-between rounded-t-[18px] border-b border-white/10 bg-[rgba(255,255,255,0.02)] px-4 py-3">
-            <div className="flex items-center gap-2 text-[0.8rem] font-medium text-[#d7d0c9]">
-              <span className="rounded-full bg-[rgba(255,255,255,0.06)] px-2 py-1 text-[#f4efe9]">Mandy&apos;s</span>
+            <div className="flex items-center gap-2 text-[0.8rem] font-medium text-[var(--text-soft)]">
+              <span className="rounded-full bg-[rgba(255,255,255,0.06)] px-2 py-1 text-[var(--text)]">Mandy&apos;s</span>
               <span>Home</span>
               <span>Services</span>
               <span>About</span>
               <span>Gallery</span>
               <span>Contact</span>
             </div>
-            <button type="button" className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-2 py-1 text-[0.74rem] text-[#f4efe9]">
+            <button type="button" className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-2 py-1 text-[0.74rem] text-[var(--text)]">
               Book now
             </button>
           </div>
 
           <div className="flex flex-col gap-4 p-2 sm:flex-row">
-            <div className="relative flex-1 overflow-hidden rounded-[18px] bg-[#f0d9d7]">
-              <div className="h-[260px] w-full bg-[linear-gradient(135deg,#f7e7e2_0%,#f0d7d0_30%,#ebd3ca_100%)] px-5 py-5">
+            <div className="relative flex-1 overflow-hidden rounded-[18px] bg-[var(--surface-1)]">
+              <div className="h-[260px] w-full bg-[linear-gradient(135deg,#22262c_0%,#2a2f37_40%,#313844_100%)] px-5 py-5">
                 <div className="flex h-full items-end justify-between gap-3">
-                  <div className="w-[48%] self-center rounded-[12px] border border-[#e6d0c5] bg-[#f6eee9]/70 p-4 backdrop-blur-sm">
-                    <div className="mb-3 h-6 w-16 rounded bg-[#e7d7ce]" />
+                  <div className="w-[48%] self-center rounded-[12px] border border-[#e6d0c5] bg-[var(--surface-2)]/80 p-4 backdrop-blur-sm">
+                    <div className="mb-3 h-6 w-16 rounded bg-[var(--surface-2)]" />
                     <div className="space-y-2">
-                      <div className="h-4 w-24 rounded bg-[#ebdbd4]" />
-                      <div className="h-4 w-20 rounded bg-[#ebdbd4]" />
+                      <div className="h-4 w-24 rounded bg-[var(--surface-3)]" />
+                      <div className="h-4 w-20 rounded bg-[var(--surface-3)]" />
                     </div>
-                    <div className="mt-4 h-8 w-24 rounded-full bg-[#1a1b1d] text-[0.6rem] text-white" />
+                    <div className="mt-4 h-8 w-24 rounded-full bg-[var(--surface-raise)] text-[0.6rem] text-white" />
                   </div>
 
                   <div className="flex h-full w-[40%] items-end justify-center">
-                    <div className="h-[70%] w-full rounded-t-[20px] bg-[radial-gradient(circle_at_50%_15%,#f7efe8_0%,#f2d8c9_18%,#ebc9bb_42%,#e1b6a4_100%)] shadow-inner" />
+                    <div className="h-[70%] w-full rounded-t-[20px] bg-[radial-gradient(circle_at_50%_15%,#3b4556_0%,#2b3442_32%,#202833_62%,#171d27_100%)] shadow-inner" />
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="flex w-full flex-col justify-center gap-3 py-2 sm:w-[250px] sm:gap-5">
-              <div className="flex items-center gap-2 text-[#f4efe9]">
-                <span className="inline-block h-3.5 w-3.5 rounded-full bg-[#58b778]" />
+              <div className="flex items-center gap-2 text-[var(--text)]">
+                <span className="inline-block h-3.5 w-3.5 rounded-full bg-[#88c4a0]" />
                 <span className="text-[1rem] font-semibold">Live</span>
               </div>
 
               <div>
-                <h2 className="text-[1.9rem] font-black leading-[0.9] tracking-[-0.08em] text-[#f4efe9] sm:text-[2.4rem]">
+                <h2 className="text-[1.9rem] font-black leading-[0.9] tracking-[-0.08em] text-[var(--text)] sm:text-[2.4rem]">
                   Mandy&apos;s Nail Salon
                 </h2>
-                <div className="mt-3 flex items-center gap-2 text-[1.02rem] text-[#d7d0c9]">
+                <div className="mt-3 flex items-center gap-2 text-[1.02rem] text-[var(--text-soft)]">
                   <span>mandysnailsalon.com</span>
                   <FiArrowRight size={16} />
                 </div>
               </div>
 
-              <p className="text-[0.96rem] text-[#d7d0c9]">Last updated 3 days ago</p>
+              <p className="text-[0.96rem] text-[var(--text-soft)]">Last updated 3 days ago</p>
             </div>
           </div>
         </div>
@@ -638,7 +638,7 @@ export const DashboardPage = () => {
         <div className="space-y-4 pt-2">
           <button
             type="button"
-            className="flex w-full items-center justify-between rounded-[18px] border border-white/10 bg-[#171717] px-5 py-4 text-left text-[1.1rem] font-semibold text-white"
+            className="flex w-full items-center justify-between rounded-[18px] border border-white/10 bg-[var(--surface-raise)] px-5 py-4 text-left text-[1.1rem] font-semibold text-white"
           >
             <span>View Site</span>
             <FiArrowRight size={18} strokeWidth={2.5} />
@@ -646,7 +646,7 @@ export const DashboardPage = () => {
 
           <button
             type="button"
-            className="flex w-full items-center justify-between rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-5 py-4 text-left text-[1.1rem] font-semibold text-[#f4efe9]"
+            className="flex w-full items-center justify-between rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-5 py-4 text-left text-[1.1rem] font-semibold text-[var(--text)]"
           >
             <span className="flex items-center gap-3">
               <FiEdit3 size={18} strokeWidth={2.1} />
@@ -656,7 +656,7 @@ export const DashboardPage = () => {
 
           <button
             type="button"
-            className="flex w-full items-center justify-between rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-5 py-4 text-left text-[1.1rem] font-semibold text-[#f4efe9]"
+            className="flex w-full items-center justify-between rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-5 py-4 text-left text-[1.1rem] font-semibold text-[var(--text)]"
           >
             <span className="flex items-center gap-3">
               <FiChevronRight size={18} strokeWidth={2.5} />
@@ -668,51 +668,51 @@ export const DashboardPage = () => {
 
       <div className="mb-7 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
         <div className="flex items-center gap-4 rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1a1b1d] text-white">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--surface-raise)] text-white">
             <FiBarChart2 size={18} strokeWidth={2.3} />
           </div>
           <div>
-            <p className="text-[0.96rem] font-medium text-[#d7d0c9]">Monthly Visits</p>
+            <p className="text-[0.96rem] font-medium text-[var(--text-soft)]">Monthly Visits</p>
             <div className="mt-2 flex items-end gap-3">
-              <p className="text-[2rem] font-black leading-none tracking-[-0.08em] text-[#f4efe9]">1,248</p>
-              <span className="mb-1 text-[0.95rem] font-medium text-[#8fd4a5]">↑ 18%</span>
+              <p className="text-[2rem] font-black leading-none tracking-[-0.08em] text-[var(--text)]">1,248</p>
+              <span className="mb-1 text-[0.95rem] font-medium text-[#9fd8b7]">↑ 18%</span>
             </div>
-            <p className="mt-2 text-[0.82rem] text-[#d7d0c9]">Last 30 days</p>
+            <p className="mt-2 text-[0.82rem] text-[var(--text-soft)]">Last 30 days</p>
           </div>
         </div>
 
         <div className="flex items-center gap-4 rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1a1b1d] text-white">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--surface-raise)] text-white">
             <FiCalendar size={18} strokeWidth={2.3} />
           </div>
           <div>
-            <p className="text-[0.96rem] font-medium text-[#d7d0c9]">Next Payment</p>
-            <p className="mt-2 text-[2.05rem] font-black leading-none tracking-[-0.08em] text-[#f4efe9]">Oct 1, 2026</p>
-            <p className="mt-2 text-[0.96rem] text-[#d7d0c9]">$35 / month</p>
+            <p className="text-[0.96rem] font-medium text-[var(--text-soft)]">Next Payment</p>
+            <p className="mt-2 text-[2.05rem] font-black leading-none tracking-[-0.08em] text-[var(--text)]">Oct 1, 2026</p>
+            <p className="mt-2 text-[0.96rem] text-[var(--text-soft)]">$35 / month</p>
           </div>
         </div>
 
         <div className="flex items-center gap-4 rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1a1b1d] text-white">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--surface-raise)] text-white">
             <FiBookOpen size={18} strokeWidth={2.2} />
           </div>
           <div>
-            <p className="text-[0.96rem] font-medium text-[#d7d0c9]">Plan</p>
-            <p className="mt-2 text-[2.05rem] font-black leading-none tracking-[-0.08em] text-[#f4efe9]">Standard</p>
-            <p className="mt-2 text-[0.96rem] text-[#d7d0c9]">Website + Hosting</p>
+            <p className="text-[0.96rem] font-medium text-[var(--text-soft)]">Plan</p>
+            <p className="mt-2 text-[2.05rem] font-black leading-none tracking-[-0.08em] text-[var(--text)]">Standard</p>
+            <p className="mt-2 text-[0.96rem] text-[var(--text-soft)]">Website + Hosting</p>
           </div>
         </div>
 
         <div className="flex items-center gap-4 rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 sm:col-span-2 xl:col-span-1">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1a1b1d] text-white">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--surface-raise)] text-white">
             <FiGlobe size={18} strokeWidth={2.3} />
           </div>
           <div>
-            <p className="text-[0.96rem] font-medium text-[#d7d0c9]">Domain</p>
-            <p className="mt-2 text-[1.5rem] font-black leading-none tracking-[-0.06em] text-[#f4efe9]">
+            <p className="text-[0.96rem] font-medium text-[var(--text-soft)]">Domain</p>
+            <p className="mt-2 text-[1.5rem] font-black leading-none tracking-[-0.06em] text-[var(--text)]">
               mandysnailsalon.com
             </p>
-            <p className="mt-2 text-[0.96rem] text-[#d7d0c9]">Connected</p>
+            <p className="mt-2 text-[0.96rem] text-[var(--text-soft)]">Connected</p>
           </div>
         </div>
       </div>
@@ -722,11 +722,11 @@ export const DashboardPage = () => {
   const renderAdminDashboardHome = () => (
     <div className="space-y-4 sm:space-y-5">
       <div>
-        <p className="text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-[#d7d0c9]">Admin</p>
-        <h1 className="mt-1 text-[2.5rem] font-black leading-[0.9] tracking-[-0.08em] text-[#f4efe9] sm:text-[4rem]">
+        <p className="text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-[var(--text-soft)]">Admin</p>
+        <h1 className="mt-1 text-[2.5rem] font-black leading-[0.9] tracking-[-0.08em] text-[var(--text)] sm:text-[4rem]">
           Dashboard
         </h1>
-        <p className="mt-2 text-[1.02rem] text-[#d7d0c9]">Overview of your users, projects, and recent activity.</p>
+        <p className="mt-2 text-[1.02rem] text-[var(--text-soft)]">Overview of your users, projects, and recent activity.</p>
       </div>
 
       <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
@@ -738,10 +738,10 @@ export const DashboardPage = () => {
         ].map((item) => (
           <div key={item.label} className="rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-4 sm:px-5">
             <div className="flex items-center justify-between gap-3">
-              <p className="text-[0.92rem] font-semibold text-[#d7d0c9]">{item.label}</p>
-              <span className="text-[0.85rem] font-semibold text-[#7fc59a]">{item.delta}</span>
+              <p className="text-[0.92rem] font-semibold text-[var(--text-soft)]">{item.label}</p>
+              <span className="text-[0.85rem] font-semibold text-[#9fd8b7]">{item.delta}</span>
             </div>
-            <p className="mt-2 text-[2rem] font-black leading-none tracking-[-0.06em] text-[#f4efe9]">{item.value}</p>
+            <p className="mt-2 text-[2rem] font-black leading-none tracking-[-0.06em] text-[var(--text)]">{item.value}</p>
           </div>
         ))}
       </div>
@@ -749,8 +749,8 @@ export const DashboardPage = () => {
       <div className="grid gap-4 xl:grid-cols-2">
         <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 sm:p-5">
           <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-[1.6rem] font-black tracking-[-0.06em] text-[#f4efe9]">Recent Projects</h2>
-            <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-sm font-medium text-[#f4efe9]">
+            <h2 className="text-[1.6rem] font-black tracking-[-0.06em] text-[var(--text)]">Recent Projects</h2>
+            <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-sm font-medium text-[var(--text)]">
               View all <FiArrowRight size={14} />
             </button>
           </div>
@@ -764,10 +764,10 @@ export const DashboardPage = () => {
             ].map(([name, status, updated]) => (
               <div key={name} className="flex items-center justify-between rounded-[12px] bg-[rgba(255,255,255,0.03)] px-3 py-2.5">
                 <div>
-                  <p className="text-[0.94rem] font-semibold text-[#f4efe9]">{name}</p>
-                  <p className="text-[0.8rem] text-[#d7d0c9]">{status}</p>
+                  <p className="text-[0.94rem] font-semibold text-[var(--text)]">{name}</p>
+                  <p className="text-[0.8rem] text-[var(--text-soft)]">{status}</p>
                 </div>
-                <p className="text-[0.8rem] text-[#d7d0c9]">{updated}</p>
+                <p className="text-[0.8rem] text-[var(--text-soft)]">{updated}</p>
               </div>
             ))}
           </div>
@@ -775,8 +775,8 @@ export const DashboardPage = () => {
 
         <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 sm:p-5">
           <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-[1.6rem] font-black tracking-[-0.06em] text-[#f4efe9]">Recent Users</h2>
-            <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-sm font-medium text-[#f4efe9]">
+            <h2 className="text-[1.6rem] font-black tracking-[-0.06em] text-[var(--text)]">Recent Users</h2>
+            <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-sm font-medium text-[var(--text)]">
               View all <FiArrowRight size={14} />
             </button>
           </div>
@@ -790,10 +790,10 @@ export const DashboardPage = () => {
             ].map(([name, email, joined]) => (
               <div key={email} className="flex items-center justify-between rounded-[12px] bg-[rgba(255,255,255,0.03)] px-3 py-2.5">
                 <div>
-                  <p className="text-[0.94rem] font-semibold text-[#f4efe9]">{name}</p>
-                  <p className="text-[0.8rem] text-[#d7d0c9]">{email}</p>
+                  <p className="text-[0.94rem] font-semibold text-[var(--text)]">{name}</p>
+                  <p className="text-[0.8rem] text-[var(--text-soft)]">{email}</p>
                 </div>
-                <p className="text-[0.8rem] text-[#d7d0c9]">{joined}</p>
+                <p className="text-[0.8rem] text-[var(--text-soft)]">{joined}</p>
               </div>
             ))}
           </div>
@@ -802,14 +802,14 @@ export const DashboardPage = () => {
 
       <div className="grid gap-4 xl:grid-cols-[1.1fr_1fr]">
         <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 sm:p-5">
-          <h2 className="text-[1.6rem] font-black tracking-[-0.06em] text-[#f4efe9]">Recent Activity</h2>
+          <h2 className="text-[1.6rem] font-black tracking-[-0.06em] text-[var(--text)]">Recent Activity</h2>
           <div className="mt-4 space-y-2">
             {[
               'New project submission from Mandy\'s Nail Salon.',
               'Project marked as completed for South Salem Winery.',
               'New user account created for Ana Costa.',
             ].map((activity) => (
-              <div key={activity} className="rounded-[12px] bg-[rgba(255,255,255,0.03)] px-3 py-3 text-[0.92rem] text-[#d7d0c9]">
+              <div key={activity} className="rounded-[12px] bg-[rgba(255,255,255,0.03)] px-3 py-3 text-[0.92rem] text-[var(--text-soft)]">
                 {activity}
               </div>
             ))}
@@ -817,7 +817,7 @@ export const DashboardPage = () => {
         </div>
 
         <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 sm:p-5">
-          <h2 className="text-[1.6rem] font-black tracking-[-0.06em] text-[#f4efe9]">Quick Actions</h2>
+          <h2 className="text-[1.6rem] font-black tracking-[-0.06em] text-[var(--text)]">Quick Actions</h2>
           <div className="mt-4 grid gap-2 sm:grid-cols-2">
             {[
               ['View New Submissions', 'submissions', FiSend],
@@ -829,7 +829,7 @@ export const DashboardPage = () => {
                 key={label}
                 type="button"
                 onClick={() => setActiveAdminTab(tab)}
-                className="flex items-center justify-between rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-3 text-left text-[0.93rem] font-medium text-[#f4efe9]"
+                className="flex items-center justify-between rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-3 text-left text-[0.93rem] font-medium text-[var(--text)]"
               >
                 <span className="inline-flex items-center gap-2">
                   <Icon size={15} />
@@ -855,7 +855,7 @@ export const DashboardPage = () => {
       status: 'Pending',
       source: 'Website Form',
       avatar: 'MN',
-      accent: 'bg-[#f1e1d7]',
+      accent: 'bg-[var(--accent-subtle)]',
       selected: true,
     },
     {
@@ -868,7 +868,7 @@ export const DashboardPage = () => {
       status: 'Converted',
       source: 'Website Form',
       avatar: 'HV',
-      accent: 'bg-[#e8e6e2]',
+      accent: 'bg-[var(--surface-2)]',
       selected: false,
     },
     {
@@ -881,7 +881,7 @@ export const DashboardPage = () => {
       status: 'Pending',
       source: 'Website Form',
       avatar: 'RD',
-      accent: 'bg-[#e7e7e1]',
+      accent: 'bg-[var(--surface-2)]',
       selected: false,
     },
     {
@@ -894,7 +894,7 @@ export const DashboardPage = () => {
       status: 'In Review',
       source: 'Referral',
       avatar: 'AS',
-      accent: 'bg-[#dfe8e5]',
+      accent: 'bg-[var(--surface-2)]',
       selected: false,
     },
     {
@@ -907,7 +907,7 @@ export const DashboardPage = () => {
       status: 'Converted',
       source: 'Website Form',
       avatar: 'GN',
-      accent: 'bg-[#e0e7df]',
+      accent: 'bg-[var(--surface-2)]',
       selected: false,
     },
     {
@@ -920,7 +920,7 @@ export const DashboardPage = () => {
       status: 'Completed',
       source: 'Referral',
       avatar: 'SW',
-      accent: 'bg-[#e8e3df]',
+      accent: 'bg-[var(--surface-2)]',
       selected: false,
     },
     {
@@ -933,7 +933,7 @@ export const DashboardPage = () => {
       status: 'Not Proceeding',
       source: 'Website Form',
       avatar: 'MP',
-      accent: 'bg-[#f3e9e7]',
+      accent: 'bg-[var(--surface-2)]',
       selected: false,
     },
     {
@@ -946,7 +946,7 @@ export const DashboardPage = () => {
       status: 'Pending',
       source: 'Website Form',
       avatar: 'NP',
-      accent: 'bg-[#eceae7]',
+      accent: 'bg-[var(--surface-2)]',
       selected: false,
     },
   ]
@@ -956,13 +956,13 @@ export const DashboardPage = () => {
       name: row.business || row.name || 'New Submission',
       city: row.city || row.location || 'Location pending',
       avatar: (row.avatar || row.business || 'NS').slice(0, 2).toUpperCase(),
-      avatarBg: row.avatarBg || 'bg-[#f1e2d7]',
+      avatarBg: row.avatarBg || 'bg-[var(--accent-subtle)]',
       type: row.type || 'General Business',
       submitted: row.submitted || 'Today',
       time: row.time || 'Now',
       status: row.status || 'New',
-      statusTone: row.statusTone || 'bg-[#dfeaf8] text-[#1d5e8b]',
-      dot: row.dot || 'bg-[#1f79d8]',
+      statusTone: row.statusTone || 'bg-[rgba(130,173,250,0.15)] text-[var(--accent)]',
+      dot: row.dot || 'bg-[var(--accent)]',
       unread: row.unread ?? true,
       selected: row.selected ?? true,
       source: row.source || 'Website Form',
@@ -978,18 +978,18 @@ export const DashboardPage = () => {
     <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 sm:p-5">
       <div className="mb-5 flex items-center justify-between gap-3">
         <div className="relative w-full max-w-[420px]">
-          <FiSearch className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[#d7d0c9]" size={16} />
+          <FiSearch className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-soft)]" size={16} />
           <input
             type="text"
             placeholder="Search submissions..."
-            className="h-[40px] w-full rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.04)] pl-10 pr-3 text-[0.95rem] text-[#f4efe9] outline-none placeholder:text-[#d7d0c9]/60"
+            className="h-[40px] w-full rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.04)] pl-10 pr-3 text-[0.95rem] text-[var(--text)] outline-none placeholder:text-[var(--text-soft)]/60"
           />
         </div>
 
         <div className="flex items-center gap-2">
           <button
             type="button"
-            className="inline-flex items-center gap-2 rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.82rem] font-medium text-[#f4efe9]"
+            className="inline-flex items-center gap-2 rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.82rem] font-medium text-[var(--text)]"
           >
             <FiCalendar size={14} />
             Sep 1, 2026 - Sep 28, 2026
@@ -999,15 +999,15 @@ export const DashboardPage = () => {
 
       <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
-          <h1 className="text-[3rem] font-black leading-[0.9] tracking-[-0.08em] text-[#f4efe9] sm:text-[4.1rem]">
+          <h1 className="text-[3rem] font-black leading-[0.9] tracking-[-0.08em] text-[var(--text)] sm:text-[4.1rem]">
             SUBMISSIONS
           </h1>
-          <p className="mt-2 text-[1.04rem] text-[#d7d0c9]">Review and manage incoming website project requests.</p>
+          <p className="mt-2 text-[1.04rem] text-[var(--text-soft)]">Review and manage incoming website project requests.</p>
         </div>
 
         <button
           type="button"
-          className="inline-flex items-center gap-2 rounded-[12px] border border-[#d97a49] bg-[#d97a49] px-4 py-3 text-[0.94rem] font-semibold text-white shadow-[0_8px_16px_rgba(217,122,73,0.2)]"
+          className="inline-flex items-center gap-2 rounded-[12px] border border-[var(--accent)] bg-[var(--accent)] px-4 py-3 text-[0.94rem] font-semibold text-white shadow-[0_8px_16px_rgba(217,122,73,0.2)]"
         >
           <FiPlus size={18} strokeWidth={2.5} />
           New Submission
@@ -1028,15 +1028,15 @@ export const DashboardPage = () => {
               type="button"
               className={`inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-[0.8rem] font-medium ${
                 tab.active
-                  ? 'border-[#d97a49] bg-[#d97a49] text-white'
-                  : 'border-white/10 bg-[rgba(255,255,255,0.03)] text-[#f4efe9]'
+                  ? 'border-[var(--accent)] bg-[var(--accent)] text-white'
+                  : 'border-white/10 bg-[rgba(255,255,255,0.03)] text-[var(--text)]'
               }`}
             >
               <span>{tab.label}</span>
               {tab.count > 0 && (
                 <span
                   className={`inline-flex h-5 min-w-[1.25rem] items-center justify-center rounded-full px-1 text-[0.68rem] ${
-                    tab.active ? 'bg-white/15 text-white' : 'bg-[rgba(255,255,255,0.06)] text-[#f4efe9]'
+                    tab.active ? 'bg-white/15 text-white' : 'bg-[rgba(255,255,255,0.06)] text-[var(--text)]'
                   }`}
                 >
                   {tab.count}
@@ -1048,17 +1048,17 @@ export const DashboardPage = () => {
 
         <button
           type="button"
-          className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-[0.82rem] font-medium text-[#f4efe9]"
+          className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-[0.82rem] font-medium text-[var(--text)]"
         >
           <FiChevronRight className="rotate-90" size={14} />
           Newest First
         </button>
       </div>
 
-      <div className="mt-5 overflow-hidden rounded-[14px] border border-white/10 bg-[#1f1c1a]">
-        <div className="grid grid-cols-[32px_minmax(0,1.8fr)_minmax(0,1.2fr)_minmax(0,1.2fr)_minmax(0,1fr)_140px] items-center border-b border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-3 text-[0.72rem] font-medium uppercase tracking-[0.05em] text-[#d7d0c9]">
+      <div className="mt-5 overflow-hidden rounded-[14px] border border-white/10 bg-[var(--surface-0)]">
+        <div className="grid grid-cols-[32px_minmax(0,1.8fr)_minmax(0,1.2fr)_minmax(0,1.2fr)_minmax(0,1fr)_140px] items-center border-b border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-3 text-[0.72rem] font-medium uppercase tracking-[0.05em] text-[var(--text-soft)]">
           <div className="px-1">
-            <input type="checkbox" aria-label="Select all" className="h-3.5 w-3.5 rounded border-white/20 accent-[#d97a49]" />
+            <input type="checkbox" aria-label="Select all" className="h-3.5 w-3.5 rounded border-white/20 accent-[var(--accent)]" />
           </div>
           <div className="px-2">Business</div>
           <div className="px-2">Type / Industry</div>
@@ -1076,29 +1076,29 @@ export const DashboardPage = () => {
             <div
               key={submissionId || row.name}
               className={`grid grid-cols-[32px_minmax(0,1.8fr)_minmax(0,1.2fr)_minmax(0,1.2fr)_minmax(0,1fr)_140px] items-center border-b border-white/5 px-3 py-3 ${
-                row.selected ? 'bg-[rgba(217,122,73,0.08)]' : 'bg-[#1f1c1a]'
+                row.selected ? 'bg-[var(--accent-subtle)]' : 'bg-[var(--surface-0)]'
               }`}
             >
               <div className="px-1">
-                <input type="checkbox" aria-label={`Select ${row.name}`} className="h-3.5 w-3.5 rounded border-white/20 accent-[#d97a49]" />
+                <input type="checkbox" aria-label={`Select ${row.name}`} className="h-3.5 w-3.5 rounded border-white/20 accent-[var(--accent)]" />
               </div>
 
               <div className="flex items-center gap-3 px-2">
                 {row.unread && <span className="h-2.5 w-2.5 rounded-full bg-[#d74d4f]" />}
-                <div className={`flex h-10 w-10 items-center justify-center rounded-[10px] text-[0.8rem] font-semibold text-[#1c1b1a] ${row.avatarBg}`}>
+                <div className={`flex h-10 w-10 items-center justify-center rounded-[10px] text-[0.8rem] font-semibold text-[var(--text)] ${row.avatarBg}`}>
                   {row.avatar}
                 </div>
                 <div>
-                  <div className="text-[0.98rem] font-semibold text-[#f4efe9]">{row.name}</div>
-                  <div className="text-[0.76rem] text-[#d7d0c9]">{row.city}</div>
+                  <div className="text-[0.98rem] font-semibold text-[var(--text)]">{row.name}</div>
+                  <div className="text-[0.76rem] text-[var(--text-soft)]">{row.city}</div>
                 </div>
               </div>
 
-              <div className="px-2 text-[0.92rem] text-[#f4efe9]">{row.type}</div>
+              <div className="px-2 text-[0.92rem] text-[var(--text)]">{row.type}</div>
 
-              <div className="px-2 text-[0.92rem] text-[#f4efe9]">
+              <div className="px-2 text-[0.92rem] text-[var(--text)]">
                 <div>{row.submitted}</div>
-                <div className="text-[0.76rem] text-[#d7d0c9]">{row.time}</div>
+                <div className="text-[0.76rem] text-[var(--text-soft)]">{row.time}</div>
               </div>
 
               <div className="px-2">
@@ -1129,14 +1129,14 @@ export const DashboardPage = () => {
                       },
                     })
                   }
-                  className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-[0.82rem] font-medium text-[#f4efe9]"
+                  className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-[0.82rem] font-medium text-[var(--text)]"
                 >
                   View Details
                 </button>
-                <button type="button" className="inline-flex h-7 w-7 items-center justify-center rounded-full text-[#f4efe9] hover:bg-[rgba(255,255,255,0.06)]" aria-label={`More actions for ${row.name}`}>
+                <button type="button" className="inline-flex h-7 w-7 items-center justify-center rounded-full text-[var(--text)] hover:bg-[rgba(255,255,255,0.06)]" aria-label={`More actions for ${row.name}`}>
                   <FiChevronRight size={16} />
                 </button>
-                <button type="button" className="inline-flex h-7 w-7 items-center justify-center rounded-full text-[#f4efe9] hover:bg-[rgba(255,255,255,0.06)]" aria-label={`Menu for ${row.name}`}>
+                <button type="button" className="inline-flex h-7 w-7 items-center justify-center rounded-full text-[var(--text)] hover:bg-[rgba(255,255,255,0.06)]" aria-label={`Menu for ${row.name}`}>
                   <FiMoreVertical size={16} />
                 </button>
               </div>
@@ -1150,11 +1150,11 @@ export const DashboardPage = () => {
 
   const renderAdminListView = (title, subtitle) => (
     <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-6 sm:p-8">
-      <h1 className="text-[2rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9] sm:text-[2.8rem]">
+      <h1 className="text-[2rem] font-black leading-none tracking-[-0.07em] text-[var(--text)] sm:text-[2.8rem]">
         {title}
       </h1>
-      <p className="mt-3 text-[1rem] text-[#d7d0c9]">{subtitle}</p>
-      <div className="mt-6 rounded-[14px] border border-dashed border-white/10 bg-[rgba(255,255,255,0.03)] p-5 text-[0.96rem] text-[#d7d0c9]">
+      <p className="mt-3 text-[1rem] text-[var(--text-soft)]">{subtitle}</p>
+      <div className="mt-6 rounded-[14px] border border-dashed border-white/10 bg-[rgba(255,255,255,0.03)] p-5 text-[0.96rem] text-[var(--text-soft)]">
         This section is ready for your live data and actions.
       </div>
     </div>
@@ -1164,15 +1164,15 @@ export const DashboardPage = () => {
     <div className="space-y-4">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
         <div>
-          <h1 className="text-[2.6rem] font-black leading-[0.9] tracking-[-0.08em] text-[#f4efe9] sm:text-[3.6rem]">
+          <h1 className="text-[2.6rem] font-black leading-[0.9] tracking-[-0.08em] text-[var(--text)] sm:text-[3.6rem]">
             USERS
           </h1>
-          <p className="mt-2 text-[1.04rem] text-[#d7d0c9]">Manage user accounts, roles, and statuses.</p>
+          <p className="mt-2 text-[1.04rem] text-[var(--text-soft)]">Manage user accounts, roles, and statuses.</p>
         </div>
 
         <button
           type="button"
-          className="inline-flex items-center gap-2 rounded-[14px] border border-[#d97a49] bg-[#d97a49] px-5 py-3 text-[0.95rem] font-semibold text-white shadow-[0_8px_16px_rgba(217,122,73,0.2)]"
+          className="inline-flex items-center gap-2 rounded-[14px] border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[0.95rem] font-semibold text-white shadow-[0_8px_16px_rgba(217,122,73,0.2)]"
         >
           <FiUserPlus size={16} />
           Add User
@@ -1188,15 +1188,15 @@ export const DashboardPage = () => {
         ].map(({ label, value, meta, icon: Icon }) => (
           <div key={label} className="rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[rgba(255,255,255,0.06)] text-[#f4efe9]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[rgba(255,255,255,0.06)] text-[var(--text)]">
                 <Icon size={18} />
               </div>
               <div>
-                <p className="text-[0.9rem] font-semibold text-[#d7d0c9]">{label}</p>
-                <p className="mt-1 text-[2rem] font-black leading-none tracking-[-0.06em] text-[#f4efe9]">{value}</p>
+                <p className="text-[0.9rem] font-semibold text-[var(--text-soft)]">{label}</p>
+                <p className="mt-1 text-[2rem] font-black leading-none tracking-[-0.06em] text-[var(--text)]">{value}</p>
               </div>
             </div>
-            <p className="mt-2 text-[0.82rem] text-[#7fc59a]">{meta}</p>
+            <p className="mt-2 text-[0.82rem] text-[#9fd8b7]">{meta}</p>
           </div>
         ))}
       </div>
@@ -1210,8 +1210,8 @@ export const DashboardPage = () => {
                 type="button"
                 className={`rounded-full border px-3 py-1.5 text-[0.84rem] font-medium ${
                   index === 0
-                    ? 'border-[#d97a49] bg-[#d97a49] text-white'
-                    : 'border-white/10 bg-[rgba(255,255,255,0.03)] text-[#f4efe9]'
+                    ? 'border-[var(--accent)] bg-[var(--accent)] text-white'
+                    : 'border-white/10 bg-[rgba(255,255,255,0.03)] text-[var(--text)]'
                 }`}
               >
                 {chip}
@@ -1219,11 +1219,11 @@ export const DashboardPage = () => {
             ))}
 
             <div className="ml-auto flex items-center gap-2">
-              <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-[0.84rem] font-medium text-[#f4efe9]">
+              <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-[0.84rem] font-medium text-[var(--text)]">
                 <FiFilter size={14} />
                 Filter
               </button>
-              <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-[0.84rem] font-medium text-[#f4efe9]">
+              <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-[0.84rem] font-medium text-[var(--text)]">
                 Newest First
               </button>
             </div>
@@ -1232,7 +1232,7 @@ export const DashboardPage = () => {
           <div className="overflow-x-auto">
             <table className="min-w-full text-left">
               <thead>
-                <tr className="text-[0.78rem] uppercase tracking-[0.08em] text-[#d7d0c9]">
+                <tr className="text-[0.78rem] uppercase tracking-[0.08em] text-[var(--text-soft)]">
                   <th className="pb-3 pr-3 font-medium">User</th>
                   <th className="pb-3 pr-3 font-medium">Business</th>
                   <th className="pb-3 pr-3 font-medium">Projects</th>
@@ -1249,42 +1249,42 @@ export const DashboardPage = () => {
                     <tr
                       key={adminUser.email}
                       className={`cursor-pointer border-t border-white/10 ${
-                        isSelected ? 'bg-[rgba(217,122,73,0.08)]' : 'hover:bg-[rgba(255,255,255,0.02)]'
+                        isSelected ? 'bg-[var(--accent-subtle)]' : 'hover:bg-[rgba(255,255,255,0.02)]'
                       }`}
                       onClick={() => setSelectedAdminUserEmail(adminUser.email)}
                     >
                       <td className="py-3 pr-3">
                         <div className="flex items-center gap-3">
-                          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[rgba(255,255,255,0.06)] text-[0.78rem] font-semibold text-[#f4efe9]">
+                          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[rgba(255,255,255,0.06)] text-[0.78rem] font-semibold text-[var(--text)]">
                             {adminUser.initials}
                           </div>
                           <div>
-                            <div className="text-[0.95rem] font-semibold text-[#f4efe9]">{adminUser.name}</div>
-                            <div className="text-[0.8rem] text-[#d7d0c9]">{adminUser.email}</div>
+                            <div className="text-[0.95rem] font-semibold text-[var(--text)]">{adminUser.name}</div>
+                            <div className="text-[0.8rem] text-[var(--text-soft)]">{adminUser.email}</div>
                           </div>
                         </div>
                       </td>
                       <td className="py-3 pr-3 align-middle">
-                        <div className="text-[0.92rem] font-medium text-[#f4efe9]">{adminUser.business}</div>
-                        <div className="text-[0.79rem] text-[#d7d0c9]">{adminUser.domain}</div>
+                        <div className="text-[0.92rem] font-medium text-[var(--text)]">{adminUser.business}</div>
+                        <div className="text-[0.79rem] text-[var(--text-soft)]">{adminUser.domain}</div>
                       </td>
-                      <td className="py-3 pr-3 text-[0.9rem] text-[#f4efe9]">{adminUser.projects}</td>
-                      <td className="py-3 pr-3 text-[0.9rem] text-[#f4efe9]">{adminUser.plan}</td>
+                      <td className="py-3 pr-3 text-[0.9rem] text-[var(--text)]">{adminUser.projects}</td>
+                      <td className="py-3 pr-3 text-[0.9rem] text-[var(--text)]">{adminUser.plan}</td>
                       <td className="py-3 pr-3">
                         <span
                           className={`inline-flex rounded-full px-2.5 py-1 text-[0.76rem] font-semibold ${
                             adminUser.status === 'Active'
-                              ? 'bg-[#dff2e3] text-[#236f3f]'
+                              ? 'bg-[rgba(136,196,160,0.16)] text-[#9fd8b7]'
                               : adminUser.status === 'In Progress'
-                                ? 'bg-[#deedf9] text-[#1f5a83]'
-                                : 'bg-[rgba(255,255,255,0.08)] text-[#d7d0c9]'
+                                ? 'bg-[rgba(130,173,250,0.15)] text-[var(--accent)]'
+                                : 'bg-[rgba(255,255,255,0.08)] text-[var(--text-soft)]'
                           }`}
                         >
                           {adminUser.status}
                         </span>
                       </td>
-                      <td className="py-3 pr-3 text-[0.9rem] text-[#f4efe9]">{adminUser.joined}</td>
-                      <td className="py-3 text-[#d7d0c9]">
+                      <td className="py-3 pr-3 text-[0.9rem] text-[var(--text)]">{adminUser.joined}</td>
+                      <td className="py-3 text-[var(--text-soft)]">
                         <button type="button" className="rounded-full p-1.5 hover:bg-[rgba(255,255,255,0.06)]">
                           <FiMoreVertical size={15} />
                         </button>
@@ -1300,25 +1300,25 @@ export const DashboardPage = () => {
         <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4 sm:p-5">
           <div className="mb-5 flex items-start justify-between gap-3">
             <div className="flex items-center gap-3">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[rgba(217,122,73,0.18)] text-[1.4rem] font-semibold text-[#f4efe9]">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[rgba(217,122,73,0.18)] text-[1.4rem] font-semibold text-[var(--text)]">
                 {selectedAdminUser.initials}
               </div>
               <div>
-                <h3 className="text-[1.6rem] font-black leading-none tracking-[-0.06em] text-[#f4efe9]">{selectedAdminUser.name}</h3>
-                <p className="mt-1 text-[0.92rem] text-[#d7d0c9]">{selectedAdminUser.email}</p>
-                <span className="mt-2 inline-flex rounded-full bg-[#dff2e3] px-2.5 py-1 text-[0.75rem] font-semibold text-[#236f3f]">
+                <h3 className="text-[1.6rem] font-black leading-none tracking-[-0.06em] text-[var(--text)]">{selectedAdminUser.name}</h3>
+                <p className="mt-1 text-[0.92rem] text-[var(--text-soft)]">{selectedAdminUser.email}</p>
+                <span className="mt-2 inline-flex rounded-full bg-[rgba(136,196,160,0.16)] px-2.5 py-1 text-[0.75rem] font-semibold text-[#9fd8b7]">
                   {selectedAdminUser.status}
                 </span>
               </div>
             </div>
 
-            <button type="button" className="rounded-full p-2 text-[#d7d0c9] hover:bg-[rgba(255,255,255,0.06)]">
+            <button type="button" className="rounded-full p-2 text-[var(--text-soft)] hover:bg-[rgba(255,255,255,0.06)]">
               <FiX size={17} />
             </button>
           </div>
 
-          <div className="mb-4 flex items-center gap-4 border-b border-white/10 pb-3 text-[0.86rem] font-medium text-[#d7d0c9]">
-            <button type="button" className="text-[#f4efe9]">Overview</button>
+          <div className="mb-4 flex items-center gap-4 border-b border-white/10 pb-3 text-[0.86rem] font-medium text-[var(--text-soft)]">
+            <button type="button" className="text-[var(--text)]">Overview</button>
             <button type="button">Projects</button>
             <button type="button">Billing</button>
             <button type="button">Activity</button>
@@ -1327,57 +1327,57 @@ export const DashboardPage = () => {
           <div className="space-y-4">
             <div className="rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-4">
               <div className="mb-3 flex items-center justify-between">
-                <h4 className="text-[1.1rem] font-semibold text-[#f4efe9]">Business Information</h4>
-                <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1 text-[0.8rem] font-medium text-[#f4efe9]">
+                <h4 className="text-[1.1rem] font-semibold text-[var(--text)]">Business Information</h4>
+                <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1 text-[0.8rem] font-medium text-[var(--text)]">
                   <FiEdit3 size={13} /> Edit
                 </button>
               </div>
-              <div className="space-y-2 text-[0.9rem] text-[#d7d0c9]">
-                <p className="font-semibold text-[#f4efe9]">{selectedAdminUser.business}</p>
+              <div className="space-y-2 text-[0.9rem] text-[var(--text-soft)]">
+                <p className="font-semibold text-[var(--text)]">{selectedAdminUser.business}</p>
                 <p className="inline-flex items-center gap-1">
                   {selectedAdminUser.domain}
                   <FiExternalLink size={13} />
                 </p>
                 <div className="grid grid-cols-2 gap-2 pt-1 text-[0.86rem]">
-                  <p className="text-[#d7d0c9]">Industry</p>
+                  <p className="text-[var(--text-soft)]">Industry</p>
                   <p>{selectedAdminUser.industry}</p>
-                  <p className="text-[#d7d0c9]">Phone</p>
+                  <p className="text-[var(--text-soft)]">Phone</p>
                   <p>{selectedAdminUser.phone}</p>
-                  <p className="text-[#d7d0c9]">Location</p>
+                  <p className="text-[var(--text-soft)]">Location</p>
                   <p>{selectedAdminUser.location}</p>
-                  <p className="text-[#d7d0c9]">Business Hours</p>
+                  <p className="text-[var(--text-soft)]">Business Hours</p>
                   <p>{selectedAdminUser.hours}</p>
                 </div>
               </div>
             </div>
 
             <div className="rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-4">
-              <h4 className="text-[1.1rem] font-semibold text-[#f4efe9]">Account Details</h4>
-              <div className="mt-3 grid grid-cols-2 gap-2 text-[0.88rem] text-[#d7d0c9]">
-                <p className="text-[#d7d0c9]">Role</p>
+              <h4 className="text-[1.1rem] font-semibold text-[var(--text)]">Account Details</h4>
+              <div className="mt-3 grid grid-cols-2 gap-2 text-[0.88rem] text-[var(--text-soft)]">
+                <p className="text-[var(--text-soft)]">Role</p>
                 <p>{selectedAdminUser.role}</p>
-                <p className="text-[#d7d0c9]">Joined</p>
+                <p className="text-[var(--text-soft)]">Joined</p>
                 <p>{selectedAdminUser.joined}</p>
-                <p className="text-[#d7d0c9]">Last Login</p>
+                <p className="text-[var(--text-soft)]">Last Login</p>
                 <p>{selectedAdminUser.lastLogin}</p>
-                <p className="text-[#d7d0c9]">Plan</p>
+                <p className="text-[var(--text-soft)]">Plan</p>
                 <p>{selectedAdminUser.plan} ($35/mo)</p>
               </div>
             </div>
 
             <div>
-              <h4 className="mb-3 text-[1.1rem] font-semibold text-[#f4efe9]">Quick Actions</h4>
+              <h4 className="mb-3 text-[1.1rem] font-semibold text-[var(--text)]">Quick Actions</h4>
               <div className="grid grid-cols-2 gap-2">
-                <button type="button" className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.86rem] font-medium text-[#f4efe9]">
+                <button type="button" className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.86rem] font-medium text-[var(--text)]">
                   View Website
                 </button>
-                <button type="button" className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.86rem] font-medium text-[#f4efe9]">
+                <button type="button" className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.86rem] font-medium text-[var(--text)]">
                   Message User
                 </button>
-                <button type="button" className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.86rem] font-medium text-[#f4efe9]">
+                <button type="button" className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.86rem] font-medium text-[var(--text)]">
                   Edit User
                 </button>
-                <button type="button" className="rounded-[10px] border border-[#f0c4bf] bg-[#fff5f4] px-3 py-2 text-[0.86rem] font-medium text-[#cf4d45]">
+                <button type="button" className="rounded-[10px] border border-[rgba(255,159,159,0.35)] bg-[rgba(255,92,92,0.14)] px-3 py-2 text-[0.86rem] font-medium text-[#ff9f9f]">
                   Deactivate User
                 </button>
               </div>
@@ -1392,15 +1392,15 @@ export const DashboardPage = () => {
     <div className="space-y-4">
       <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
         <div>
-          <h1 className="text-[2.6rem] font-black leading-[0.9] tracking-[-0.08em] text-[#f4efe9] sm:text-[3.6rem]">
+          <h1 className="text-[2.6rem] font-black leading-[0.9] tracking-[-0.08em] text-[var(--text)] sm:text-[3.6rem]">
             PROJECTS
           </h1>
-          <p className="mt-2 text-[1.04rem] text-[#d7d0c9]">View and manage all client website projects.</p>
+          <p className="mt-2 text-[1.04rem] text-[var(--text-soft)]">View and manage all client website projects.</p>
         </div>
 
         <button
           type="button"
-          className="inline-flex items-center gap-2 rounded-[14px] border border-[#d97a49] bg-[#d97a49] px-5 py-3 text-[0.95rem] font-semibold text-white shadow-[0_8px_16px_rgba(217,122,73,0.2)]"
+          className="inline-flex items-center gap-2 rounded-[14px] border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[0.95rem] font-semibold text-white shadow-[0_8px_16px_rgba(217,122,73,0.2)]"
         >
           <FiPlus size={16} />
           New Project
@@ -1416,15 +1416,15 @@ export const DashboardPage = () => {
         ].map(({ label, value, meta, icon: Icon }) => (
           <div key={label} className="rounded-[16px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[rgba(255,255,255,0.06)] text-[#f4efe9]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[rgba(255,255,255,0.06)] text-[var(--text)]">
                 <Icon size={18} />
               </div>
               <div>
-                <p className="text-[0.9rem] font-semibold text-[#d7d0c9]">{label}</p>
-                <p className="mt-1 text-[2rem] font-black leading-none tracking-[-0.06em] text-[#f4efe9]">{value}</p>
+                <p className="text-[0.9rem] font-semibold text-[var(--text-soft)]">{label}</p>
+                <p className="mt-1 text-[2rem] font-black leading-none tracking-[-0.06em] text-[var(--text)]">{value}</p>
               </div>
             </div>
-            <p className="mt-2 text-[0.82rem] text-[#7fc59a]">{meta}</p>
+            <p className="mt-2 text-[0.82rem] text-[#9fd8b7]">{meta}</p>
           </div>
         ))}
       </div>
@@ -1438,8 +1438,8 @@ export const DashboardPage = () => {
                 type="button"
                 className={`rounded-full border px-3 py-1.5 text-[0.84rem] font-medium ${
                   index === 0
-                    ? 'border-[#d97a49] bg-[#d97a49] text-white'
-                    : 'border-white/10 bg-[rgba(255,255,255,0.03)] text-[#f4efe9]'
+                    ? 'border-[var(--accent)] bg-[var(--accent)] text-white'
+                    : 'border-white/10 bg-[rgba(255,255,255,0.03)] text-[var(--text)]'
                 }`}
               >
                 {chip}
@@ -1447,11 +1447,11 @@ export const DashboardPage = () => {
             ))}
 
             <div className="ml-auto flex items-center gap-2">
-              <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-[0.84rem] font-medium text-[#f4efe9]">
+              <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-[0.84rem] font-medium text-[var(--text)]">
                 <FiFilter size={14} />
                 Filter
               </button>
-              <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-[0.84rem] font-medium text-[#f4efe9]">
+              <button type="button" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-1.5 text-[0.84rem] font-medium text-[var(--text)]">
                 Newest First
               </button>
             </div>
@@ -1460,7 +1460,7 @@ export const DashboardPage = () => {
           <div className="overflow-x-auto">
             <table className="min-w-full text-left">
               <thead>
-                <tr className="text-[0.78rem] uppercase tracking-[0.08em] text-[#d7d0c9]">
+                <tr className="text-[0.78rem] uppercase tracking-[0.08em] text-[var(--text-soft)]">
                   <th className="pb-3 pr-3 font-medium">Project</th>
                   <th className="pb-3 pr-3 font-medium">Business</th>
                   <th className="pb-3 pr-3 font-medium">Client</th>
@@ -1476,7 +1476,7 @@ export const DashboardPage = () => {
                     <tr
                       key={project.domain}
                       className={`cursor-pointer border-t border-white/10 ${
-                        isSelected ? 'bg-[rgba(217,122,73,0.08)]' : 'hover:bg-[rgba(255,255,255,0.02)]'
+                        isSelected ? 'bg-[var(--accent-subtle)]' : 'hover:bg-[rgba(255,255,255,0.02)]'
                       }`}
                       onClick={() => setSelectedAdminProjectDomain(project.domain)}
                     >
@@ -1484,37 +1484,37 @@ export const DashboardPage = () => {
                         <div className="flex items-center gap-3">
                           <div className={`h-10 w-14 rounded-[6px] bg-gradient-to-br ${project.previewTone}`} />
                           <div>
-                            <div className="text-[0.95rem] font-semibold text-[#f4efe9]">{project.name}</div>
-                            <div className="text-[0.8rem] text-[#d7d0c9]">{project.domain}</div>
+                            <div className="text-[0.95rem] font-semibold text-[var(--text)]">{project.name}</div>
+                            <div className="text-[0.8rem] text-[var(--text-soft)]">{project.domain}</div>
                           </div>
                         </div>
                       </td>
-                      <td className="py-3 pr-3 text-[0.92rem] font-medium text-[#f4efe9]">{project.business}</td>
+                      <td className="py-3 pr-3 text-[0.92rem] font-medium text-[var(--text)]">{project.business}</td>
                       <td className="py-3 pr-3">
                         <div className="inline-flex items-center gap-2">
-                          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[rgba(255,255,255,0.06)] text-[0.72rem] font-semibold text-[#f4efe9]">
+                          <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[rgba(255,255,255,0.06)] text-[0.72rem] font-semibold text-[var(--text)]">
                             {project.clientInitials}
                           </span>
-                          <span className="text-[0.9rem] text-[#f4efe9]">{project.client}</span>
+                          <span className="text-[0.9rem] text-[var(--text)]">{project.client}</span>
                         </div>
                       </td>
                       <td className="py-3 pr-3">
                         <span
                           className={`inline-flex rounded-full px-2.5 py-1 text-[0.76rem] font-semibold ${
                             project.status === 'Completed'
-                              ? 'bg-[#dff2e3] text-[#236f3f]'
+                              ? 'bg-[rgba(136,196,160,0.16)] text-[#9fd8b7]'
                               : project.status === 'In Progress'
-                                ? 'bg-[#deedf9] text-[#1f5a83]'
+                                ? 'bg-[rgba(130,173,250,0.15)] text-[var(--accent)]'
                                 : project.status === 'Review'
-                                  ? 'bg-[#deedf9] text-[#1f5a83]'
-                                  : 'bg-[#ffe9d9] text-[#ba6225]'
+                                  ? 'bg-[rgba(130,173,250,0.15)] text-[var(--accent)]'
+                                  : 'bg-[rgba(130,173,250,0.12)] text-[var(--accent-soft)]'
                           }`}
                         >
                           {project.status}
                         </span>
                       </td>
-                      <td className="py-3 pr-3 text-[0.9rem] text-[#f4efe9]">{project.updated}</td>
-                      <td className="py-3 text-[#d7d0c9]">
+                      <td className="py-3 pr-3 text-[0.9rem] text-[var(--text)]">{project.updated}</td>
+                      <td className="py-3 text-[var(--text-soft)]">
                         <button type="button" className="rounded-full p-1.5 hover:bg-[rgba(255,255,255,0.06)]">
                           <FiMoreVertical size={15} />
                         </button>
@@ -1531,8 +1531,8 @@ export const DashboardPage = () => {
           <div className={`mb-4 h-40 rounded-[12px] bg-gradient-to-br ${selectedAdminProject.previewTone}`} />
           <div className="mb-3 flex items-start justify-between gap-3">
             <div>
-              <h3 className="text-[1.6rem] font-black leading-none tracking-[-0.06em] text-[#f4efe9]">{selectedAdminProject.name}</h3>
-              <p className="mt-1 inline-flex items-center gap-1 text-[0.92rem] text-[#d7d0c9]">
+              <h3 className="text-[1.6rem] font-black leading-none tracking-[-0.06em] text-[var(--text)]">{selectedAdminProject.name}</h3>
+              <p className="mt-1 inline-flex items-center gap-1 text-[0.92rem] text-[var(--text-soft)]">
                 {selectedAdminProject.domain}
                 <FiExternalLink size={13} />
               </p>
@@ -1540,10 +1540,10 @@ export const DashboardPage = () => {
             <span
               className={`inline-flex rounded-full px-2.5 py-1 text-[0.76rem] font-semibold ${
                 selectedAdminProject.status === 'Completed'
-                  ? 'bg-[#dff2e3] text-[#236f3f]'
+                  ? 'bg-[rgba(136,196,160,0.16)] text-[#9fd8b7]'
                   : selectedAdminProject.status === 'In Progress' || selectedAdminProject.status === 'Review'
-                    ? 'bg-[#deedf9] text-[#1f5a83]'
-                    : 'bg-[#ffe9d9] text-[#ba6225]'
+                    ? 'bg-[rgba(130,173,250,0.15)] text-[var(--accent)]'
+                    : 'bg-[rgba(130,173,250,0.12)] text-[var(--accent-soft)]'
               }`}
             >
               {selectedAdminProject.status}
@@ -1551,43 +1551,43 @@ export const DashboardPage = () => {
           </div>
 
           <div className="mb-4 grid gap-2 text-[0.88rem]">
-            <button type="button" className="inline-flex items-center justify-center gap-2 rounded-[10px] border border-[#d97a49] bg-[#d97a49] px-3 py-2 text-white">
+            <button type="button" className="inline-flex items-center justify-center gap-2 rounded-[10px] border border-[var(--accent)] bg-[var(--accent)] px-3 py-2 text-white">
               Open Project <FiArrowRight size={14} />
             </button>
-            <button type="button" className="inline-flex items-center justify-center gap-2 rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[#f4efe9]">
+            <button type="button" className="inline-flex items-center justify-center gap-2 rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[var(--text)]">
               View Live Site
             </button>
           </div>
 
           <div className="rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-4">
-            <h4 className="text-[1.1rem] font-semibold text-[#f4efe9]">Project Details</h4>
-            <div className="mt-3 grid grid-cols-2 gap-2 text-[0.88rem] text-[#d7d0c9]">
-              <p className="text-[#d7d0c9]">Business</p>
+            <h4 className="text-[1.1rem] font-semibold text-[var(--text)]">Project Details</h4>
+            <div className="mt-3 grid grid-cols-2 gap-2 text-[0.88rem] text-[var(--text-soft)]">
+              <p className="text-[var(--text-soft)]">Business</p>
               <p>{selectedAdminProject.business}</p>
-              <p className="text-[#d7d0c9]">Client</p>
+              <p className="text-[var(--text-soft)]">Client</p>
               <p>{selectedAdminProject.client} ({selectedAdminProject.clientEmail})</p>
-              <p className="text-[#d7d0c9]">Plan</p>
+              <p className="text-[var(--text-soft)]">Plan</p>
               <p>{selectedAdminProject.plan}</p>
-              <p className="text-[#d7d0c9]">Started</p>
+              <p className="text-[var(--text-soft)]">Started</p>
               <p>{selectedAdminProject.started}</p>
-              <p className="text-[#d7d0c9]">Last Updated</p>
+              <p className="text-[var(--text-soft)]">Last Updated</p>
               <p>{selectedAdminProject.updated}</p>
             </div>
           </div>
 
           <div className="mt-4">
-            <h4 className="mb-3 text-[1.1rem] font-semibold text-[#f4efe9]">Quick Actions</h4>
+            <h4 className="mb-3 text-[1.1rem] font-semibold text-[var(--text)]">Quick Actions</h4>
             <div className="grid grid-cols-2 gap-2">
-              <button type="button" className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.86rem] font-medium text-[#f4efe9]">
+              <button type="button" className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.86rem] font-medium text-[var(--text)]">
                 Message Client
               </button>
-              <button type="button" className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.86rem] font-medium text-[#f4efe9]">
+              <button type="button" className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.86rem] font-medium text-[var(--text)]">
                 Request Changes
               </button>
-              <button type="button" className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.86rem] font-medium text-[#f4efe9]">
+              <button type="button" className="rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.86rem] font-medium text-[var(--text)]">
                 Mark as Complete
               </button>
-              <button type="button" className="inline-flex items-center justify-center gap-2 rounded-[10px] border border-[#f0c4bf] bg-[#fff5f4] px-3 py-2 text-[0.86rem] font-medium text-[#cf4d45]">
+              <button type="button" className="inline-flex items-center justify-center gap-2 rounded-[10px] border border-[rgba(255,159,159,0.35)] bg-[rgba(255,92,92,0.14)] px-3 py-2 text-[0.86rem] font-medium text-[#ff9f9f]">
                 <FiPause size={13} />
                 Pause Project
               </button>
@@ -1626,23 +1626,23 @@ export const DashboardPage = () => {
     }
 
     return (
-      <div className="rounded-[28px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[#f4efe9] shadow-[0_18px_50px_rgba(18,16,14,0.22)] sm:p-6 lg:p-8">
-        <div className="rounded-[22px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-5 text-[#f4efe9] sm:p-6 lg:p-8">
-          <h1 className="text-[3.3rem] font-black leading-[0.9] tracking-[-0.08em] text-[#f4efe9] sm:text-[4.6rem] md:text-[5.2rem]">
+      <div className="rounded-[28px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[var(--text)] shadow-[0_18px_50px_rgba(18,16,14,0.22)] sm:p-6 lg:p-8">
+        <div className="rounded-[22px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-5 text-[var(--text)] sm:p-6 lg:p-8">
+          <h1 className="text-[3.3rem] font-black leading-[0.9] tracking-[-0.08em] text-[var(--text)] sm:text-[4.6rem] md:text-[5.2rem]">
             {`WELCOME BACK, ${greetingFirstName.toUpperCase()}`}
           </h1>
-          <p className="mt-3 text-[1.1rem] text-[#d7d0c9] sm:text-[1.5rem]">
+          <p className="mt-3 text-[1.1rem] text-[var(--text-soft)] sm:text-[1.5rem]">
             You&apos;re all set! Let&apos;s create your first website.
           </p>
         </div>
 
-        <div className="mt-8 rounded-[22px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 sm:p-6 lg:p-8 text-[#f4efe9]">
+        <div className="mt-8 rounded-[22px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 sm:p-6 lg:p-8 text-[var(--text)]">
           <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
             <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-4 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.02)]">
               <div className="flex items-center gap-2 pb-3">
-                <span className="h-3 w-3 rounded-full bg-[#d77a57]" />
-                <span className="h-3 w-3 rounded-full bg-[#d9c2a6]" />
-                <span className="h-3 w-3 rounded-full bg-[#d5d1cc]" />
+                <span className="h-3 w-3 rounded-full bg-[var(--accent)]" />
+                <span className="h-3 w-3 rounded-full bg-[var(--accent-soft)]" />
+                <span className="h-3 w-3 rounded-full bg-[#7c8595]" />
               </div>
 
               <div className="rounded-[14px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4">
@@ -1661,22 +1661,22 @@ export const DashboardPage = () => {
             </div>
 
             <div className="flex flex-col justify-center">
-              <div className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1.5 text-[0.9rem] font-medium text-[#f4efe9]">
-                <span className="h-2 w-2 rounded-full bg-[#d88e63]" />
+              <div className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-1.5 text-[0.9rem] font-medium text-[var(--text)]">
+                <span className="h-2 w-2 rounded-full bg-[var(--accent)]" />
                 No Website Yet
               </div>
 
-              <h2 className="text-[2.4rem] font-black leading-[0.95] tracking-[-0.07em] text-[#f4efe9] sm:text-[3.3rem]">
+              <h2 className="text-[2.4rem] font-black leading-[0.95] tracking-[-0.07em] text-[var(--text)] sm:text-[3.3rem]">
                 Create Your First Website
               </h2>
-              <p className="mt-4 max-w-[27rem] text-[1.05rem] leading-relaxed text-[#d7d0c9] sm:text-[1.2rem]">
+              <p className="mt-4 max-w-[27rem] text-[1.05rem] leading-relaxed text-[var(--text-soft)] sm:text-[1.2rem]">
                 Turn your business information into a professional, modern website in just a few minutes.
               </p>
 
               <button
                 type="button"
                 onClick={() => navigate('/start')}
-                className="mt-6 inline-flex w-fit items-center justify-center gap-3 rounded-[18px] border border-[#d97a49] bg-[#d97a49] px-5 py-4 text-[1.05rem] font-semibold text-white shadow-[0_12px_24px_rgba(18,18,20,0.18)]"
+                className="mt-6 inline-flex w-fit items-center justify-center gap-3 rounded-[18px] border border-[var(--accent)] bg-[var(--accent)] px-5 py-4 text-[1.05rem] font-semibold text-white shadow-[0_12px_24px_rgba(18,18,20,0.18)]"
               >
                 <FiPlus size={20} strokeWidth={2.5} />
                 New Website
@@ -1687,41 +1687,41 @@ export const DashboardPage = () => {
 
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#f3e2d8] text-[#171717]">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--accent-subtle)] text-[var(--text)]">
               <FiZap size={22} strokeWidth={2.2} />
             </div>
-            <h3 className="text-[2rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9]">Fast &amp; Simple</h3>
-            <p className="mt-3 text-[1.05rem] leading-relaxed text-[#d7d0c9]">
+            <h3 className="text-[2rem] font-black leading-none tracking-[-0.07em] text-[var(--text)]">Fast &amp; Simple</h3>
+            <p className="mt-3 text-[1.05rem] leading-relaxed text-[var(--text-soft)]">
               Fill out a quick form and we&apos;ll handle the rest.
             </p>
           </div>
 
           <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#f3e2d8] text-[#171717]">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--accent-subtle)] text-[var(--text)]">
               <FiMonitor size={22} strokeWidth={2.2} />
             </div>
-            <h3 className="text-[2rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9]">Custom Design</h3>
-            <p className="mt-3 text-[1.05rem] leading-relaxed text-[#d7d0c9]">
+            <h3 className="text-[2rem] font-black leading-none tracking-[-0.07em] text-[var(--text)]">Custom Design</h3>
+            <p className="mt-3 text-[1.05rem] leading-relaxed text-[var(--text-soft)]">
               Professionally designed for your business.
             </p>
           </div>
 
           <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#f3e2d8] text-[#171717]">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--accent-subtle)] text-[var(--text)]">
               <FiSmartphone size={22} strokeWidth={2.2} />
             </div>
-            <h3 className="text-[2rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9]">Mobile Ready</h3>
-            <p className="mt-3 text-[1.05rem] leading-relaxed text-[#d7d0c9]">
+            <h3 className="text-[2rem] font-black leading-none tracking-[-0.07em] text-[var(--text)]">Mobile Ready</h3>
+            <p className="mt-3 text-[1.05rem] leading-relaxed text-[var(--text-soft)]">
               Looks great on all devices.
             </p>
           </div>
 
           <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#f3e2d8] text-[#171717]">
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--accent-subtle)] text-[var(--text)]">
               <FiSearch size={22} strokeWidth={2.2} />
             </div>
-            <h3 className="text-[2rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9]">SEO Optimized</h3>
-            <p className="mt-3 text-[1.05rem] leading-relaxed text-[#d7d0c9]">
+            <h3 className="text-[2rem] font-black leading-none tracking-[-0.07em] text-[var(--text)]">SEO Optimized</h3>
+            <p className="mt-3 text-[1.05rem] leading-relaxed text-[var(--text-soft)]">
               Built to help you get found online.
             </p>
           </div>
@@ -1731,37 +1731,37 @@ export const DashboardPage = () => {
   }
 
   const renderBillingView = () => (
-    <div className="rounded-[28px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[#f4efe9] shadow-[0_18px_50px_rgba(18,16,14,0.22)] sm:p-6 lg:p-8">
-      <div className="mb-7 rounded-[22px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-5 text-[#f4efe9] sm:p-6">
-        <h1 className="text-[2.5rem] font-black leading-[0.9] tracking-[-0.08em] text-[#f4efe9] sm:text-[3.2rem] md:text-[4rem]">
+    <div className="rounded-[28px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[var(--text)] shadow-[0_18px_50px_rgba(18,16,14,0.22)] sm:p-6 lg:p-8">
+      <div className="mb-7 rounded-[22px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-5 text-[var(--text)] sm:p-6">
+        <h1 className="text-[2.5rem] font-black leading-[0.9] tracking-[-0.08em] text-[var(--text)] sm:text-[3.2rem] md:text-[4rem]">
           Billing
         </h1>
-        <p className="mt-3 text-[1.1rem] leading-relaxed text-[#d7d0c9]">
+        <p className="mt-3 text-[1.1rem] leading-relaxed text-[var(--text-soft)]">
           Manage your subscription, view invoices, and update payment details.
         </p>
       </div>
 
       <div className="grid gap-5 xl:grid-cols-[minmax(0,1.6fr)_360px]">
         <div className="space-y-5">
-          <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[#f4efe9]">
-            <h2 className="mb-4 text-[1.4rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9] sm:text-[2rem]">
+          <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[var(--text)]">
+            <h2 className="mb-4 text-[1.4rem] font-black leading-none tracking-[-0.07em] text-[var(--text)] sm:text-[2rem]">
               Current Plan
             </h2>
 
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
               <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] text-[#f4efe9]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] text-[var(--text)]">
                   <FiBookOpen size={18} strokeWidth={2.1} />
                 </div>
 
                 <div>
-                  <div className="text-[1.1rem] font-semibold text-[#f4efe9] sm:text-[1.7rem]">Standard</div>
-                  <div className="text-[1rem] text-[#d7d0c9]">Website + Hosting</div>
+                  <div className="text-[1.1rem] font-semibold text-[var(--text)] sm:text-[1.7rem]">Standard</div>
+                  <div className="text-[1rem] text-[var(--text-soft)]">Website + Hosting</div>
                 </div>
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="text-[1.1rem] font-semibold text-[#f4efe9] sm:text-[1.8rem]">$35 <span className="text-[0.95rem] font-medium text-[#d7d0c9]">/ month</span></div>
+                <div className="text-[1.1rem] font-semibold text-[var(--text)] sm:text-[1.8rem]">$35 <span className="text-[0.95rem] font-medium text-[var(--text-soft)]">/ month</span></div>
                 <div className="inline-flex items-center rounded-full border border-[#a8d9b0]/50 bg-[#1d3b2d] px-3 py-1 text-[0.8rem] font-semibold text-[#a7e0b2]">
                   Active
                 </div>
@@ -1769,8 +1769,8 @@ export const DashboardPage = () => {
             </div>
           </div>
 
-          <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[#f4efe9]">
-            <h2 className="mb-4 text-[1.4rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9] sm:text-[2rem]">
+          <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[var(--text)]">
+            <h2 className="mb-4 text-[1.4rem] font-black leading-none tracking-[-0.07em] text-[var(--text)] sm:text-[2rem]">
               Payment Method
             </h2>
 
@@ -1781,14 +1781,14 @@ export const DashboardPage = () => {
                 </div>
 
                 <div>
-                  <div className="text-[1.05rem] font-semibold text-[#f4efe9] sm:text-[1.6rem]">Mastercard •••• 4242</div>
-                  <div className="text-[0.95rem] text-[#d7d0c9]">Expires 10/2028</div>
+                  <div className="text-[1.05rem] font-semibold text-[var(--text)] sm:text-[1.6rem]">Mastercard •••• 4242</div>
+                  <div className="text-[0.95rem] text-[var(--text-soft)]">Expires 10/2028</div>
                 </div>
               </div>
 
               <button
                 type="button"
-                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-2.5 text-[0.95rem] font-medium text-[#f4efe9]"
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-2.5 text-[0.95rem] font-medium text-[var(--text)]"
               >
                 <FiEdit3 size={16} strokeWidth={2.1} />
                 Edit
@@ -1796,12 +1796,12 @@ export const DashboardPage = () => {
             </div>
           </div>
 
-          <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[#f4efe9]">
+          <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[var(--text)]">
             <div className="mb-4 flex items-center justify-between gap-4">
-              <h2 className="text-[1.4rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9] sm:text-[2rem]">
+              <h2 className="text-[1.4rem] font-black leading-none tracking-[-0.07em] text-[var(--text)] sm:text-[2rem]">
                 Billing History
               </h2>
-              <button type="button" className="text-[0.95rem] font-medium text-[#f4efe9]">
+              <button type="button" className="text-[0.95rem] font-medium text-[var(--text)]">
                 View All →
               </button>
             </div>
@@ -1809,7 +1809,7 @@ export const DashboardPage = () => {
             <div className="overflow-x-auto">
               <table className="min-w-full border-separate border-spacing-y-2 text-left text-[1rem]">
                 <thead>
-                  <tr className="text-[#d7d0c9]">
+                  <tr className="text-[var(--text-soft)]">
                     <th className="pb-2 pr-4 font-medium">Date</th>
                     <th className="pb-2 pr-4 font-medium">Description</th>
                     <th className="pb-2 pr-4 font-medium">Amount</th>
@@ -1819,7 +1819,7 @@ export const DashboardPage = () => {
                 </thead>
                 <tbody>
                   {billingRows.map(({ date, description, amount, status, invoice }) => (
-                    <tr key={date} className="bg-[rgba(255,255,255,0.03)] text-[#f4efe9]">
+                    <tr key={date} className="bg-[rgba(255,255,255,0.03)] text-[var(--text)]">
                       <td className="rounded-l-[12px] px-3 py-3 align-middle">{date}</td>
                       <td className="px-3 py-3 align-middle">{description}</td>
                       <td className="px-3 py-3 align-middle">{amount}</td>
@@ -1829,7 +1829,7 @@ export const DashboardPage = () => {
                         </span>
                       </td>
                       <td className="rounded-r-[12px] px-3 py-3 align-middle">
-                        <button type="button" className="inline-flex items-center gap-2 text-[#f4efe9]">
+                        <button type="button" className="inline-flex items-center gap-2 text-[var(--text)]">
                           <FiDownload size={14} />
                           {invoice}
                         </button>
@@ -1843,22 +1843,22 @@ export const DashboardPage = () => {
         </div>
 
         <div className="space-y-5">
-          <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[#f4efe9]">
+          <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[var(--text)]">
             <div className="mb-4 flex items-center justify-between gap-4">
-              <h2 className="text-[1.4rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9] sm:text-[2rem]">
+              <h2 className="text-[1.4rem] font-black leading-none tracking-[-0.07em] text-[var(--text)] sm:text-[2rem]">
                 Next Payment
               </h2>
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] text-[#f4efe9]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] text-[var(--text)]">
                 <FiCalendar size={18} strokeWidth={2.1} />
               </div>
             </div>
 
-            <div className="text-[1.05rem] font-semibold text-[#f4efe9] sm:text-[1.7rem]">Oct 1, 2026</div>
-            <div className="mt-2 text-[1.05rem] text-[#f4efe9] sm:text-[1.2rem]">$35.00</div>
+            <div className="text-[1.05rem] font-semibold text-[var(--text)] sm:text-[1.7rem]">Oct 1, 2026</div>
+            <div className="mt-2 text-[1.05rem] text-[var(--text)] sm:text-[1.2rem]">$35.00</div>
 
             <button
               type="button"
-              className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-3 text-[0.98rem] font-medium text-[#f4efe9]"
+              className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-3 text-[0.98rem] font-medium text-[var(--text)]"
             >
               <FiEdit3 size={16} strokeWidth={2.1} />
               Update Payment Method
@@ -1866,26 +1866,26 @@ export const DashboardPage = () => {
           </div>
 
           <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5">
-            <h2 className="mb-4 text-[1.4rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9] sm:text-[2rem]">
+            <h2 className="mb-4 text-[1.4rem] font-black leading-none tracking-[-0.07em] text-[var(--text)] sm:text-[2rem]">
               Billing Information
             </h2>
 
             <div className="flex items-start justify-between gap-4">
               <div className="flex items-start gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] text-[#f4efe9]">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] text-[var(--text)]">
                   <FiBookOpen size={17} strokeWidth={2.1} />
                 </div>
                 <div>
-                  <div className="text-[1.05rem] font-semibold text-[#f4efe9]">Mandy&apos;s Nail Salon</div>
-                  <div className="mt-2 text-[0.96rem] text-[#d7d0c9]">123 Main St</div>
-                  <div className="text-[0.96rem] text-[#d7d0c9]">Hopewell Junction, NY 12533</div>
-                  <div className="text-[0.96rem] text-[#d7d0c9]">United States</div>
+                  <div className="text-[1.05rem] font-semibold text-[var(--text)]">Mandy&apos;s Nail Salon</div>
+                  <div className="mt-2 text-[0.96rem] text-[var(--text-soft)]">123 Main St</div>
+                  <div className="text-[0.96rem] text-[var(--text-soft)]">Hopewell Junction, NY 12533</div>
+                  <div className="text-[0.96rem] text-[var(--text-soft)]">United States</div>
                 </div>
               </div>
 
               <button
                 type="button"
-                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-2 text-[0.95rem] font-medium text-[#f4efe9]"
+                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-2 text-[0.95rem] font-medium text-[var(--text)]"
               >
                 <FiEdit3 size={15} strokeWidth={2.1} />
                 Edit
@@ -1894,16 +1894,16 @@ export const DashboardPage = () => {
           </div>
 
           <div className="rounded-[18px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5">
-            <h3 className="text-[1.9rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9]">
+            <h3 className="text-[1.9rem] font-black leading-none tracking-[-0.07em] text-[var(--text)]">
               Need something?
             </h3>
-            <p className="mt-3 text-[1.05rem] leading-relaxed text-[#d7d0c9]">
+            <p className="mt-3 text-[1.05rem] leading-relaxed text-[var(--text-soft)]">
               Have a question about your billing or plan? We&apos;re here to help.
             </p>
 
             <button
               type="button"
-              className="mt-6 flex w-full items-center justify-center gap-3 rounded-[16px] border border-[#d97a49] bg-[#d97a49] px-4 py-4 text-[1.05rem] font-semibold text-white"
+              className="mt-6 flex w-full items-center justify-center gap-3 rounded-[16px] border border-[var(--accent)] bg-[var(--accent)] px-4 py-4 text-[1.05rem] font-semibold text-white"
             >
               <FiMessageCircle size={18} strokeWidth={2.2} />
               Contact Support
@@ -1915,64 +1915,64 @@ export const DashboardPage = () => {
   )
 
   const renderSupportView = () => (
-    <div className="rounded-[28px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[#f4efe9] shadow-[0_18px_50px_rgba(18,16,14,0.22)] sm:p-6 lg:p-8">
-      <div className="mb-6 rounded-[22px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-5 text-[#f4efe9] sm:p-6">
-        <h1 className="text-[2.4rem] font-black leading-[0.9] tracking-[-0.08em] text-[#f4efe9] sm:text-[3rem]">
+    <div className="rounded-[28px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[var(--text)] shadow-[0_18px_50px_rgba(18,16,14,0.22)] sm:p-6 lg:p-8">
+      <div className="mb-6 rounded-[22px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-5 text-[var(--text)] sm:p-6">
+        <h1 className="text-[2.4rem] font-black leading-[0.9] tracking-[-0.08em] text-[var(--text)] sm:text-[3rem]">
           Support
         </h1>
-        <p className="mt-3 text-[1.08rem] leading-relaxed text-[#d7d0c9]">
+        <p className="mt-3 text-[1.08rem] leading-relaxed text-[var(--text-soft)]">
           We&apos;re here to help with edits, troubleshooting, and questions about your site.
         </p>
       </div>
 
       <div className="grid gap-5 lg:grid-cols-3">
-        <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[#f4efe9]">
-          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-[#171717] text-white">
+        <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[var(--text)]">
+          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-[var(--surface-raise)] text-white">
             <FiMessageCircle size={18} strokeWidth={2.2} />
           </div>
-          <h2 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f4efe9]">Chat with us</h2>
-          <p className="mt-3 text-[1rem] text-[#d7d0c9]">Get a quick answer from our team during business hours.</p>
+          <h2 className="text-[1.5rem] font-black tracking-[-0.06em] text-[var(--text)]">Chat with us</h2>
+          <p className="mt-3 text-[1rem] text-[var(--text-soft)]">Get a quick answer from our team during business hours.</p>
         </div>
 
-        <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[#f4efe9]">
-          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-[#171717] text-white">
+        <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[var(--text)]">
+          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-[var(--surface-raise)] text-white">
             <FiEdit3 size={18} strokeWidth={2.1} />
           </div>
-          <h2 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f4efe9]">Design updates</h2>
-          <p className="mt-3 text-[1rem] text-[#d7d0c9]">Request edits to pages, sections, content, or branding.</p>
+          <h2 className="text-[1.5rem] font-black tracking-[-0.06em] text-[var(--text)]">Design updates</h2>
+          <p className="mt-3 text-[1rem] text-[var(--text-soft)]">Request edits to pages, sections, content, or branding.</p>
         </div>
 
-        <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[#f4efe9]">
-          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-[#171717] text-white">
+        <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[var(--text)]">
+          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-[var(--surface-raise)] text-white">
             <FiBookOpen size={18} strokeWidth={2.2} />
           </div>
-          <h2 className="text-[1.5rem] font-black tracking-[-0.06em] text-[#f4efe9]">Guides</h2>
-          <p className="mt-3 text-[1rem] text-[#d7d0c9]">Browse walkthroughs for managing your site and billing.</p>
+          <h2 className="text-[1.5rem] font-black tracking-[-0.06em] text-[var(--text)]">Guides</h2>
+          <p className="mt-3 text-[1rem] text-[var(--text-soft)]">Browse walkthroughs for managing your site and billing.</p>
         </div>
       </div>
     </div>
   )
 
   const renderAccountView = () => (
-    <div className="rounded-[28px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[#f4efe9] shadow-[0_18px_50px_rgba(18,16,14,0.22)] sm:p-6 lg:p-8">
-      <div className="mb-7 rounded-[22px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-5 text-[#f4efe9] sm:p-6">
-        <h1 className="text-[3.1rem] font-black leading-[0.9] tracking-[-0.08em] text-[#f4efe9] sm:text-[4.1rem]">
+    <div className="rounded-[28px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 text-[var(--text)] shadow-[0_18px_50px_rgba(18,16,14,0.22)] sm:p-6 lg:p-8">
+      <div className="mb-7 rounded-[22px] border border-white/10 bg-[rgba(255,255,255,0.03)] p-5 text-[var(--text)] sm:p-6">
+        <h1 className="text-[3.1rem] font-black leading-[0.9] tracking-[-0.08em] text-[var(--text)] sm:text-[4.1rem]">
           Account
         </h1>
-        <p className="mt-3 text-[1.08rem] leading-relaxed text-[#d7d0c9]">
+        <p className="mt-3 text-[1.08rem] leading-relaxed text-[var(--text-soft)]">
           Manage your personal information, security, and account details.
         </p>
       </div>
 
       <div className="grid gap-5 xl:grid-cols-[minmax(0,1.7fr)_360px]">
         <div className="space-y-6">
-          <form onSubmit={handleProfileSave} className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 sm:p-6 text-[#f4efe9]">
+          <form onSubmit={handleProfileSave} className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 sm:p-6 text-[var(--text)]">
             <div className="mb-5 flex items-center justify-between gap-4">
               <div>
-                <h2 className="text-[2.1rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9]">
+                <h2 className="text-[2.1rem] font-black leading-none tracking-[-0.07em] text-[var(--text)]">
                   Profile Information
                 </h2>
-                <p className="mt-2 text-[1rem] text-[#d7d0c9]">
+                <p className="mt-2 text-[1rem] text-[var(--text-soft)]">
                   Update your name, email, and other account details.
                 </p>
               </div>
@@ -1980,7 +1980,7 @@ export const DashboardPage = () => {
               <button
                 type="submit"
                 disabled={isSavingProfile}
-                className="rounded-[14px] border border-[#171717] bg-[#171717] px-5 py-3 text-[1rem] font-semibold text-white"
+                className="rounded-[14px] border border-white/15 bg-[var(--surface-raise)] px-5 py-3 text-[1rem] font-semibold text-white"
               >
                 {isSavingProfile ? 'Saving...' : 'Save Changes'}
               </button>
@@ -1998,56 +1998,56 @@ export const DashboardPage = () => {
 
             <div className="grid gap-5 md:grid-cols-[112px_minmax(0,1fr)] md:items-center">
               <div className="mx-auto md:mx-0">
-                <div className="flex h-[88px] w-[88px] items-center justify-center rounded-full bg-[#171717] text-[2.1rem] font-semibold text-white">
+                <div className="flex h-[88px] w-[88px] items-center justify-center rounded-full bg-[var(--surface-raise)] text-[2.1rem] font-semibold text-white">
                   {accountInitials}
                 </div>
               </div>
 
               <div className="space-y-5">
                 <div>
-                  <label className="mb-2 block text-[1.02rem] font-medium text-[#f4efe9]">Full Name</label>
+                  <label className="mb-2 block text-[1.02rem] font-medium text-[var(--text)]">Full Name</label>
                   <input
                     value={profileForm.fullName}
                     onChange={(event) => {
                       setProfileForm((prev) => ({ ...prev, fullName: event.target.value }))
                     }}
-                    className="w-full rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-3 text-[1.05rem] text-[#f4efe9] outline-none placeholder:text-[#d7d0c9]/60 focus:border-[#d97a49]"
+                    className="w-full rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-3 text-[1.05rem] text-[var(--text)] outline-none placeholder:text-[var(--text-soft)]/60 focus:border-[var(--accent)]"
                   />
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-[1.02rem] font-medium text-[#f4efe9]">Email Address</label>
+                  <label className="mb-2 block text-[1.02rem] font-medium text-[var(--text)]">Email Address</label>
                   <input
                     type="email"
                     value={profileForm.email}
                     onChange={(event) => {
                       setProfileForm((prev) => ({ ...prev, email: event.target.value }))
                     }}
-                    className="w-full rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-3 text-[1.05rem] text-[#f4efe9] outline-none placeholder:text-[#d7d0c9]/60 focus:border-[#d97a49]"
+                    className="w-full rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-3 text-[1.05rem] text-[var(--text)] outline-none placeholder:text-[var(--text-soft)]/60 focus:border-[var(--accent)]"
                   />
                 </div>
 
                 <div>
-                  <label className="mb-2 block text-[1.02rem] font-medium text-[#f4efe9]">Phone Number (optional)</label>
+                  <label className="mb-2 block text-[1.02rem] font-medium text-[var(--text)]">Phone Number (optional)</label>
                   <input
                     value={profileForm.phone}
                     onChange={(event) => {
                       setProfileForm((prev) => ({ ...prev, phone: event.target.value }))
                     }}
                     placeholder="Enter phone number"
-                    className="w-full rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-3 text-[1.05rem] text-[#f4efe9] outline-none placeholder:text-[#d7d0c9]/60 focus:border-[#d97a49]"
+                    className="w-full rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-3 text-[1.05rem] text-[var(--text)] outline-none placeholder:text-[var(--text-soft)]/60 focus:border-[var(--accent)]"
                   />
                 </div>
               </div>
             </div>
           </form>
 
-          <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 sm:p-6 text-[#f4efe9]">
+          <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 sm:p-6 text-[var(--text)]">
             <div className="mb-4">
-              <h2 className="text-[2.1rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9]">
+              <h2 className="text-[2.1rem] font-black leading-none tracking-[-0.07em] text-[var(--text)]">
                 Security
               </h2>
-              <p className="mt-2 text-[1rem] text-[#d7d0c9]">
+              <p className="mt-2 text-[1rem] text-[var(--text-soft)]">
                 Manage your password and connected accounts.
               </p>
             </div>
@@ -2055,18 +2055,18 @@ export const DashboardPage = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-between gap-4 rounded-[14px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4">
                 <div className="flex items-center gap-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] text-[#f4efe9]">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] text-[var(--text)]">
                     <FiLock size={18} strokeWidth={2.2} />
                   </div>
                   <div>
-                    <div className="text-[1.15rem] font-semibold text-[#f4efe9]">Password</div>
-                    <div className="text-[0.96rem] text-[#d7d0c9]">Update your password.</div>
+                    <div className="text-[1.15rem] font-semibold text-[var(--text)]">Password</div>
+                    <div className="text-[0.96rem] text-[var(--text-soft)]">Update your password.</div>
                   </div>
                 </div>
 
                 <button
                   type="button"
-                  className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-2.5 text-[0.94rem] font-medium text-[#f4efe9]"
+                  className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-2.5 text-[0.94rem] font-medium text-[var(--text)]"
                 >
                   Change Password
                 </button>
@@ -2074,18 +2074,18 @@ export const DashboardPage = () => {
 
               <div className="flex items-center justify-between gap-4 rounded-[14px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-4">
                 <div className="flex items-center gap-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#fff5f4] text-[1.2rem] font-bold text-[#e06d63]">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[rgba(255,92,92,0.14)] text-[1.2rem] font-bold text-[#ff9f9f]">
                     {providerBadge}
                   </div>
                   <div>
-                    <div className="text-[1.15rem] font-semibold text-[#f4efe9]">{providerName}</div>
-                    <div className="text-[0.96rem] text-[#d7d0c9]">Connected as {accountDisplayEmail || 'No email on file'}.</div>
+                    <div className="text-[1.15rem] font-semibold text-[var(--text)]">{providerName}</div>
+                    <div className="text-[0.96rem] text-[var(--text-soft)]">Connected as {accountDisplayEmail || 'No email on file'}.</div>
                   </div>
                 </div>
 
                 <button
                   type="button"
-                  className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-2.5 text-[0.94rem] font-medium text-[#f4efe9]"
+                  className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-4 py-2.5 text-[0.94rem] font-medium text-[var(--text)]"
                 >
                   Disconnect
                 </button>
@@ -2095,78 +2095,78 @@ export const DashboardPage = () => {
         </div>
 
         <div className="space-y-5">
-          <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 sm:p-6 text-[#f4efe9]">
-            <h2 className="text-[2.1rem] font-black leading-none tracking-[-0.07em] text-[#f4efe9]">
+          <div className="rounded-[20px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-5 sm:p-6 text-[var(--text)]">
+            <h2 className="text-[2.1rem] font-black leading-none tracking-[-0.07em] text-[var(--text)]">
               Account Details
             </h2>
-            <p className="mt-2 text-[1rem] text-[#d7d0c9]">View your account information.</p>
+            <p className="mt-2 text-[1rem] text-[var(--text-soft)]">View your account information.</p>
 
             <div className="mt-5 space-y-4">
               <div className="flex items-center justify-between gap-4 border-b border-white/10 pb-3">
-                <div className="flex items-center gap-3 text-[#f4efe9]">
+                <div className="flex items-center gap-3 text-[var(--text)]">
                   <FiUser size={18} strokeWidth={2.1} />
                   <span className="text-[1.08rem] font-medium">Account Type</span>
                 </div>
-                <span className="text-[1.08rem] text-[#f4efe9]">Standard</span>
+                <span className="text-[1.08rem] text-[var(--text)]">Standard</span>
               </div>
 
               <div className="flex items-center justify-between gap-4 border-b border-white/10 pb-3">
-                <div className="flex items-center gap-3 text-[#f4efe9]">
+                <div className="flex items-center gap-3 text-[var(--text)]">
                   <FiClock size={18} strokeWidth={2.1} />
                   <span className="text-[1.08rem] font-medium">Member Since</span>
                 </div>
-                <span className="text-[1.08rem] text-[#f4efe9]">{memberSince}</span>
+                <span className="text-[1.08rem] text-[var(--text)]">{memberSince}</span>
               </div>
 
               <div className="flex items-center justify-between gap-4 border-b border-white/10 pb-3">
-                <div className="flex items-center gap-3 text-[#f4efe9]">
+                <div className="flex items-center gap-3 text-[var(--text)]">
                   <FiMail size={18} strokeWidth={2.1} />
                   <span className="text-[1.08rem] font-medium">Email</span>
                 </div>
-                <span className="text-[1.08rem] text-[#f4efe9]">{accountDisplayEmail || 'No email on file'}</span>
+                <span className="text-[1.08rem] text-[var(--text)]">{accountDisplayEmail || 'No email on file'}</span>
               </div>
 
               <div className="flex items-center justify-between gap-4 border-b border-white/10 pb-3">
-                <div className="flex items-center gap-3 text-[#f4efe9]">
+                <div className="flex items-center gap-3 text-[var(--text)]">
                   <FiPhone size={18} strokeWidth={2.1} />
                   <span className="text-[1.08rem] font-medium">Phone</span>
                 </div>
-                <span className="text-[1.08rem] text-[#f4efe9]">{accountDisplayPhone}</span>
+                <span className="text-[1.08rem] text-[var(--text)]">{accountDisplayPhone}</span>
               </div>
 
               <div className="flex items-center justify-between gap-4">
-                <div className="flex items-center gap-3 text-[#f4efe9]">
+                <div className="flex items-center gap-3 text-[var(--text)]">
                   <FiGlobe size={18} strokeWidth={2.1} />
                   <span className="text-[1.08rem] font-medium">Language</span>
                 </div>
-                <span className="text-[1.08rem] text-[#f4efe9]">English (US)</span>
+                <span className="text-[1.08rem] text-[var(--text)]">English (US)</span>
               </div>
             </div>
           </div>
 
-          <div className="rounded-[20px] border border-[#f2c4c0]/40 bg-[#2a1d1c] p-5 sm:p-6 text-[#f4efe9]">
-            <h2 className="text-[2.1rem] font-black leading-none tracking-[-0.07em] text-[#f8b3ae]">
+          <div className="rounded-[20px] border border-[#f2c4c0]/40 bg-[rgba(93,39,42,0.35)] p-5 sm:p-6 text-[var(--text)]">
+            <h2 className="text-[2.1rem] font-black leading-none tracking-[-0.07em] text-[#ff9f9f]">
               Danger Zone
             </h2>
-            <p className="mt-2 text-[1rem] text-[#f8b3ae]">
+            <p className="mt-2 text-[1rem] text-[#ff9f9f]">
               These actions are permanent and cannot be undone.
             </p>
 
             <div className="mt-5">
               <button
                 type="button"
-                className="flex w-full items-center justify-between gap-3 rounded-[14px] border border-[#f2c4c0]/30 bg-[#3a2324] px-4 py-3 text-left"
+                className="flex w-full items-center justify-between gap-3 rounded-[14px] border border-[#f2c4c0]/30 bg-[rgba(93,39,42,0.45)] px-4 py-3 text-left"
               >
                 <div className="flex items-center gap-3">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#4d2a2a] text-[#f8b3ae]">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[rgba(93,39,42,0.6)] text-[#ff9f9f]">
                     <FiTrash2 size={18} strokeWidth={2.1} />
                   </div>
                   <div>
-                    <div className="text-[1.1rem] font-semibold text-[#f4efe9]">Delete Account</div>
-                    <div className="text-[0.9rem] text-[#f8b3ae]">Permanently delete your account and all data.</div>
+                    <div className="text-[1.1rem] font-semibold text-[var(--text)]">Delete Account</div>
+                    <div className="text-[0.9rem] text-[#ff9f9f]">Permanently delete your account and all data.</div>
                   </div>
                 </div>
-                <span className="text-[0.95rem] font-medium text-[#f8b3ae]">Delete Account</span>
+                <span className="text-[0.95rem] font-medium text-[#ff9f9f]">Delete Account</span>
               </button>
             </div>
           </div>
@@ -2191,18 +2191,18 @@ export const DashboardPage = () => {
 
   return (
     isAdmin ? (
-      <section className="min-h-screen bg-[#201d1b] text-[#f4efe9]">
+      <section className="min-h-screen bg-[var(--app-bg-strong)] text-[var(--text)]">
         <Helmet>
           <title>Admin Dashboard | 845 Sites</title>
         </Helmet>
 
         <div className="mx-auto flex min-h-screen max-w-[1700px] flex-col xl:flex-row">
-          <aside className="w-full border-b border-white/10 bg-[#171412] px-4 py-5 text-[#efefec] xl:w-[250px] xl:border-b-0 xl:border-r xl:border-white/10 xl:px-5">
+          <aside className="w-full border-b border-white/10 bg-[var(--surface-0)] px-4 py-5 text-[var(--text)] xl:w-[250px] xl:border-b-0 xl:border-r xl:border-white/10 xl:px-5">
             <div className="mb-6 flex items-center gap-3 px-1">
-              <div className="h-10 w-10 rounded-[8px] bg-[#d97a49]" />
+              <div className="h-10 w-10 rounded-[8px] bg-[var(--accent)]" />
               <div>
                 <div className="text-[1.1rem] font-black tracking-[-0.07em] text-white">E8GHT45</div>
-                <div className="text-[0.58rem] uppercase tracking-[0.24em] text-[#d7d0c9]">Sites</div>
+                <div className="text-[0.58rem] uppercase tracking-[0.24em] text-[var(--text-soft)]">Sites</div>
               </div>
             </div>
 
@@ -2215,7 +2215,7 @@ export const DashboardPage = () => {
                   className={`flex items-center gap-2 rounded-[11px] px-3 py-2.5 text-left text-[0.88rem] font-medium transition xl:text-[0.96rem] ${
                     activeAdminTab === id
                       ? 'bg-[rgba(255,255,255,0.06)] text-white ring-1 ring-white/10'
-                      : 'text-[#cbcbc6] hover:bg-[rgba(255,255,255,0.04)] hover:text-white'
+                      : 'text-[var(--text-soft)] hover:bg-[rgba(255,255,255,0.04)] hover:text-white'
                   }`}
                 >
                   <Icon size={16} />
@@ -2228,7 +2228,7 @@ export const DashboardPage = () => {
               <button
                 type="button"
                 onClick={() => setActiveAdminTab('dashboard')}
-                className="flex w-full items-center justify-between rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.88rem] text-[#f4efe9]"
+                className="flex w-full items-center justify-between rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2 text-[0.88rem] text-[var(--text)]"
               >
                 <span>View Site</span>
                 <FiArrowRight size={14} />
@@ -2236,30 +2236,30 @@ export const DashboardPage = () => {
               <div className="mt-3 flex items-center justify-between rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.03)] px-3 py-2.5">
                 <div>
                   <div className="text-[0.9rem] font-medium text-white">{displayName}</div>
-                  <div className="text-[0.75rem] text-[#d7d0c9]">Admin</div>
+                  <div className="text-[0.75rem] text-[var(--text-soft)]">Admin</div>
                 </div>
-                <button type="button" onClick={handleLogout} className="text-[0.8rem] text-[#d6d6d1] hover:text-white">
+                <button type="button" onClick={handleLogout} className="text-[0.8rem] text-[var(--text-soft)] hover:text-white">
                   Log out
                 </button>
               </div>
             </div>
           </aside>
 
-          <main className="flex-1 bg-[#201d1b] px-4 py-4 sm:px-5 sm:py-5 xl:px-6 xl:py-6">
+          <main className="flex-1 bg-[var(--app-bg-strong)] px-4 py-4 sm:px-5 sm:py-5 xl:px-6 xl:py-6">
             <header className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div className="relative w-full max-w-xl">
-                <FiSearch className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[#d7d0c9]" size={16} />
+                <FiSearch className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-soft)]" size={16} />
                 <input
                   type="text"
                   placeholder="Search projects, users, or domains..."
-                  className="w-full rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.04)] py-2.5 pl-10 pr-3 text-[0.93rem] text-[#f4efe9] outline-none placeholder:text-[#d7d0c9]/60"
+                  className="w-full rounded-[12px] border border-white/10 bg-[rgba(255,255,255,0.04)] py-2.5 pl-10 pr-3 text-[0.93rem] text-[var(--text)] outline-none placeholder:text-[var(--text-soft)]/60"
                 />
               </div>
 
               <div className="flex items-center gap-2 sm:gap-3">
                 <button
                   type="button"
-                  className="inline-flex items-center gap-2 rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-2 text-[0.84rem] font-medium text-[#f4efe9]"
+                  className="inline-flex items-center gap-2 rounded-[10px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-2 text-[0.84rem] font-medium text-[var(--text)]"
                 >
                   <FiCalendar size={14} />
                   Sep 1, 2026 - Sep 28, 2026
@@ -2267,9 +2267,9 @@ export const DashboardPage = () => {
                 <button
                   type="button"
                   onClick={handleLogout}
-                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#1a1b1d] px-2.5 py-1.5 text-[#f2efe9]"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[var(--surface-raise)] px-2.5 py-1.5 text-[var(--text)]"
                 >
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#f1f1ef] text-[0.82rem] font-semibold text-[#171717]">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--surface-2)] text-[0.82rem] font-semibold text-[var(--text)]">
                     {displayInitials}
                   </span>
                   <span className="hidden text-[0.9rem] font-medium sm:inline">{displayName}</span>
@@ -2282,19 +2282,19 @@ export const DashboardPage = () => {
         </div>
       </section>
     ) : (
-    <section className="min-h-screen bg-[#201d1b] text-[#f4efe9]">
+    <section className="min-h-screen bg-[var(--app-bg-strong)] text-[var(--text)]">
       <Helmet>
         <title>{activeTab === 'billing' ? 'Billing' : activeTab === 'my-site' ? 'My Site' : activeTab === 'support' ? 'Support' : 'Account'} | 845 Sites</title>
       </Helmet>
 
       <div className="mx-auto flex min-h-screen max-w-[1600px] flex-col lg:flex-row">
-        <aside className="flex w-full flex-col justify-between border-b border-white/10 bg-[#171412] px-4 py-4 backdrop-blur-sm lg:w-[270px] lg:border-b-0 lg:border-r lg:border-white/10 lg:px-5 lg:py-5">
+        <aside className="flex w-full flex-col justify-between border-b border-white/10 bg-[var(--surface-0)] px-4 py-4 backdrop-blur-sm lg:w-[270px] lg:border-b-0 lg:border-r lg:border-white/10 lg:px-5 lg:py-5">
           <div>
             <div className="mb-8 flex items-center gap-3 pl-2 pt-2">
-              <div className="h-10 w-10 rounded-[8px] bg-[#d97a49]" />
+              <div className="h-10 w-10 rounded-[8px] bg-[var(--accent)]" />
               <div className="leading-none">
-                <div className="text-[1.05rem] font-black tracking-[-0.08em] text-[#f7f4f1]">EIGHT45</div>
-                <div className="mt-1 text-[0.56rem] font-medium uppercase tracking-[0.2em] text-[#d7d0c9]">
+                <div className="text-[1.05rem] font-black tracking-[-0.08em] text-[var(--text-strong)]">EIGHT45</div>
+                <div className="mt-1 text-[0.56rem] font-medium uppercase tracking-[0.2em] text-[var(--text-soft)]">
                   Sites
                 </div>
               </div>
@@ -2308,8 +2308,8 @@ export const DashboardPage = () => {
                   onClick={() => setActiveTab(id)}
                   className={`flex w-full items-center justify-center gap-2 rounded-[14px] px-2 py-3 text-left text-[0.8rem] font-medium transition sm:gap-3 sm:px-3 sm:text-[1.03rem] lg:justify-start ${
                     activeTab === id
-                      ? 'bg-[#d97a49] text-white shadow-[0_10px_18px_rgba(16,16,19,0.15)]'
-                      : 'text-[#f4efe9] hover:bg-white/5'
+                      ? 'bg-[var(--accent)] text-white shadow-[0_10px_18px_rgba(16,16,19,0.15)]'
+                      : 'text-[var(--text)] hover:bg-white/5'
                   }`}
                 >
                   <Icon size={18} strokeWidth={2.2} />
@@ -2319,13 +2319,13 @@ export const DashboardPage = () => {
             </nav>
           </div>
 
-          <div className="space-y-5 border-t border-[#2b2a28] pt-5">
-            <div className="rounded-[18px] border border-[#2c2b2a] bg-[#201e1d] p-4 text-center text-[#f4efe9]">
-              <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] text-lg text-[#f4efe9]">
+          <div className="space-y-5 border-t border-white/10 pt-5">
+            <div className="rounded-[18px] border border-white/12 bg-[var(--surface-1)] p-4 text-center text-[var(--text)]">
+              <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] text-lg text-[var(--text)]">
                 ?
               </div>
-              <p className="text-[1.05rem] font-semibold leading-tight text-[#f4efe9]">Need help?</p>
-              <p className="mt-2 text-[0.92rem] leading-relaxed text-[#d7d0c9]">
+              <p className="text-[1.05rem] font-semibold leading-tight text-[var(--text)]">Need help?</p>
+              <p className="mt-2 text-[0.92rem] leading-relaxed text-[var(--text-soft)]">
                 We&apos;re here if you have any questions.
               </p>
             </div>
@@ -2333,19 +2333,19 @@ export const DashboardPage = () => {
             <button
               type="button"
               onClick={() => setActiveTab('support')}
-              className="w-full rounded-[14px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-3 text-[0.98rem] font-medium text-[#f4efe9] transition hover:bg-[rgba(255,255,255,0.08)]"
+              className="w-full rounded-[14px] border border-white/10 bg-[rgba(255,255,255,0.04)] px-3 py-3 text-[0.98rem] font-medium text-[var(--text)] transition hover:bg-[rgba(255,255,255,0.08)]"
             >
               Contact Support
             </button>
           </div>
         </aside>
 
-        <main className="flex-1 bg-[#201d1b] px-4 py-5 sm:px-5 lg:px-7 lg:py-7">
+        <main className="flex-1 bg-[var(--app-bg-strong)] px-4 py-5 sm:px-5 lg:px-7 lg:py-7">
           <header className="mb-6 flex items-center justify-end gap-3 sm:mb-7 lg:gap-4">
             <button
               type="button"
               aria-label="Notifications"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] text-[#f4efe9] shadow-[0_1px_0_rgba(15,15,15,0.06)]"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] text-[var(--text)] shadow-[0_1px_0_rgba(15,15,15,0.06)]"
             >
               <FiBell size={18} strokeWidth={2.2} />
             </button>
@@ -2353,13 +2353,13 @@ export const DashboardPage = () => {
             <button
               type="button"
               onClick={handleLogout}
-              className="flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-2.5 py-2 text-left text-[#f4efe9] shadow-[0_1px_0_rgba(15,15,15,0.06)] sm:gap-3 sm:px-3"
+              className="flex items-center gap-2 rounded-full border border-white/10 bg-[rgba(255,255,255,0.04)] px-2.5 py-2 text-left text-[var(--text)] shadow-[0_1px_0_rgba(15,15,15,0.06)] sm:gap-3 sm:px-3"
             >
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#171717] text-[0.9rem] font-semibold text-[#f5f1ec]">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--surface-raise)] text-[0.9rem] font-semibold text-[var(--text)]">
                 {displayInitials}
               </span>
               <span className="hidden text-[0.98rem] font-medium sm:inline">{displayName}</span>
-              <span aria-hidden="true" className="text-xs text-[#d7d0c9]">▾</span>
+              <span aria-hidden="true" className="text-xs text-[var(--text-soft)]">▾</span>
             </button>
           </header>
 

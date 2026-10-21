@@ -59,13 +59,13 @@ export const Services = () => (
         {SERVICE_ITEMS.map(({ id, icon: Icon, label, title, price, priceSuffix, description }) => (
           <article
             key={id}
-            className="rounded-[24px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-6 text-[#f4efe9] shadow-[0_18px_45px_rgba(0,0,0,0.14)] md:p-7"
+            className="rounded-[24px] border border-white/10 bg-[rgba(255,255,255,0.04)] p-6 text-[var(--text)] shadow-[0_18px_45px_rgba(0,0,0,0.14)] md:p-7"
           >
             <div className="mb-6 flex items-center justify-between gap-4">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#e78a5e]/70 bg-[rgba(231,138,94,0.08)] text-[1.8rem] text-[#f59d6c]">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[var(--accent)] bg-[var(--accent-subtle)] text-[1.8rem] text-[var(--accent)]">
                 <Icon aria-hidden="true" />
               </div>
-              <span className="text-[0.72rem] font-medium uppercase tracking-[0.18em] text-[#d7d0c9]">{label}</span>
+              <span className="text-[0.72rem] font-medium uppercase tracking-[0.18em] text-[var(--text-soft)]">{label}</span>
             </div>
 
             <h3 className="max-w-[330px] text-[2.3rem] font-black leading-[0.92] tracking-[-0.07em] text-white md:text-[3.05rem] md:tracking-[-0.075em]">
@@ -80,12 +80,12 @@ export const Services = () => (
               <span className="text-[2.6rem] font-black leading-none tracking-[-0.07em] text-white md:text-[3.7rem] md:tracking-[-0.08em]">
                 {price}
               </span>
-              <span className="text-[0.74rem] font-medium uppercase tracking-[0.12em] text-[#d7d0c9]">
+              <span className="text-[0.74rem] font-medium uppercase tracking-[0.12em] text-[var(--text-soft)]">
                 {priceSuffix}
               </span>
             </div>
 
-            <p className="mt-6 max-w-[430px] text-[1rem] leading-relaxed text-[#d7d0c9] md:text-[1.1rem]">
+            <p className="mt-6 max-w-[430px] text-[1rem] leading-relaxed text-[var(--text-soft)] md:text-[1.1rem]">
               {description}
             </p>
           </article>
